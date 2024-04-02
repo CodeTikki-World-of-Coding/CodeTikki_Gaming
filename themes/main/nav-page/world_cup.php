@@ -1,4 +1,5 @@
 <?php
+  //include '/setting.php';
 session_start();
 ?>
 <div class="register-main__page">

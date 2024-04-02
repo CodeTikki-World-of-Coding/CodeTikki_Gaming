@@ -1,5 +1,3 @@
-
-
 <?php
 
         include 'setting.php';
@@ -28,7 +26,7 @@
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
                 <li class="nav-item"><a href="themes/main/cpanel/content.php" class="nav-link" >Control Panel</a></li>';
     } else {
-        echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link">World Cup</a></li>
+        echo '<li class="nav-item"><a href="themes/main/nav-page/user-world_cup.php" class="nav-link">World Cup</a></li>
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>';
     }
 
