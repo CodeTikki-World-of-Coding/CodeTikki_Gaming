@@ -1,0 +1,196 @@
+.cpanel-container{
+    background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+    height: 100%;
+    width: 100%;
+    .navbar-cpanel{
+
+       // box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+        background: #ffffff !important;
+        border-bottom: 2px solid gray !important;
+
+        }
+        .sidebar{
+            width:30%;
+            /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
+            background: linear-gradient(to bottom, #ffffff, #FFE7D5);
+
+            ul{ 
+                .nav-item.active a.nav-link {
+                    color: #FF4D00 !important;
+                    font-size: 20px;
+                    font-weight: 600;
+
+                }
+        
+                /* Change cursor style on hover */
+                .nav-item a.nav-link:hover {
+                    cursor: pointer;
+                }
+        
+                li {
+                .dropdown-toggle::after {
+                    display: none !important;
+                }
+            
+                .dropdown-menu {
+                    right: -132px !important;
+                    left: auto !important;
+                    top:-30px !important;
+                }
+                .page-layout {
+                    right: -265px !important;
+                    left: auto !important;
+                    top:-30px !important;
+                }
+                .world-cup {
+                    right: -287px !important;
+                    left: auto !important;
+                    top:-30px !important;
+                }
+                
+            .dropdown-menu li a{
+                text-decoration: none;
+            }
+            a {
+                color:#000 !important;
+                .arrow-d{
+                    margin-left:98% !important;
+                }
+                .arrow-s{
+                    margin-left:76% !important;
+                }
+                .arrow-p{
+                    margin-left:94% !important;
+                }
+                .arrow-w{
+                    margin-left:119% !important;
+                }
+            }
+        }
+    }
+        .section{
+            width:278px;
+            height:215px;
+    margin:0 auto;
+            border:.5px ;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        }
+        }
+        .main{
+            width:70%;
+            ;
+    
+        }
+       
+}
+button.btn-add{
+    width: 200px !important;
+    height: 50px !important;
+    background-color:#FF4D00 !important;
+    color:#fff !important;
+
+}
+button.btn-view{
+    width: 200px !important;
+    height: 50px !important;
+    background-color:#FF4D00 !important;
+    color:#fff !important;
+    margin-left: 40%;
+
+
+}
+button.btn-submit{
+    width: 200px !important;
+    height: 50px !important;
+    background-color:#FF4D00 !important;
+    color:#fff !important;
+}
+.question-form{
+    background-color: #FFE7D5;
+}
+span.question-number{
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 5px !important;
+    margin: 10px;
+}
+div.dashboard{
+
+.box-1{
+
+    border: 1px solid rgb(96, 154, 235);
+    height: 280px;
+    background-color: rgb(96, 154, 235);
+    border-radius: 15px;
+    width: 540px;
+    margin: 10px;
+   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); 
+
+
+}
+.box-2{
+    border: 1px solid aliceblue;
+    height: 280px;
+    background-color:aliceblue;
+    border-radius: 15px;
+    width: 540px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); 
+
+    label{
+        color: #000;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    button{
+     background-color: #FF4D00;
+     width: 100px;
+     height: 40px;
+     border-radius: 15px;
+     margin-top: 20%;
+    }
+
+
+}
+.box-3{
+    border: 1px solid #FFFFFF;
+    height: 370px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    width: 330px;
+margin: 10px;
+color: #000;
+        font-size: 22px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); 
+
+        font-weight: 400;
+
+}
+.box-4{
+    border: 1px solid #FFFFFF;
+    height: 185px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+
+
+}
+label.box1{
+    color: red;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+
+}
+span.box1{
+    background-color: #fff;
+
+}
+}

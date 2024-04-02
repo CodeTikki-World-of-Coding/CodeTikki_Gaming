@@ -1,0 +1,19 @@
+nav{
+    background-color: black !important;
+    .navbar-toggler{
+        .navbar-toggler-icon{
+            color: #FFFFFF !important;
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                a{
+                    color: #FFFFFF;
+                    @import "./cpanel";
+                }
+
+            }
+        }
+    }
+}

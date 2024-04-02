@@ -1,0 +1,73 @@
+
+div.player-profile{
+    background-color: #0170B8;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    div.player-profile_inner{
+        display: flex;
+        flex-direction: row;
+        div.profile-pic{
+            box-sizing: border-box;
+            width:600px;
+            height:780px;
+            transform: skew(9.49deg);
+            margin-left: 10px;
+           // background: url('../images/Profile-pics.png');
+            background-repeat: no-repeat,repeat;
+            background-size: cover;
+            img{
+                width: 100%;
+                //height: 100vh;
+            }
+
+        }
+        div.profile-info{
+            div.profile-logo-box{
+                width: 300px;
+                height: 70px;
+                background-color: #A5CD3A;
+                box-sizing: border-box;
+                margin-top: 100px;
+                margin-left: -123px;
+                text-align: center;
+                padding: 20px;
+                font-size: 24px;
+                font-weight: 600;
+                
+            }
+            div.player-name{
+                color: white;
+                font-size: 96px;
+                font-weight: 400;
+                margin-left: 85%;
+            }
+            div.divider{
+                background-color: #A5CD3A;
+                width: 500px;
+                height: 4px;
+                margin-left: 55%;
+
+            }
+            div.countary-name{
+                color: white;
+                font-weight: 600;
+                font-size: 36px;
+                margin-left: 85%;
+            }
+            div.match-data{
+                margin-left: 60%;
+                color: #000000;
+                font-size: 22px;
+                font-weight: 600;
+                .matches-count,.run-count,.six-count,.four-count,.average-score,.full-century,.troffy-won{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                   
+                }
+            }
+        }
+    }
+}

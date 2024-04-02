@@ -1,0 +1,21 @@
+div.control-page{
+    background-color: aliceblue !important;
+    .color-options {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    
+    
+    
+    // #applyColorsBtn {
+    //     margin-top: 15px;
+    // }
+    
+}
