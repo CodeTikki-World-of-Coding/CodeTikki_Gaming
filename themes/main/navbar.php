@@ -22,9 +22,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto" id="navbar-nav">';
 
-    // Add page links based on the user's role
     
-    if ($user && $user['role'] == 'Admin') {
+    if ($user && $user['role'] == 'Admin'|| $user['role'] == 'QuizMaster' || $user['role']== 'ContentModerator'|| $user ['role']=='QuestionMaster') {
         echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link">World Cup</a></li>
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
                 <li class="nav-item"><a href="themes/main/cpanel/content.php" class="nav-link" >Control Panel</a></li>';
@@ -33,7 +32,6 @@
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>';
     }
 
-    // Close the navigation menu
     echo '</ul></div></nav>';
 
 
