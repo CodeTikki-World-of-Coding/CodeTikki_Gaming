@@ -36,33 +36,6 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <div class="d-flex align-items-center">
-                                    <img src="../../../../CodeTikki_Gaming/themes/images/ph_sidebar-thin.svg" alt="" class="me-1 ms-1">
-                                        <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Sidebar type 
-                                            <img src="../../../../CodeTikki_Gaming/themes/images/ooui_next-ltr.svg" alt="arrow" class=" arrow-s">
-                                        </a>
-                                        <ul class="dropdown-menu sidebar-type dropdown-menu-start" aria-labelledby="navbarDropdown">
-                                            <li><a class="submenu-link" href="#">Order 1</a></li>
-                                            <li><a class="submenu-link" href="#">Order 2</a></li>
-                                            <li><a class="submenu-link" href="#">Order 3</a></li>
-                                        </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <div class="d-flex align-items-center">
-                                    <img src="../../../../CodeTikki_Gaming/themes/images/layout 2.svg" alt="" class="me-1 ms-1">
-                                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Page layout <img src="../../../../CodeTikki_Gaming/themes/images/ooui_next-ltr.svg" alt="arrow" class=" arrow-p">
-                                    </a>
-                                    <ul class="dropdown-menu page-layout dropdown-menu-end" aria-labelledby="navbarDropdown2">
-                                        <li><a class="submenu-link" href="#">Product 1</a></li>
-                                        <li><a class="submenu-link" href="#">Product 2</a></li>
-                                        <li><a class="submenu-link" href="#">Product 3</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <div class="d-flex align-items-center">
                                     <img src="../../../../CodeTikki_Gaming/themes/images/Vector.svg" alt="" class="me-1 ms-1">
                                     <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         World Cup <img src="../../../../CodeTikki_Gaming/themes/images/ooui_next-ltr.svg" alt="arrow" class=" arrow-w">
