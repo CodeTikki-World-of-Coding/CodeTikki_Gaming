@@ -54,11 +54,7 @@
                     </div>
                     <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
                         <ul class="nav flex-column">            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center menu" href="../../../../CodeTikki_Gaming/themes/main/cpanel/create-quiz.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Create quiz <img src="../../../../CodeTikki_Gaming/themes/images/ooui_next-ltr.svg" alt=" arrow" >
-                                </a>                
-                            </li>
+                            
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Approve quiz <img src="../../../../CodeTikki_Gaming/themes/images/ooui_next-ltr.svg" alt="arrow arrow">

@@ -21,13 +21,19 @@
             <ul class="navbar-nav ml-auto" id="navbar-nav">';
 
     
-    if ($user && $user['role'] == 'Admin'|| $user['role'] == 'QuizMaster' || $user['role']== 'ContentModerator'|| $user ['role']=='QuestionMaster') {
+    if ($user && $user['role'] == 'Admin'|| $user['role']== 'ContentModerator'|| $user ['role']=='QuestionMaster') {
         echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link">World Cup</a></li>
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
                 <li class="nav-item"><a href="themes/main/cpanel/content.php" class="nav-link" >Control Panel</a></li>';
-    } else {
+    }elseif($user&&$user['role']=='QuizMaster' ){
+        echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link">World Cup</a></li>
+        <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
+        <li class="nav-item"><a href="themes/main/cpanel/quizMaster/quizmaster.php" class="nav-link" >Control Panel</a></li>';
+    }
+     else {
         echo '<li class="nav-item"><a href="themes/main/nav-page/user-world_cup.php" class="nav-link">World Cup</a></li>
-                <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>';
+                <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
+                <li class="nav-item"><a href="themes/main/nav-page/user_pseudoBattle.php" class="nav-link">Pseudo Battle</a></li>';
     }
 
     echo '</ul></div></nav>';

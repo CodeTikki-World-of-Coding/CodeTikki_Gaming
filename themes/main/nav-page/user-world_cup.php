@@ -1,3 +1,3 @@
-<div class="contaioner user-page">
-<p>Lounching soon....</p>
+<div class="contaioner user-world_page">
+<p>Launching soon....</p>
 </div>
