@@ -12553,6 +12553,26 @@ nav .navbar-collapse .navbar-nav .nav-item a div.quiz-container div.quizQuestion
   font-weight: 400;
   font-size: 18px;
 }
+nav .navbar-collapse .navbar-nav .nav-item a .icon {
+  display: inline-block; /* Ensure the icon is inline with text */
+  vertical-align: middle; /* Align the icon vertically */
+  width: 30px; /* Icon width */
+  margin-right: 10px; /* Right margin */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+nav .navbar-collapse .navbar-nav .nav-item a .icon-text {
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  border: 2px solid transparent; /* Initial border style (transparent) */
+  padding: 10px; /* Padding around the icon */
+}
+nav .navbar-collapse .navbar-nav .nav-item a:hover .icon {
+  opacity: 0; /* Hide the icon on hover */
+}
+nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
+  opacity: 1; /* Show the text on hover */
+  border-color: #ffffff; /* Show white border on hover */
+}
 
 .cpanel-container {
   background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;

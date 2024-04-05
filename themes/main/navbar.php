@@ -22,7 +22,7 @@
 
     
     if ($user && $user['role'] == 'Admin'|| $user['role']== 'ContentModerator'|| $user ['role']=='QuestionMaster') {
-        echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link">World Cup</a></li>
+        echo '<li class="nav-item"><a href="themes/main/nav-page/world_cup.php" class="nav-link" title="World Cup"><img src="" alt="icon"> </a></li>
                 <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
                 <li class="nav-item"><a href="themes/main/cpanel/content.php" class="nav-link" >Control Panel</a></li>';
     }elseif($user&&$user['role']=='QuizMaster' ){
@@ -31,9 +31,10 @@
         <li class="nav-item"><a href="themes/main/cpanel/quizMaster/quizmaster.php" class="nav-link" >Control Panel</a></li>';
     }
      else {
-        echo '<li class="nav-item"><a href="themes/main/nav-page/user-world_cup.php" class="nav-link">World Cup</a></li>
-                <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link">Player Profile</a></li>
-                <li class="nav-item"><a href="themes/main/nav-page/user_pseudoBattle.php" class="nav-link">Pseudo Battle</a></li>';
+        echo '<li class="nav-item "><a href="themes/main/nav-page/user-world_cup.php" class="nav-link" ><img class="icon" src="themes/images/trophy-solid.svg" alt="icon"><span class="icon-text">World Cup</span>
+        </a></li>
+                <li class="nav-item"><a href="themes/main/nav-page/player-profile.php" class="nav-link"><img class="icon" src="themes/images/user-regular.svg" alt="icon"><span class="icon-text">Player Profile</span></a></li>
+                <li class="nav-item"><a href="themes/main/nav-page/user_pseudoBattle.php" class="nav-link"><img class="icon" src="themes/images/hammer-solid.svg" alt="icon"><span class="icon-text">Psuedo Battle</span></a></li>';
     }
 
     echo '</ul></div></nav>';
