@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <div class="container-fluid login-page">
   <div class="row">
-    <div class="col-md-6"><img src="./themes/images/image-removebg-preview (50) 2.png" alt=""></div>
+    <div class="col-md-6 logo-pic"><img src="./themes/images/image-removebg-preview (50) 2.png" alt=""></div>
     <div class="col-lg-6 offset-lg-3">
       <div class="login-box">
         <h2 class="text-center mb-4 login-heading">Login Form</h2>
