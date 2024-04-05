@@ -64,22 +64,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
-//     function updateCurrentTime() {
-//     // Get the current date and time
-//         let currentTime = new Date();
-//         let hours = currentTime.getHours();
-//         let minutes = currentTime.getMinutes();
-//         let seconds = currentTime.getSeconds();
-//         hours = hours < 10 ? '0' + hours : hours;
-//         minutes = minutes < 10 ? '0' + minutes : minutes;
-//         seconds = seconds < 10 ? '0' + seconds : seconds;
-//         document.getElementById('currentTime').textContent = hours + ':' + minutes + ':' + seconds;
-//     }
-
-//   // Update the current time initially and then every second
-//     updateCurrentTime();
-//     setInterval(updateCurrentTime, 1000); // Update every second
-
 
     $(document).ready(function() {
         $('#add').click(function() {
@@ -105,7 +89,7 @@
             allFormData.append(key, value);
         });
         $('.question-form').not('#questionForm').each(function(index, form) {
-            var formData = new FormData($(form)[0]); // Get form data for each form
+            var formData = new FormData($(form)[0]); 
             formData.forEach(function(value, key) {
                 allFormData.append('cloned_' + key + '_' + index, value); // Append form data with a prefix and index
             });
@@ -117,10 +101,10 @@
             processData: false,
             contentType: false,
             success: function(response) {
-                console.log(response); // Log the response from the server
+                console.log(response); 
             },
             error: function(xhr, status, error) {
-                console.error(xhr.responseText); // Log any errors that occur during the AJAX request
+                console.error(xhr.responseText); 
             }
         });
         // Optional: Clear form fields after submitting

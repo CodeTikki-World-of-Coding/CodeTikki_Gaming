@@ -7,16 +7,13 @@
         <div class="col-md-12"><label >Monthly</label></div>
         <div class="col-md-12"><label >Custom</label></div>
     </form>
-    <!-- <div id="content"></div> -->
     <form id="secondForm" style="display:none">
     <div class="col-md-12"><label><button onclick="showAutomatic(event)">Automatic</button></label></div>
     <div class="col-md-12"><label><button >manual</button></label></div>
 
-    <!-- Add your form fields here -->
 
 </form>
 <form id="thirdForm" style="display:none">
-    <!-- Add your form fields here -->
     <div class="quizQuestions" id="quizQuestions"></div>
 
 </form>
@@ -24,20 +21,16 @@
 </div>
 <script>
                function showSecondForm(event) {
-                event.preventDefault(); // Prevent default form submission
-
-        // Show the second form by changing its display property to 'block'
+                event.preventDefault(); 
         document.getElementById("secondForm").style.display = "block";
         document.getElementById("rowDaily").style.display = "none";
 
     }
     function showAutomatic(event) {
-    event.preventDefault(); // Prevent default form submission
-    // Show the third form by changing its display property to 'block'
+    event.preventDefault(); 
     document.getElementById("thirdForm").style.display = "block";
     document.getElementById("secondForm").style.display = "none";
 
-    // Generate automatic quiz with 10 random questions
     generateAutomaticQuiz();
 }
 function generateAutomaticQuiz() {
@@ -45,8 +38,7 @@ function generateAutomaticQuiz() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
-                console.log('Response:', xhr.responseText); // Log response for debugging
-                try {
+                console.log('Response:', xhr.responseText);                try {
                     var questions = JSON.parse(xhr.responseText);
                     displayQuestions(questions);
                 } catch (error) {
@@ -61,7 +53,6 @@ function generateAutomaticQuiz() {
     xhr.send();
 }
 
-// Function to fetch questions and options from PHP script
 function fetchQuestions() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -74,7 +65,7 @@ function fetchQuestions() {
             }
         }
     };
-    xhr.open('GET', 'path/to/your/php/script.php', true); // Replace 'path/to/your/php/script.php' with the actual path
+    xhr.open('GET', 'path/to/your/php/script.php', true); 
     xhr.send();
 }
 
