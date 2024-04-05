@@ -12791,4 +12791,32 @@ div.quiz-container div.quizQuestions ul li {
   font-size: 18px;
 }
 
+div.pseudoBattle {
+  background: linear-gradient(to bottom left, black, #605c5c, black) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+div.pseudoBattle .pseudoBattle-button {
+  width: 300px;
+  height: 200px;
+  background-color: #605c5c;
+  border: 1px solid linear-gradient(to bottom left, black, #605c5c, black);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.pseudoBattle .pseudoBattle-button button {
+  background-color: #FF4D00;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */

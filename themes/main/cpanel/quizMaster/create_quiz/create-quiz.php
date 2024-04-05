@@ -71,16 +71,16 @@ function fetchQuestions() {
 
 
 function displayQuestions(questionsData) {
-    console.log('Received questionsData:', questionsData); // Log the received data
+   // console.log('Received questionsData:', questionsData); // Log the received data
 
     var questionsContainer = document.getElementById('quizQuestions');
     questionsContainer.innerHTML = ''; // Clear previous content
 
     if (Array.isArray(questionsData)) {
-        console.log('Number of questions:', questionsData.length); // Log the number of questions
+       // console.log('Number of questions:', questionsData.length); // Log the number of questions
 
         questionsData.forEach(function(question, index) {
-            console.log('Processing question:', question); // Log each question object
+           // console.log('Processing question:', question); // Log each question object
 
             // Check if QuestionTitle is defined, not null, and not empty
             if (question.QuestionTitle && question.QuestionTitle.trim() !== '') {
@@ -88,7 +88,7 @@ function displayQuestions(questionsData) {
                 questionElement.classList.add('question');
                 
                 // Log the QuestionTitle before assigning it
-                console.log('QuestionTitle:', question.QuestionTitle);
+              //  console.log('QuestionTitle:', question.QuestionTitle);
 
                 questionElement.innerHTML = '<h2>Question ' + (index + 1) + '</h2>' +
                     '<p>' + question.QuestionTitle + '</p>';
@@ -105,7 +105,7 @@ function displayQuestions(questionsData) {
                 questionElement.appendChild(optionsList);
                 questionsContainer.appendChild(questionElement);
 
-                console.log('Question element:', questionElement); // Log the question element
+               // console.log('Question element:', questionElement); // Log the question element
             } else {
                 console.warn('Skipping question with missing or empty title at index ' + index + ':', question);
                 // Optionally, you can skip processing or display a warning message for this question
