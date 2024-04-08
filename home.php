@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./themes/css/style.css" rel="stylesheet">
-    <link href="./node_modules/bootstrap/scss/bootstrap.scss" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Code Tikki</title>
 
 </head>
@@ -28,9 +28,10 @@
 
 </div>
 
-     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 <script> 
         $(document).ready(function(){
     $("#navbar-nav a").click(function(e){
@@ -48,10 +49,13 @@
             $(".row").load(page); 
         }
     });
-    
+    $(".navbar-toggler").click(function(){
+            $(".navbar-collapse").toggleClass("show");
+        });
+
    });
+   
     </script>
 </body>
 </html>
 
- 
