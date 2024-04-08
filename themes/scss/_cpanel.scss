@@ -9,10 +9,14 @@
         border-bottom: 2px solid gray !important;
 
         }
+        div.row{
+            background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+            height: 100vh;
+            object-fit: cover;
         .sidebar{
             width:30%;
             /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
-            background: linear-gradient(to bottom, #ffffff, #FFE7D5);
+           // background: linear-gradient(to bottom, #ffffff, #FFE7D5);
 
             ul{ 
                 .nav-item.active a.nav-link {
@@ -78,7 +82,7 @@
         }
         .main{
             width:70%;
-            ;
+
     
         }
        
@@ -265,4 +269,5 @@ background: none;
                     }
                 }
                }
+}
 }

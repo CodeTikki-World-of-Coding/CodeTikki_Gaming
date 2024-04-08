@@ -4,11 +4,8 @@ div.homepage,div.user-world_page {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     width: 100% !important;
-    height: 100vh !important;
-    // margin: 0 !important;
-    // padding: 0 !important;
-    // display: flex !important;
-    // justify-content: center !important;
-    // align-items: center !important;
-    // //background-color: black;
+    height: 90vh !important;
+    object-fit: cover;
+
+    
 }

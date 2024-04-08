@@ -1,5 +1,7 @@
 nav{
     background-color: black !important;
+    padding: 0 !important;
+    height:  60px !important;
     .navbar-toggler{
         .navbar-toggler-icon{
             color: #FFFFFF !important;
@@ -13,46 +15,32 @@ nav{
                     color: #FFFFFF;
                     @import "./cpanel";
                     .icon {
-                        display: inline-block; /* Ensure the icon is inline with text */
-                        vertical-align: middle; /* Align the icon vertically */
-                        width: 30px; /* Icon width */
-                        margin-right: 10px; /* Right margin */
-                        transition: opacity 0.3s ease; /* Smooth transition for opacity */
-
-                      }
-                      .icon-text {
-                        opacity: 0; /* Initially hide the text */
-                        transition: opacity 0.3s ease; /* Smooth transition for opacity */
-                        border: 2px solid transparent; /* Initial border style (transparent) */
-                        padding: 10px; /* Padding around the icon */
-
-                      }
-                      
-                    
+                        display: inline-block; 
+                        vertical-align: middle;
+                        width: 30px; 
+                        margin-right: 10px;
+                        transition: opacity 0.3s ease;
+                    }
+                    .icon-text {
+                        opacity: 0; 
+                        transition: opacity 2s ease; 
+                        border: 2px solid transparent; 
+                        padding: 16px; 
+                        font-size: 25px;
+                        font-weight: 500;
+                    }                                         
                 }
                 a:hover .icon {
-                    opacity: 0; /* Hide the icon on hover */
+                    opacity: 0;
+                     
+                }
+                a:hover .icon-text {
+                    opacity: 1;
+                    border-color: #ffffff; 
+                    color: #000000;
+                    background-color: #FFFFFF;
 
-                  }
-                  a:hover .icon-text {
-                    opacity: 1; /* Show the text on hover */
-                    border-color: #ffffff; /* Show white border on hover */
-
-                  }
-                // a:hover::after {
-                //     content: attr(title); /* Show title as tooltip */
-                //     position: absolute;
-                //     background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
-                //     color: #fff; /* Tooltip text color */
-                //     padding: 5px 10px; /* Padding inside the tooltip */
-                //     border-radius: 5px; /* Rounded corners for the tooltip */
-                //     z-index: 1; /* Ensure tooltip appears above other elements */
-                //     font-size: 0.8rem; /* Adjust tooltip text size */
-                //     visibility: visible; /* Show the tooltip on hover */
-                //     opacity: 1;
-                //   }
-                  
-
+                }                 
             }
         }
     }
