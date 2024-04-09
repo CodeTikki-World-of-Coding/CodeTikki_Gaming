@@ -72,9 +72,15 @@
                         <img class="icon" src="themes/images/hammer-solid.svg" alt="icon">
                         <span class="icon-text">Psuedo Battle</span>
                     </a>
-                </li>';
+                </li>
+                
+               '
+                ;
     }
 
     echo '</ul></div></nav>';
     
 ?>
+<!-- <li class="nav-item logout">
+                <a href="logout.php" class="nav-link">Logout</a>
+            </li> -->

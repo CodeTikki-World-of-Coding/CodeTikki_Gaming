@@ -11920,6 +11920,8 @@ div.homepage, div.user-world_page {
   width: 100% !important;
   height: 90vh !important;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
 }
 
 div.register-main__page {
@@ -12348,6 +12350,9 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row {
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar {
   width: 30%;
+  background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+  height: 100vh;
+  object-fit: cover;
   /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul {
@@ -12565,6 +12570,38 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   font-weight: 400;
   font-size: 18px;
 }
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz h1, nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .h1 {
+  color: #FF4D00;
+}
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
+  background-color: #FF4D00;
+  padding: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 300;
+}
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam {
+  margin-top: 10px;
+}
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam ul li {
+  border: 2px solid #FF4D00;
+  padding: 10px;
+  background-color: #FF4D00;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
 nav .navbar-collapse .navbar-nav .nav-item a .icon {
   display: inline-block;
   vertical-align: middle;
@@ -12606,6 +12643,9 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 }
 .cpanel-container div.row .sidebar {
   width: 30%;
+  background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+  height: 100vh;
+  object-fit: cover;
   /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
 }
 .cpanel-container div.row .sidebar ul {
@@ -12824,24 +12864,62 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   font-size: 18px;
 }
 
+div.pseudoBattleQuiz h1, div.pseudoBattleQuiz .h1 {
+  color: #FF4D00;
+}
+div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
+  background-color: #FF4D00;
+  padding: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 300;
+}
+div.pseudoBattleQuiz .registeredTeam {
+  margin-top: 10px;
+}
+div.pseudoBattleQuiz .registeredTeam ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+div.pseudoBattleQuiz .registeredTeam ul li {
+  border: 2px solid #FF4D00;
+  padding: 10px;
+  background-color: #FF4D00;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
 div.pseudoBattle {
-  background: linear-gradient(to bottom left, black, #605c5c, black) !important;
+  background-image: url("../images/Cover.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 90vh !important;
+  object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  opacity: 0.5;
 }
 div.pseudoBattle .pseudoBattle-button {
-  width: 300px;
-  height: 200px;
-  background-color: #605c5c;
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
   border: 1px solid linear-gradient(to bottom left, black, #605c5c, black);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
 }
 div.pseudoBattle .pseudoBattle-button button {
   background-color: #FF4D00;
@@ -12850,6 +12928,13 @@ div.pseudoBattle .pseudoBattle-button button {
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
   border-radius: 5px;
+  padding: 5px 10px;
+}
+div.pseudoBattle .pseudoBattle-button p#registeredMessage {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,11 +10,14 @@
 
         }
         div.row{
-            background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+           background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
             height: 100vh;
             object-fit: cover;
         .sidebar{
             width:30%;
+            background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+            height: 100vh;
+            object-fit: cover;
             /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
            // background: linear-gradient(to bottom, #ffffff, #FFE7D5);
 
@@ -83,6 +86,22 @@
         .main{
             width:70%;
 
+
+            // div#main-content{
+            //  div#teamForm{
+            //     div.registeredTeam{
+            //       ul{
+            //         display: flex;
+            //         list-style-type: none;
+            //         li{
+            //           margin: 10px;
+            //           padding: 10px;
+            //           border: 1px solid #FF4D00;
+            //         }
+            //       }
+            //     }
+            //     }
+            //  }
     
         }
        
@@ -270,4 +289,43 @@ background: none;
                 }
                }
 }
+}
+div.pseudoBattleQuiz{
+    h1{
+        color: #FF4D00;
+        
+    }
+    form.pseudoForm{
+        button.pseudo-btn{
+            background-color: #FF4D00;
+            padding: 10px;
+            cursor: pointer;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            font-weight: 300;
+
+        }
+        
+    }
+    .registeredTeam{
+        margin-top: 10px;
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            li{
+                border: 2px solid #FF4D00;
+                padding: 10px;
+                background-color: #FF4D00;
+                color: #fff;
+                margin-bottom: 5px;
+                font-size: 18px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-weight: 300;
+            }
+        }
+    }
 }
