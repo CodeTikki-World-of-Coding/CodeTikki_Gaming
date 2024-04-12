@@ -12338,79 +12338,146 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container {
   background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .navbar-cpanel {
   background: #ffffff !important;
   border-bottom: 2px solid gray !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster {
   background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
   height: 100vh;
   object-fit: cover;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar {
   width: 30%;
-  background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
-  height: 100vh;
-  object-fit: cover;
-  /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul {
-  /* Change cursor style on hover */
-}
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul .nav-item.active a.nav-link {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FF4D00 !important;
   font-size: 20px;
   font-weight: 600;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul .nav-item a.nav-link:hover {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li .dropdown-toggle::after {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li .dropdown-menu {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu {
   right: -132px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li .page-layout {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .page-layout {
   right: -265px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li .world-cup {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .world-cup {
   right: -287px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li .dropdown-menu li a {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu li a {
   text-decoration: none;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li a {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a {
   color: #000 !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li a .arrow-d {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-d {
   margin-left: 98% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li a .arrow-s {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-s {
   margin-left: 76% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li a .arrow-p {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-p {
   margin-left: 94% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar ul li a .arrow-w {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-w {
   margin-left: 119% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .sidebar .section {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar .section {
   width: 278px;
   height: 215px;
   margin: 0 auto;
   border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.row .main {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main {
   width: 70%;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  color: #FF4D00;
+  cursor: pointer;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  width: 100%;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content {
+  display: flex;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content button {
+  width: 40px;
+  border: none;
+  background: none;
+  opacity: 0.5;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .modal-header {
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content ul li {
+  border: 2px solid #FF4D00;
+  padding: 10px;
+  background-color: #FF4D00;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
   width: 200px !important;
@@ -12512,7 +12579,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 800;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container label {
@@ -12522,25 +12589,24 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   border: 1px solid;
   border-radius: 5px;
   margin: 15px;
-  /* padding-top:4%; */
   font-size: 45px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   cursor: pointer;
-  display: inline-block; /* Added display property */
-  line-height: 100px; /* Centered text vertically */
+  display: inline-block;
+  line-height: 100px;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container label button {
   border: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   cursor: pointer;
   background: none;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions .h2 {
   color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions p {
   border-color: #FF4D00 !important;
@@ -12549,7 +12615,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   margin: 15px;
   font-size: 27px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -12565,42 +12631,31 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   margin: 10px;
   width: 240px;
   height: auto;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 400;
   font-size: 18px;
-}
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz h1, nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .h1 {
-  color: #FF4D00;
 }
 nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
   background-color: #FF4D00;
   padding: 10px;
   cursor: pointer;
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
   font-weight: 300;
+  width: 200px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam {
-  margin-top: 10px;
-}
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam ul li {
-  border: 2px solid #FF4D00;
-  padding: 10px;
-  background-color: #FF4D00;
-  color: #fff;
-  margin-bottom: 5px;
-  font-size: 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam select {
+  width: 400px;
+  height: 40px;
+  color: #FF4D00;
+  border: 4px solid #FF4D00;
+  font-size: 22px;
   font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 nav .navbar-collapse .navbar-nav .nav-item a .icon {
   display: inline-block;
@@ -12631,79 +12686,146 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .cpanel-container .navbar-cpanel {
   background: #ffffff !important;
   border-bottom: 2px solid gray !important;
 }
-.cpanel-container div.row {
+.cpanel-container div.quizMaster {
   background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
   height: 100vh;
   object-fit: cover;
 }
-.cpanel-container div.row .sidebar {
+.cpanel-container div.quizMaster .sidebar {
   width: 30%;
-  background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
-  height: 100vh;
-  object-fit: cover;
-  /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
 }
-.cpanel-container div.row .sidebar ul {
-  /* Change cursor style on hover */
-}
-.cpanel-container div.row .sidebar ul .nav-item.active a.nav-link {
+.cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FF4D00 !important;
   font-size: 20px;
   font-weight: 600;
 }
-.cpanel-container div.row .sidebar ul .nav-item a.nav-link:hover {
+.cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
-.cpanel-container div.row .sidebar ul li .dropdown-toggle::after {
+.cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
-.cpanel-container div.row .sidebar ul li .dropdown-menu {
+.cpanel-container div.quizMaster .sidebar ul li .dropdown-menu {
   right: -132px !important;
   left: auto !important;
   top: -30px !important;
 }
-.cpanel-container div.row .sidebar ul li .page-layout {
+.cpanel-container div.quizMaster .sidebar ul li .page-layout {
   right: -265px !important;
   left: auto !important;
   top: -30px !important;
 }
-.cpanel-container div.row .sidebar ul li .world-cup {
+.cpanel-container div.quizMaster .sidebar ul li .world-cup {
   right: -287px !important;
   left: auto !important;
   top: -30px !important;
 }
-.cpanel-container div.row .sidebar ul li .dropdown-menu li a {
+.cpanel-container div.quizMaster .sidebar ul li .dropdown-menu li a {
   text-decoration: none;
 }
-.cpanel-container div.row .sidebar ul li a {
+.cpanel-container div.quizMaster .sidebar ul li a {
   color: #000 !important;
 }
-.cpanel-container div.row .sidebar ul li a .arrow-d {
+.cpanel-container div.quizMaster .sidebar ul li a .arrow-d {
   margin-left: 98% !important;
 }
-.cpanel-container div.row .sidebar ul li a .arrow-s {
+.cpanel-container div.quizMaster .sidebar ul li a .arrow-s {
   margin-left: 76% !important;
 }
-.cpanel-container div.row .sidebar ul li a .arrow-p {
+.cpanel-container div.quizMaster .sidebar ul li a .arrow-p {
   margin-left: 94% !important;
 }
-.cpanel-container div.row .sidebar ul li a .arrow-w {
+.cpanel-container div.quizMaster .sidebar ul li a .arrow-w {
   margin-left: 119% !important;
 }
-.cpanel-container div.row .sidebar .section {
+.cpanel-container div.quizMaster .sidebar .section {
   width: 278px;
   height: 215px;
   margin: 0 auto;
   border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
-.cpanel-container div.row .main {
+.cpanel-container div.quizMaster .main {
   width: 70%;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  color: #FF4D00;
+  cursor: pointer;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  width: 100%;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content {
+  display: flex;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content button {
+  width: 40px;
+  border: none;
+  background: none;
+  opacity: 0.5;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .modal-header {
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content ul li {
+  border: 2px solid #FF4D00;
+  padding: 10px;
+  background-color: #FF4D00;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
 }
 .cpanel-container button.btn-add {
   width: 200px !important;
@@ -12805,7 +12927,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 }
 .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 800;
 }
 .cpanel-container div.quiz-container label {
@@ -12815,25 +12937,24 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   border: 1px solid;
   border-radius: 5px;
   margin: 15px;
-  /* padding-top:4%; */
   font-size: 45px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   cursor: pointer;
-  display: inline-block; /* Added display property */
-  line-height: 100px; /* Centered text vertically */
+  display: inline-block;
+  line-height: 100px;
 }
 .cpanel-container div.quiz-container label button {
   border: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   cursor: pointer;
   background: none;
 }
 .cpanel-container div.quiz-container div.quizQuestions h2, .cpanel-container div.quiz-container div.quizQuestions .h2 {
   color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .cpanel-container div.quiz-container div.quizQuestions p {
   border-color: #FF4D00 !important;
@@ -12842,7 +12963,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin: 15px;
   font-size: 27px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FF4D00;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -12858,43 +12979,32 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin: 10px;
   width: 240px;
   height: auto;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 400;
   font-size: 18px;
 }
 
-div.pseudoBattleQuiz h1, div.pseudoBattleQuiz .h1 {
-  color: #FF4D00;
-}
 div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
   background-color: #FF4D00;
   padding: 10px;
   cursor: pointer;
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
   font-weight: 300;
+  width: 200px;
 }
-div.pseudoBattleQuiz .registeredTeam {
-  margin-top: 10px;
-}
-div.pseudoBattleQuiz .registeredTeam ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-div.pseudoBattleQuiz .registeredTeam ul li {
-  border: 2px solid #FF4D00;
-  padding: 10px;
-  background-color: #FF4D00;
-  color: #fff;
-  margin-bottom: 5px;
-  font-size: 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+div.pseudoBattleQuiz .registeredTeam select {
+  width: 400px;
+  height: 40px;
+  color: #FF4D00;
+  border: 4px solid #FF4D00;
+  font-size: 22px;
   font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 div.pseudoBattle {
@@ -12907,10 +13017,9 @@ div.pseudoBattle {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
 }
 div.pseudoBattle .pseudoBattle-button {
-  width: 400px;
+  width: 600px;
   height: 300px;
   background-color: #ffffff;
   border: 1px solid linear-gradient(to bottom left, black, #605c5c, black);
@@ -12920,6 +13029,18 @@ div.pseudoBattle .pseudoBattle-button {
   justify-content: center;
   align-items: center;
   opacity: 0.9;
+  flex-direction: column;
+  padding: 20px;
+}
+div.pseudoBattle .pseudoBattle-button .selectEvent {
+  flex: 1;
+}
+div.pseudoBattle .pseudoBattle-button .selectEvent select {
+  width: 200px;
+  border: 3px solid #FF4D00;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
 }
 div.pseudoBattle .pseudoBattle-button button {
   background-color: #FF4D00;

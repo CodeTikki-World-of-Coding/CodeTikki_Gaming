@@ -80,8 +80,7 @@
                  <!-- Main Content -->
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main">
                     <div class="container mt-4" id="main-content">
-                        <h1>Main Page Content</h1>
-                        <p>This is the main content area.</p>
+                        
                     </div>
                 </main>
             </div>

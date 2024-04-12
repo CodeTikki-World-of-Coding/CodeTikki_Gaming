@@ -2,7 +2,7 @@
     <button type="button" class="btn  btn-add mt-4" id="add">Add New Question</button>
 </div>
 <div class="form-container" style="display:none"  id="Form">
-    <form method="post" action="../../../../CodeTikki_Gaming/core/main/question_bank.php"  id="questionForm" class="row g-3 border rounded question-form" >
+    <form method="post" action="core/main/question_bank.php"  id="questionForm" class="row g-3 border rounded question-form" >
         <div class="row g-3">
             <div class="col-md-6"><label >Level</label><input type="number" id="level" name="level" class="form-control" placeholder="Enter Level" required>
             </div>
@@ -63,54 +63,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script>
-
-    $(document).ready(function() {
-        $('#add').click(function() {
-            $('#container').hide();
-            $('#Form').show();
-        });
-
-    $('.add-question-btn').click(function() {
-        var clonedForm = $('#questionForm').clone(true); // Include event handlers when cloning
-        clonedForm.find('input[type="text"], textarea').val('');
-        var questionNumber = $('.question-number').length + 1;
-        clonedForm.find('.question-number').text(questionNumber);
-        clonedForm.attr('id', 'questionForm' + questionNumber);
-        $('#clone-container').append(clonedForm);
-        $('.view-preview-btn').show();
-    });
-
-    $('#submit').click(function(event) {
-        event.preventDefault();
-        var allFormData = new FormData();
-        var originalFormData = new FormData($('#questionForm')[0]);
-        originalFormData.forEach(function(value, key) {
-            allFormData.append(key, value);
-        });
-        $('.question-form').not('#questionForm').each(function(index, form) {
-            var formData = new FormData($(form)[0]); 
-            formData.forEach(function(value, key) {
-                allFormData.append('cloned_' + key + '_' + index, value); // Append form data with a prefix and index
-            });
-        });
-        $.ajax({
-            url: "../../../../CodeTikki_Gaming/core/main/question_bank.php",
-            type: "POST",
-            data: allFormData,
-            processData: false,
-            contentType: false,
-            success: function(response) {
-                console.log(response); 
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText); 
-            }
-        });
-        // Optional: Clear form fields after submitting
-        $('#questionForm')[0].reset();
-        $('#clone-container').empty(); // Remove cloned forms
-        $('.view-preview-btn').hide(); // Hide "View Preview" button
-    });
-});
-</script>
+<script src="themes/main/cpanel/js/questionBank_script.js"></script>
