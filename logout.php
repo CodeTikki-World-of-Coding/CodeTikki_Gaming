@@ -1,6 +1,5 @@
 <?php
-// Include the database connection file
-// include 'setting.php';
+include 'setting.php';
 
 // // Start the session
 // session_start();
@@ -20,4 +19,10 @@
 //     // Handle the case when the user is not logged in
 //     echo "You are not logged in.";
 // }
+
+session_start();
+session_destroy();
+header("Location: index.php");
+exit();
+
 ?>

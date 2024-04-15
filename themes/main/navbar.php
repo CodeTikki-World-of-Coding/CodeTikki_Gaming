@@ -52,7 +52,10 @@
                         <img class="icon" src="themes/images/gear-solid.svg" alt="icon">
                         <span class="icon-text">Control Panel</span>
                     </a>
-                </li>';
+                </li>
+                 <li class="nav-item logout">
+                <a href="logout.php" class="nav-link">Logout</a>
+            </li> ';
     }
      else {
         echo    '<li class="nav-item ">
@@ -81,6 +84,3 @@
     echo '</ul></div></nav>';
     
 ?>
-<!-- <li class="nav-item logout">
-                <a href="logout.php" class="nav-link">Logout</a>
-            </li> -->

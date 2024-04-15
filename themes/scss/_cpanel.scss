@@ -86,7 +86,15 @@
                     padding-right: 5px;
                     margin: 5px;  
                     color: #FF4D00; 
-                    cursor: pointer;            
+                    cursor: pointer; 
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px; 
+                    text-align: center;
+  
+                    h2{
+                        padding-top: 35%;
+                    }        
                 }
                .analyticsContainer{
                     border: 2px solid #FF4D00;
@@ -96,7 +104,15 @@
                     padding-right: 5px;
                     color: #FF4D00;
                     margin: 5px;
-                    cursor: pointer;            
+                    cursor: pointer; 
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px; 
+                    text-align: center;
+  
+                    h2{
+                        padding-top: 35%;
+                    }           
 
                }
                .rewardContainer{
@@ -107,7 +123,14 @@
                     padding-right: 5px;
                     color: #FF4D00;
                     margin: 5px;
-                    cursor: pointer;            
+                    cursor: pointer;  
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;   
+                    text-align: center;
+                    h2{
+                        padding-top: 35%;
+                    }          
 
                }
                .teamContainer-content{
@@ -125,27 +148,74 @@
                             background: none;
                             opacity: .5;
                         }
-                        .modal-header{
-                            margin: 0 auto;
-                            font-size: 22px;
-                            font-weight: 600;
-                        }
-                        ul{
-                            list-style-type: none;
+                        .teams{
                             display: flex;
-                            flex-direction: column;
-                            li{
-                                border: 2px solid #FF4D00;
-                                padding: 10px;
-                                background-color: #FF4D00;
-                                color: #fff;
-                                margin-bottom: 5px;
-                                font-size: 18px;
-                                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                            margin: 20px;
+                            .teamList-content{
+                                border: 3px solid #FF4D00;
                                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                                font-weight: 300;
+                                width: 30%;
+                                min-height: 400px;
+                                padding: 2%;
+                                border-radius: 10px;
+                                margin-left: 5%;
+
+
+                            h5{
+                                text-align: center;
+                                color: #FF4D00;
+                            }
+                            .teamList{
+                                
+                                ul{
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    li{
+                                        border: 2px solid #FF4D00;
+                                        padding: 10px;
+                                        background-color: #FF4D00;
+                                        color: #fff;
+                                        margin-bottom: 5px;
+                                        font-size: 18px;
+                                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                        font-weight: 300;
+                                    }
+                                }
                             }
                         }
+                        }
+                        .allTeamMember-content{
+                            border: 3px solid #FF4D00;
+                            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                            margin-left: 5%;
+                            padding: 2%;
+                            width: 30%;
+                            min-height: 400px;
+                            border-radius: 10px;
+                            h5{
+                                text-align: center;
+                                color: #FF4D00;
+                            }
+                            .allTeamMember{
+                            ul{
+                                list-style-type: none;
+                                display: flex;
+                                flex-direction: column;
+                                li{
+                                    padding: 10px;
+                                    color: #FF4D00;
+                                    margin-bottom: 5px;
+                                    font-size: 20px;
+                                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        }
+                       
                     }
                 }               
             }            

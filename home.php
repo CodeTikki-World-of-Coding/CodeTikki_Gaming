@@ -49,30 +49,27 @@
             $(".row").load(page); 
         }
     });
-    // $("#navbar-nav a").click(function(e){
-    //     var page = $(this).attr("href");
-
-    //     // Check if the link is the logout link or contains 'cpanel/logout'
-    //     if ($(this).hasClass('logout')) {
-    //         // Redirect to index.php for logout
-    //         window.location.href = "index.php";
-    //     } else if (page.includes('cpanel/logout')) {
-    //         // Redirect to index.php for logout within cpanel
-    //         window.location.href = "index.php";
-    //     } else if (page.includes('cpanel')) {
-    //         // Load Control Panel content in the current tab
-    //         e.preventDefault(); 
-    //         $(".main").load(page); 
-    //     } else {
-    //         // Load other links in the current tab
-    //         e.preventDefault(); 
-    //         $(".row").load(page); 
-    //     }
-    // });
-
+    
     $(".navbar-toggler").click(function(){
             $(".navbar-collapse").toggleClass("show");
         });
+
+        $('.logout a').click(function(e){
+        // e.preventDefault(); 
+
+        $.ajax({
+            url: 'logout.php',
+            method: 'GET',
+            success: function(response) {
+                window.location.href = 'index.php';
+
+            },
+            error: function(xhr, status, error) {
+                console.error('Error logging out:', error);
+            }
+        });
+    });
+
 
    });
    

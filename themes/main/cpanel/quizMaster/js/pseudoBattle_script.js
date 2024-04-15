@@ -83,6 +83,7 @@ $(document).ready(function () {
                     $('.registeredTeam').hide(); 
                     $('.showEventContainer').show().find('.teamList').html(response);
 
+
                 },
                 error: function (xhr, status, error) {
                     console.error('Error fetching event data:', error); 
@@ -90,4 +91,28 @@ $(document).ready(function () {
             });
         }
     });
+    $('#teamDropdown').change(function () {
+        const selectedValue = $(this).val();
+        if (selectedValue === 'create') {
+            $('#createEventModal').modal('show');
+            $(this).val('');
+        } else if (selectedValue !== '' && selectedValue !== 'create') {
+            $.ajax({
+                url: 'core/main/fetch_allTeamMember.php',
+                type: 'POST',
+                data: { selectedEvent: selectedValue }, 
+                success: function (response) {
+                    console.log(response);
+                    $('.registeredTeam').hide(); 
+                    $('.showEventContainer').show().find('.allTeamMember').html(response);
+
+
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching event data:', error); 
+                }
+            });
+        }
+    });
+    
 });

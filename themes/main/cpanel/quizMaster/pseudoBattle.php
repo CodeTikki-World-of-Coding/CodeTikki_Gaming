@@ -18,11 +18,19 @@
     <div class="teamContainer-content" id="teamContainer-content" style="display: none;">
         <div class="modal-content">
             <button  id="backBtn"><img src="themes/images/arrow-left-solid.svg"></button>
-            <div class="modal-header">
-                <h5 class="modal-title" id="createEventModalLabel">BATTLE</h5>
+            <div class="teams">
+            <div class="allTeamMember-content">
+            <h5>Team List</h5>
+             <div class="allTeamMember"></div>
             </div>
-            <div class="modal-body teamList">
+
+                <div class=" teamList-content">
+                <h5>BATTLE</h5>
+                <div class="teamList"></div>
             </div>
+           
+            </div>
+
          </div>
     </div>
 </div>
