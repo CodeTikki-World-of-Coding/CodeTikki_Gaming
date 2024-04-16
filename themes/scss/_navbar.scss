@@ -27,7 +27,7 @@ nav{
                         border: 2px solid transparent; 
                         padding: 16px; 
                         font-size: 25px;
-                        font-weight: 500;
+                        font-weight: 600;
                     }                                         
                 }
                 a:hover .icon {
@@ -36,9 +36,9 @@ nav{
                 }
                 a:hover .icon-text {
                     opacity: 1;
-                    border-color: #ffffff; 
-                    color: #000000;
-                    background-color: #FFFFFF;
+                    // border-color: #ffffff; 
+                    color: #FFEE59;
+                    // background-color: #FFFFFF;
 
                 }                 
             }

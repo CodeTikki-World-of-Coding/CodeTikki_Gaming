@@ -1,11 +1,49 @@
-
-div.homepage,div.user-world_page {
-    background-image: url('../images/Cover.png') !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100% !important;
-    height: 90vh !important;
-    object-fit: cover;
+div.homepage,
+div.user-world_page {
+    background-image: url('../images/Cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
     padding: 0;
     margin: 0;
+}
+
+div.user-world_page {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+#launchMessage {
+    text-align: center;
+    color: #FFEE59;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 12%;
+}
+
+#launchMessage::after {
+    content: "....."; /* Initial content to match the final step of the animation */
+    animation: showDisappear 3s infinite; /* Apply show and disappear animation */
+}
+
+@keyframes showDisappear {
+    0% { content: "."; }
+    25% { content: ".."; }
+    50% { content: "..."; }
+    75% { content: "...."; }
+    100% { content: "....."; }
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    div.user-world_page {
+        padding: 20px; /* Add padding to center content */
+    }
+
+    #launchMessage {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: 10%; /* Reduce top margin */
+    }
 }

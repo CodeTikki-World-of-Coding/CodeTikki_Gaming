@@ -13,13 +13,16 @@ div.player-profile{
             width:600px;
             height:780px;
             transform: skew(9.49deg);
-            margin-left: 10px;
+            margin-left: 3%;
+            margin-right: 6%;
            // background: url('../images/Profile-pics.png');
             background-repeat: no-repeat,repeat;
             background-size: cover;
+            object-fit: cover;
             img{
                 width: 100%;
-                //height: 100vh;
+                height: 100vh;
+                object-fit: cover;
             }
 
         }
@@ -39,9 +42,9 @@ div.player-profile{
             }
             div.player-name{
                 color: white;
-                font-size: 96px;
+                font-size: 60px;
                 font-weight: 400;
-                margin-left: 85%;
+                margin-left: 84%;
             }
             div.divider{
                 background-color: #A5CD3A;

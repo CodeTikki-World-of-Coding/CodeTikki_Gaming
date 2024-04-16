@@ -11,7 +11,7 @@
     </form>
 </div>
             <div class="profile-logo-box"> Player Profile </div>
-            <div class="player-name">Rahul</div>
+            <div class="player-name"></div>
             <div class="countary-name">India</div>
             <div class="divider"></div>
             <div class="match-data">
@@ -50,6 +50,29 @@
 
 <script>
 $(document).ready(function() {
+    function fetchUserInfo() {
+        $.ajax({
+            url: 'core/main/fetch_player-name.php', // Update the URL to your PHP script
+            type: 'POST',
+            dataType: 'json',
+            success: function(response) {
+                if (response && response.name) {
+                    $('.player-name').text(response.name); // Update player name in the profile
+                } else if (response && response.username) {
+                    $('.player-name').text(response.username); // Use username if name is not available
+                } else {
+                    console.log('No user info received from PHP.');
+                }
+            },
+            error: function(xhr, status, error) {
+                console.log('Error fetching user info:', status, error);
+            }
+        });
+    }
+
+    // Call the fetchUserInfo function when the document is ready
+    fetchUserInfo();
+
     $('#uploadButton').click(function() {
         const fileInput = document.getElementById('uploadInput');
         const file = fileInput.files[0];

@@ -2,7 +2,12 @@ body{
     background-color: rgb(241, 247, 247) !important;
     width: 100% !important;
     height: 100vh !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scroll bars */
+    // overflow: auto;
     div.main{
         padding: 0 ;
+        margin: 0;
     }
 }

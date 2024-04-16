@@ -11908,22 +11908,72 @@ body {
   background-color: rgb(241, 247, 247) !important;
   width: 100% !important;
   height: 100vh !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scroll bars */
 }
 body div.main {
-  padding: 0;
-}
-
-div.homepage, div.user-world_page {
-  background-image: url("../images/Cover.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100% !important;
-  height: 90vh !important;
-  object-fit: cover;
   padding: 0;
   margin: 0;
 }
 
+div.homepage,
+div.user-world_page {
+  background-image: url("../images/Cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 90vh;
+  padding: 0;
+  margin: 0;
+}
+
+div.user-world_page {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+#launchMessage {
+  text-align: center;
+  color: #FFEE59;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 12%;
+}
+
+#launchMessage::after {
+  content: "....."; /* Initial content to match the final step of the animation */
+  animation: showDisappear 3s infinite; /* Apply show and disappear animation */
+}
+
+@keyframes showDisappear {
+  0% {
+    content: ".";
+  }
+  25% {
+    content: "..";
+  }
+  50% {
+    content: "...";
+  }
+  75% {
+    content: "....";
+  }
+  100% {
+    content: ".....";
+  }
+}
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  div.user-world_page {
+    padding: 20px; /* Add padding to center content */
+  }
+  #launchMessage {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-top: 10%; /* Reduce top margin */
+  }
+}
 div.register-main__page {
   background-color: #FFFFFF;
   margin: 0;
@@ -12259,12 +12309,16 @@ div.player-profile div.player-profile_inner div.profile-pic {
   width: 600px;
   height: 780px;
   transform: skew(9.49deg);
-  margin-left: 10px;
+  margin-left: 3%;
+  margin-right: 6%;
   background-repeat: no-repeat, repeat;
   background-size: cover;
+  object-fit: cover;
 }
 div.player-profile div.player-profile_inner div.profile-pic img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 div.player-profile div.player-profile_inner div.profile-info div.profile-logo-box {
   width: 300px;
@@ -12280,9 +12334,9 @@ div.player-profile div.player-profile_inner div.profile-info div.profile-logo-bo
 }
 div.player-profile div.player-profile_inner div.profile-info div.player-name {
   color: white;
-  font-size: 96px;
+  font-size: 60px;
   font-weight: 400;
-  margin-left: 85%;
+  margin-left: 84%;
 }
 div.player-profile div.player-profile_inner div.profile-info div.divider {
   background-color: #A5CD3A;
@@ -12730,16 +12784,14 @@ nav .navbar-collapse .navbar-nav .nav-item a .icon-text {
   border: 2px solid transparent;
   padding: 16px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
 }
 nav .navbar-collapse .navbar-nav .nav-item a:hover .icon {
   opacity: 0;
 }
 nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   opacity: 1;
-  border-color: #ffffff;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #FFEE59;
 }
 
 .cpanel-container {
