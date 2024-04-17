@@ -3,6 +3,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    overflow: auto;
     .navbar-cpanel{
         background: #ffffff !important;
         border-bottom: 2px solid gray !important;
@@ -116,6 +117,24 @@
 
                }
                .rewardContainer{
+                    border: 2px solid #FF4D00;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    color: #FF4D00;
+                    margin: 5px;
+                    cursor: pointer;  
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;   
+                    text-align: center;
+                    h2{
+                        padding-top: 35%;
+                    }          
+
+               }
+               .quizSetContainer{
                     border: 2px solid #FF4D00;
                     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                     border-radius: 5px;
@@ -326,6 +345,7 @@ div.quiz-container{
     margin:0 auto;
      text-align:center;
     align-items:center;
+    padding-bottom: 15%;
     .welcome{
         color:#FF4D00;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 

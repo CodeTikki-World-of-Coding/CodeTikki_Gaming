@@ -16,6 +16,7 @@ $(document).ready(function () {
         $('#teamContainer').hide();
         $('.analyticsContainer').hide();
         $('.rewardContainer').hide();            
+        $('.quizSetContainer').hide();            
     });
     // Close teamContainer-content when close button is clicked
     $('#backBtn').click(function () {
@@ -23,6 +24,7 @@ $(document).ready(function () {
     $('#teamContainer').show();
     $('.analyticsContainer').show();
         $('.rewardContainer').show();
+        $('.quizSetContainer').show();
     });
 
     // Event listener for the confirm button in the modal

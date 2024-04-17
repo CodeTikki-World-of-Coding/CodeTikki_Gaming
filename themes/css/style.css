@@ -12362,6 +12362,34 @@ div.player-profile div.player-profile_inner div.profile-info div.match-data .mat
   margin-top: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  div.profile-info {
+    text-align: left;
+  }
+  div.profile-logo-box {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  div.player-name {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+  }
+  div.countary-name {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+  }
+  div.divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  div.match-data {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 div.control-page {
   background-color: aliceblue !important;
 }
@@ -12393,6 +12421,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  overflow: auto;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .navbar-cpanel {
   background: #ffffff !important;
@@ -12514,6 +12543,23 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   text-align: center;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer .h2 {
+  padding-top: 35%;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer .h2 {
   padding-top: 35%;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
@@ -12690,6 +12736,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   margin: 0 auto;
   text-align: center;
   align-items: center;
+  padding-bottom: 15%;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;
@@ -12799,6 +12846,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  overflow: auto;
 }
 .cpanel-container .navbar-cpanel {
   background: #ffffff !important;
@@ -12920,6 +12968,23 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   text-align: center;
 }
 .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer h2, .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer .h2 {
+  padding-top: 35%;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer {
+  border: 2px solid #FF4D00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  color: #FF4D00;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer h2, .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer .h2 {
   padding-top: 35%;
 }
 .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
@@ -13096,6 +13161,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin: 0 auto;
   text-align: center;
   align-items: center;
+  padding-bottom: 15%;
 }
 .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;

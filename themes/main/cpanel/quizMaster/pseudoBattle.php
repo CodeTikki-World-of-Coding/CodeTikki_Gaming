@@ -15,6 +15,7 @@
     </div>
     <div class="col-md-4 analyticsContainer"><h2> Analytics </h2></div>
     <div class="col-md-4 rewardContainer"><h2> Rewards </h2></div>
+    <div class="col-md-4 quizSetContainer"><h2> Quiz Set </h2></div>
     <div class="teamContainer-content" id="teamContainer-content" style="display: none;">
         <div class="modal-content">
             <button  id="backBtn"><img src="themes/images/arrow-left-solid.svg"></button>
