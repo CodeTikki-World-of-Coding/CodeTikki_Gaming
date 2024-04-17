@@ -64,7 +64,14 @@
                 <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
                 <span class="icon-text">Logout</span>
                 </a>
-            </li> ';
+            </li> 
+                <li class="nav-item ">
+                <a href="themes/main/nav-page/events.php" class="nav-link">
+                <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+                <span class="icon-text">Events</span>
+                </a>
+            </li> 
+            ';
     }
      else {
         echo    '<li class="nav-item ">

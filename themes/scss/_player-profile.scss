@@ -74,3 +74,36 @@ div.player-profile{
         }
     }
 }
+@media only screen and (min-width: 768px) {
+    div.profile-info {
+        text-align: left;
+    }
+
+    div.profile-logo-box {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    div.player-name {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 48px;
+    }
+
+    div.countary-name {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+    }
+
+    div.divider {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    div.match-data {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
