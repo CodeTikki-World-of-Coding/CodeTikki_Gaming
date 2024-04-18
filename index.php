@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="form-group form-group_login">
           <button type="submit" class="btn btn_login">Signin</button>
           <label class="or" >OR</label>
-                        <button type="button" class="btn btn-register "><a href="https://codetikki.in/register" target="_blank">Register</a></button>
+                        <button type="button" class="btn btn-register "><a href="registration.php" >Register</a></button>
                     
 </div>
         </form>

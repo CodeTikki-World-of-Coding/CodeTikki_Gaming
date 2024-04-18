@@ -11,6 +11,11 @@ function showAutomatic(event) {
     document.getElementById("secondForm").style.display = "none";
 
     generateAutomaticQuiz();
+    setTimeout(function() {
+        console.log('Redirecting to quiz set page...');
+        window.location.href = 'themes/main/cpanel/quizMaster/pseudoBattle.php'; // Replace with actual URL
+    }, 1000); // Adjust the timeout delay as needed (in milliseconds)
+
 }
 
 function generateAutomaticQuiz() {
