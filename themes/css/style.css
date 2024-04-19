@@ -12693,7 +12693,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-submit
   background-color: #FF4D00 !important;
   color: #fff !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .question-form {
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container {
+  margin-bottom: 10%;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .question-form {
   background-color: #FFE7D5;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container span.question-number {
@@ -12861,7 +12864,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .icon {
   transition: opacity 0.3s ease;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .icon-text {
-  opacity: 0;
+  opacity: 0.1;
   transition: opacity 2s ease;
   border: 2px solid transparent;
   padding: 16px;
@@ -13118,7 +13121,10 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   background-color: #FF4D00 !important;
   color: #fff !important;
 }
-.cpanel-container .question-form {
+.cpanel-container .form-container {
+  margin-bottom: 10%;
+}
+.cpanel-container .form-container .question-form {
   background-color: #FFE7D5;
 }
 .cpanel-container span.question-number {

@@ -79,6 +79,12 @@
                 <span class="icon-text">Events</span>
                 </a>
             </li> 
+            <li class="nav-item ">
+            <a href="themes/main/nav-page/referral.php" class="nav-link">
+            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <span class="icon-text">Referral Dashboard</span>
+            </a>
+        </li>
             ';
     }
      else {
