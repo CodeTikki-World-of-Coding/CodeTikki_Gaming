@@ -1,0 +1,11 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Rewrite Rule for Home URL
+RewriteRule ^home$ home.php [L]
+
+# Set default index file
+DirectoryIndex index.php index.html
+
+# Error Handling (example for 404 error)
+ErrorDocument 404 /error.php

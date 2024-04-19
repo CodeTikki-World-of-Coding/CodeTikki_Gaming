@@ -8,10 +8,307 @@
         background: #ffffff !important;
         border-bottom: 2px solid gray !important;
         }
+        div.adminCpanel{
+            background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
+            height: 100vh;
+            object-fit: cover;
+            .sidebar{
+                width:30%;           
+                ul{ 
+                    .nav-item.active a.nav-link {
+                        color: #FF4D00 !important;
+                        font-size: 20px;
+                        font-weight: 600;
+    
+                    }
+                    .nav-item a.nav-link:hover {
+                        cursor: pointer;
+                    }
+            
+                    li {
+                        .dropdown-toggle::after {
+                            display: none !important;
+                        }
+                
+                        .dropdown-menu {
+                            right: -132px !important;
+                            left: auto !important;
+                            top:-30px !important;
+                        }
+                        .page-layout {
+                            right: -265px !important;
+                            left: auto !important;
+                            top:-30px !important;
+                        }
+                        .world-cup {
+                            right: -287px !important;
+                            left: auto !important;
+                            top:-30px !important;
+                        }                
+                        .dropdown-menu li a{
+                            text-decoration: none;
+                        }
+                        a {
+                            color:#000 !important;
+                            .arrow-d{
+                                margin-left:98% !important;
+                            }
+                            .arrow-s{
+                            margin-left:76% !important;
+                            }
+                            .arrow-p{
+                                margin-left:94% !important;
+                            }
+                            .arrow-w{
+                                margin-left:119% !important;
+                            }
+                        }
+                    }
+                }
+                .section{
+                    width:278px;
+                    height:215px;
+                    margin:0 auto;
+                    border:.5px ;
+                    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+                }
+            }
+            .main{
+                width:70%;
+                            
+            }
+        }
     div.quizMaster{
         background: linear-gradient(to bottom, #ffffff, #FFE7D5) !important;
         height: 100vh;
         object-fit: cover;
+        .sidebar{
+            width:30%;           
+            ul{ 
+                .nav-item.active a.nav-link {
+                    color: #FF4D00 !important;
+                    font-size: 20px;
+                    font-weight: 600;
+
+                }
+                .nav-item a.nav-link:hover {
+                    cursor: pointer;
+                }
+        
+                li {
+                    .dropdown-toggle::after {
+                        display: none !important;
+                    }
+            
+                    .dropdown-menu {
+                        right: -132px !important;
+                        left: auto !important;
+                        top:-30px !important;
+                    }
+                    .page-layout {
+                        right: -265px !important;
+                        left: auto !important;
+                        top:-30px !important;
+                    }
+                    .world-cup {
+                        right: -287px !important;
+                        left: auto !important;
+                        top:-30px !important;
+                    }                
+                    .dropdown-menu li a{
+                        text-decoration: none;
+                    }
+                    a {
+                        color:#000 !important;
+                        .arrow-d{
+                            margin-left:98% !important;
+                        }
+                        .arrow-s{
+                        margin-left:76% !important;
+                        }
+                        .arrow-p{
+                            margin-left:94% !important;
+                        }
+                        .arrow-w{
+                            margin-left:119% !important;
+                        }
+                    }
+                }
+            }
+            .section{
+                width:278px;
+                height:215px;
+                margin:0 auto;
+                border:.5px ;
+                box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .main{
+            width:70%;
+            div.showEventContainer{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                .teamContainer{
+                    border: 2px solid #FF4D00;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    margin: 5px;  
+                    color: #FF4D00; 
+                    cursor: pointer; 
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px; 
+                    text-align: center;
+  
+                    h2{
+                        padding-top: 35%;
+                    }        
+                }
+               .analyticsContainer{
+                    border: 2px solid #FF4D00;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    color: #FF4D00;
+                    margin: 5px;
+                    cursor: pointer; 
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px; 
+                    text-align: center;
+  
+                    h2{
+                        padding-top: 35%;
+                    }           
+
+               }
+               .rewardContainer{
+                    border: 2px solid #FF4D00;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    color: #FF4D00;
+                    margin: 5px;
+                    cursor: pointer;  
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;   
+                    text-align: center;
+                    h2{
+                        padding-top: 35%;
+                    }          
+
+               }
+               .quizSetContainer{
+                    border: 2px solid #FF4D00;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    color: #FF4D00;
+                    margin: 5px;
+                    cursor: pointer;  
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;   
+                    text-align: center;
+                    h2{
+                        padding-top: 35%;
+                    }          
+
+               }
+               .teamContainer-content{
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    color: #FF4D00;
+                    margin: 5px;
+                    width: 100%;
+                    .modal-content{
+                        display: flex;
+                        button{
+                            width: 40px;
+                            border: none;
+                            background: none;
+                            opacity: .5;
+                        }
+                        .teams{
+                            display: flex;
+                            margin: 20px;
+                            .teamList-content{
+                                border: 3px solid #FF4D00;
+                                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                width: 30%;
+                                min-height: 400px;
+                                padding: 2%;
+                                border-radius: 10px;
+                                margin-left: 5%;
+
+
+                            h5{
+                                text-align: center;
+                                color: #FF4D00;
+                            }
+                            .teamList{
+                                
+                                ul{
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    li{
+                                        border: 2px solid #FF4D00;
+                                        padding: 10px;
+                                        background-color: #FF4D00;
+                                        color: #fff;
+                                        margin-bottom: 5px;
+                                        font-size: 18px;
+                                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+                        }
+                        .allTeamMember-content{
+                            border: 3px solid #FF4D00;
+                            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                            margin-left: 5%;
+                            padding: 2%;
+                            width: 30%;
+                            min-height: 400px;
+                            border-radius: 10px;
+                            h5{
+                                text-align: center;
+                                color: #FF4D00;
+                            }
+                            .allTeamMember{
+                            ul{
+                                list-style-type: none;
+                                display: flex;
+                                flex-direction: column;
+                                li{
+                                    padding: 10px;
+                                    color: #FF4D00;
+                                    margin-bottom: 5px;
+                                    font-size: 20px;
+                                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        }
+                       
+                    }
+                }               
+            }            
+        }
         .sidebar{
             width:30%;           
             ul{ 
@@ -269,7 +566,6 @@ button.btn-submit{
         
     }
 }
-
 span.question-number{
     border: 1px solid;
     border-radius: 50%;
