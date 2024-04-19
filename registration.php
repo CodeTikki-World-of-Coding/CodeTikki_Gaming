@@ -8,7 +8,7 @@
     <link href="./themes/css/style.css" rel="stylesheet">
     <style>
         body {
-            background-color: #000000;
+            background-color: #000000 !important;
         }
     </style>
 </head>
