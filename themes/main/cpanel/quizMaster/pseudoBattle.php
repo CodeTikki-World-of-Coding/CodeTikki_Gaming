@@ -35,6 +35,24 @@
          </div>
     </div>
 </div>
+<div class="container quiz_set-container">
+        <h1 class="mt-5 mb-4">Welcome Quiz Master!</h1>
+        <form id="setRequirementsForm">
+            <div class="form-group">
+                <label for="minLevel">MinLevel</label>
+                <input type="number" class="form-control" id="minLevel" name="minLevel" min="1" max="900" required>
+            </div>
+
+            <div class="form-group">
+                <label for="maxLevel"> MaxLevel:</label>
+                <input type="number" class="form-control" id="maxLevel" name="maxLevel" min="1" max="1000" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Quiz Sets</button>
+        </form>
+        <div id="questionContainer" class="questionContainer" class="mt-5">
+
+        </div>
+</div>
 
 <div class="modal" id="createEventModal" tabindex="-1" role="dialog" aria-labelledby="createEventModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

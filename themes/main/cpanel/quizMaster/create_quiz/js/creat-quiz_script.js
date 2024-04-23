@@ -1,4 +1,3 @@
-
 function showSecondForm(event) {
     event.preventDefault(); 
     document.getElementById("secondForm").style.display = "block";
@@ -10,12 +9,7 @@ function showAutomatic(event) {
     document.getElementById("thirdForm").style.display = "block";
     document.getElementById("secondForm").style.display = "none";
 
-    generateAutomaticQuiz();
-    setTimeout(function() {
-        console.log('Redirecting to quiz set page...');
-        window.location.href = 'themes/main/cpanel/quizMaster/pseudoBattle.php'; // Replace with actual URL
-    }, 1000); // Adjust the timeout delay as needed (in milliseconds)
-
+    generateAutomaticQuiz(); // Fetch questions from dailyQuiz.php
 }
 
 function generateAutomaticQuiz() {
@@ -34,7 +28,7 @@ function generateAutomaticQuiz() {
             }
         }
     };
-    xhr.open('GET', 'core/main/dailyQuiz.php', true);
+    xhr.open('GET', 'core/main/dailyQuiz.php', true); // Change 'core/main/dailyQuiz.php' to the correct path if needed
     xhr.send();
 }
 
@@ -70,7 +64,3 @@ function displayQuestions(questionsData) {
         console.error('Invalid format for questions:', questionsData);
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    // fetchQuestions();
-});

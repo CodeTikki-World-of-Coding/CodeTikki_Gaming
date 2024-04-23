@@ -534,7 +534,53 @@
                        
                     }
                 }               
-            }            
+            }  
+            div.quiz_set-container{
+                #setRequirementsForm{
+                    button{
+                        margin-top: 3%;
+                    }
+                }
+                .questionContainer{
+                    margin: 2%;
+                    margin-bottom: 10%;
+                    .quizSetContainer{
+                          border: 2px solid #FF4D00;
+                          padding: 1%;
+                          .quizSet{
+                            font-size: 22px;
+                            color: #FF4D00;
+                            margin: 0 auto;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                            font-weight: 500;
+
+                          }
+                          .question{
+                            font-size: 18px;
+                            margin: 0 auto;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                            font-weight: 500;
+                            margin-top: 4%;
+                            ul{
+                                display: flex;
+                                li{
+                                    list-style-type:none;
+                                    color: #FF4D00;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    width: 200px;
+                                    border: 2px solid #FF4D00 ;
+                                    background-color: #FFE7D5;
+                                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                    padding: 10px;
+                                    margin: 5px;
+                                }
+                            }
+
+                          }
+                    }
+                }
+            }          
         }      
     }
 button.btn-add{

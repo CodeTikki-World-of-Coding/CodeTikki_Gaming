@@ -1,33 +1,42 @@
 $(document).ready(function () {
     $('.registeredTeam').hide();
     $('.showEventContainer').hide();
-    $('#teamContainer-content').hide(); 
+    $('#teamContainer-content').hide();
+    $('.quiz_set-container').hide(); 
 
-    // Show the registeredTeam container when the button is clicked
     $('#teamForm').submit(function (event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
         $('.registeredTeam').show();
         $('#teamForm').hide();
     });
 
-    // Show teamContainer-content when teamContainer is clicked
     $('#teamContainer').click(function () {
         $('#teamContainer-content').show();
         $('#teamContainer').hide();
         $('.analyticsContainer').hide();
-        $('.rewardContainer').hide();            
-        $('.quizSetContainer').hide();            
+        $('.rewardContainer').hide();
+        $('.quizSetContainer').hide();
     });
-    // Close teamContainer-content when close button is clicked
+
     $('#backBtn').click(function () {
-    $('#teamContainer-content').hide();
-    $('#teamContainer').show();
-    $('.analyticsContainer').show();
+        $('#teamContainer-content').hide();
+        $('#teamContainer').show();
+        $('.analyticsContainer').show();
         $('.rewardContainer').show();
         $('.quizSetContainer').show();
     });
 
-    // Event listener for the confirm button in the modal
+    $('.quizSetContainer h2').click(function () {
+        $('#teamContainer-content').hide();
+        $('#teamContainer').hide();
+        $('.quizSetContainer').hide();
+        $('.analyticsContainer').hide();
+        $('.rewardContainer').hide();
+        $('.quiz_set-container').show();
+        $('.questionContainer').show();
+        fetchQuestion();
+    });
+
     $('#confirmBtn').click(function () {
         const eventDate = $('#eventDate').val();
         if (eventDate) {
@@ -54,7 +63,7 @@ $(document).ready(function () {
     $('#closeModalBtn').click(function () {
         $('#createEventModal').modal('hide');
     });
-    //fetch event-version name
+
     function fetchEventNames() {
         $.ajax({
             url: 'core/main/fetch_event-name.php',
@@ -69,7 +78,7 @@ $(document).ready(function () {
     }
 
     fetchEventNames();
-     //dropdown menues 
+
     $('#teamDropdown').change(function () {
         const selectedValue = $(this).val();
         if (selectedValue === 'create') {
@@ -79,42 +88,110 @@ $(document).ready(function () {
             $.ajax({
                 url: 'core/main/fetch_registered_teams.php',
                 type: 'POST',
-                data: { selectedEvent: selectedValue }, 
+                data: { selectedEvent: selectedValue },
                 success: function (response) {
                     console.log(response);
-                    $('.registeredTeam').hide(); 
+                    $('.registeredTeam').hide();
                     $('.showEventContainer').show().find('.teamList').html(response);
-
-
                 },
                 error: function (xhr, status, error) {
-                    console.error('Error fetching event data:', error); 
+                    console.error('Error fetching event data:', error);
                 }
             });
         }
     });
-    $('#teamDropdown').change(function () {
-        const selectedValue = $(this).val();
-        if (selectedValue === 'create') {
-            $('#createEventModal').modal('show');
-            $(this).val('');
-        } else if (selectedValue !== '' && selectedValue !== 'create') {
-            $.ajax({
-                url: 'core/main/fetch_allTeamMember.php',
-                type: 'POST',
-                data: { selectedEvent: selectedValue }, 
-                success: function (response) {
-                    console.log(response);
-                    $('.registeredTeam').hide(); 
-                    $('.showEventContainer').show().find('.allTeamMember').html(response);
 
-
-                },
-                error: function (xhr, status, error) {
-                    console.error('Error fetching event data:', error); 
-                }
-            });
-        }
+    $('#setRequirementsForm').submit(function (event) {
+        event.preventDefault();
+        const minLevel = parseInt($('#minLevel').val());
+        const maxLevel = parseInt($('#maxLevel').val());
+        generateQuizSetsAndInsert(minLevel, maxLevel);
     });
     
+    function generateQuizSetsAndInsert(minLevel, maxLevel) {
+        $.ajax({
+            url: 'core/main/dailyQuiz.php',
+            type: 'POST',
+            data: {
+                minLevel: minLevel,
+                maxLevel: maxLevel
+            },
+            success: function (response) {
+
+            },
+            error: function (xhr, status, error) {
+                console.log(xhr.responseText);
+            }
+        });
+    }
+
+    function fetchQuestion() {
+        $.ajax({
+            url: 'core/main/fetch_quiz-set.php',
+            type: 'POST',
+            dataType: 'json',
+            success: function(response) {
+                if (response.success) {
+                    $('#questionContainer').html('');
+
+                    for (let i = 0; i < response.quizSetData.length; i++) {
+                        const quizSet = response.quizSetData[i];
+                        const quizSetContainer = $('<div class="quizSetContainer"></div>'); // Create a new container for the quiz set
+                        quizSetContainer.append('<div class="quizSet">CT[Event Version] ' + quizSet.QuizSetID + '</div>');
+
+                        $.each(quizSet.Questions, function(qIndex, question) {
+                            var questionHtml = '<div class="question">';
+                            questionHtml += '<h5>Q.No ' + (qIndex + 1) + ': ' + question.QuestionTitle + '</h5>';
+                            questionHtml += '<ul>';
+                            questionHtml += '<li>A) ' + question.Option1 + '</li>';
+                            questionHtml += '<li>B) ' + question.Option2 + '</li>';
+                            questionHtml += '<li>C) ' + question.Option3 + '</li>';
+                            questionHtml += '<li>D) ' + question.Option4 + '</li>';
+                            questionHtml += '</ul>';
+                            questionHtml += '</div>';
+
+                            quizSetContainer.append(questionHtml);
+                        });
+
+                        $('#questionContainer').append(quizSetContainer);
+                    }
+                    } else {
+                        $('#questionContainer').html('<p>' + response.message + '</p>');
+                    }
+                },
+                error: function(xhr, status, error) {
+
+                    console.error(xhr.responseText);
+                }
+            });
+        }
+    $('#minLevel').on('input', function () {
+        const minLevelValue = parseInt($(this).val());
+        const maxLevelValue = parseInt($('#maxLevel').val());
+
+        if (maxLevelValue <= minLevelValue) {
+            $('#maxLevel').attr('min', minLevelValue + 1); 
+            $('#maxLevel')[0].reportValidity(); 
+            $('#createButton').prop('disabled', true); 
+        } else {
+            $('#maxLevel').attr('min', minLevelValue + 1); 
+            $('#createButton').prop('disabled', false); 
+        }
+    });
+
+    $('#maxLevel').on('input', function () {
+        const minLevelValue = parseInt($('#minLevel').val());
+        const maxLevelValue = parseInt($(this).val());
+
+        if (maxLevelValue <= minLevelValue) {
+            $(this).attr('min', minLevelValue + 1); 
+            $(this)[0].reportValidity(); 
+            $('#createButton').prop('disabled', true); 
+        } else {
+            $(this).attr('min', minLevelValue + 1); 
+            $('#createButton').prop('disabled', false); 
+        }
+    });
+
+
 });
