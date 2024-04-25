@@ -1,5 +1,5 @@
     <div class="cpanel-container">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-cpanel ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-cpanel ">
             <div class="container">
                 <a class="navbar-brand" href="home.php">            
                     <img src="themes/images/image-removebg-preview (50) 2.png" alt="Logo" height="30">
@@ -12,8 +12,8 @@
         </nav>
         <div class="container-fluid">
             <div class="row quizMaster">
-                <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                <nav class="col-md-3 col-lg-2 d-md-block  sidebar">
+                    <div class="position-sticky pt-3 mt-4  rounded border-dark section">
                         <ul class="nav flex-column nav-margin">
                         <li class="nav-item">
                                 <div class="d-flex align-items-center">
@@ -48,7 +48,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                    <div class="position-sticky pt-3 mt-4  rounded border-dark section">
                         <ul class="nav flex-column">            
                         <li class="nav-item">
                                 <div class="d-flex align-items-center">
@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                    <div class="position-sticky pt-3 mt-4  rounded border-dark section">
                         <ul class="nav flex-column">
          
                         </ul>

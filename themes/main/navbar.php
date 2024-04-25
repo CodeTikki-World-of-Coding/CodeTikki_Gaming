@@ -34,17 +34,18 @@
                         <span class="icon-text">Control Panel</span>
                     </a>
                 </li>
-                <li class="nav-item logout">
-                <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
-                <span class="icon-text">Logout</span>
-                </a>
-            </li>
+                
             </li> 
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
                 <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
                 <span class="icon-text">Events</span>
+                </a>
+            </li>
+            <li class="nav-item logout">
+                <a href="logout.php" class="nav-link">
+                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+                <span class="icon-text">Logout</span>
                 </a>
             </li>
             ';
@@ -67,12 +68,7 @@
                         <span class="icon-text">Control Panel</span>
                     </a>
                 </li>
-                <li class="nav-item logout">
-                <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
-                <span class="icon-text">Logout</span>
-                </a>
-            </li> 
+                 
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
                 <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
@@ -85,6 +81,12 @@
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
+        <li class="nav-item logout">
+                <a href="logout.php" class="nav-link">
+                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+                <span class="icon-text">Logout</span>
+                </a>
+            </li>
             ';
     }
      else {
@@ -106,19 +108,20 @@
                         <span class="icon-text">Psuedo Battle</span>
                     </a>
                 </li>
-                <li class="nav-item logout">
-                <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
-                <span class="icon-text">Logout</span>
-                </a>
-            </li>
-            </li> 
+               
+             
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
                 <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
                 <span class="icon-text">Events</span>
                 </a>
             </li>
+            <li class="nav-item logout">
+            <a href="logout.php" class="nav-link">
+            <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+            <span class="icon-text">Logout</span>
+            </a>
+        </li>
                 
                '
                 ;

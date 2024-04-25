@@ -16,7 +16,7 @@
         <!-- Content for demonstration purposes -->
         <div class="container-fluid">
             <div class="row adminCpanel">
-                <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <nav class="col-md-3 col-lg-2 d-md-block  sidebar">
                     <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
                         <ul class="nav flex-column nav-margin">
                             <li class="nav-item">

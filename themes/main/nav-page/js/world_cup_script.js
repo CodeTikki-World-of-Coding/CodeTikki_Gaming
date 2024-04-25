@@ -11,38 +11,6 @@ document.getElementById('next-btn').addEventListener('click', function() {
     
 
 });
-$(document).ready(function() {
-$('#confirm-btn').click(function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
-
-    // Get form data
-    var formData = {
-        'phone': $('#phone').val(),
-    };
-
-    // Send form data to PHP script using AJAX
-    $.ajax({
-        type: 'POST',
-        url: 'core/main/varify_handler.php',
-        data: formData,
-        dataType: 'json',
-        encode: true
-    })
-    .done(function(data) {
-        console.log(data);
-      //  alert('Form submitted successfully!');
-        document.getElementById('verify-phone-form').classList.add('hidden');
-        document.getElementById('select-subject').classList.remove('hidden');
-    })
-    .fail(function(xhr, status, error) {
-        console.error(xhr.responseText); // Log the full response from the server
-        console.error(error); // Log the JavaScript error message
-        alert('Error submitting form! Please try again later.'); // Display a generic error message to the user
-    });
-});
-});
-
-$(document).ready(function() {
 var selectedSubjects = []; // Array to store selected subjects
 
 function addSubject(subject) {
@@ -71,6 +39,37 @@ selectedSubjects.forEach(function(subject, index) {
     selectedSubjectsContainer.append('<span>' + subjectNumber + '. ' + subject + '</span>');
 });
 }
+$(document).ready(function() {
+
+$('#confirm-btn').click(function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Get form data
+    var formData = {
+        'phone': $('#phone').val(),
+    };
+
+    // Send form data to PHP script using AJAX
+    $.ajax({
+        type: 'POST',
+        url: 'core/main/varify_handler.php',
+        data: formData,
+        dataType: 'json',
+        encode: true
+    })
+    .done(function(data) {
+        console.log(data);
+      //  alert('Form submitted successfully!');
+        document.getElementById('verify-phone-form').classList.add('hidden');
+        document.getElementById('select-subject').classList.remove('hidden');
+    })
+    .fail(function(xhr, status, error) {
+        console.error(xhr.responseText); // Log the full response from the server
+        console.error(error); // Log the JavaScript error message
+        alert('Error submitting form! Please try again later.'); // Display a generic error message to the user
+    });
+});
+
 
 
 // Click event handler for checkboxes
@@ -78,12 +77,13 @@ $('.subject').click(function() {
     if ($(this).is(":checked")) {
         var subject = $(this).val();
         addSubject(subject);
+
     }
 });
 
+
 $('#confirm-subject-btn').click(function(event) {
     event.preventDefault(); // Prevent default form submission behavior
-
     if (selectedSubjects.length === 11) { // Check if exactly 11 subjects are selected
         // Send form data to PHP script using AJAX
         $.ajax({
@@ -109,8 +109,6 @@ $('#confirm-subject-btn').click(function(event) {
         alert("Please select exactly 11 subjects.");
     }
 });
-});
-$(document).ready(function() {
 $('#confirm-final-btn').click(function(event) {
     event.preventDefault(); // Prevent default form submission behavior
 
@@ -118,5 +116,7 @@ $('#confirm-final-btn').click(function(event) {
     $('#confirm-form').addClass('hidden');
     $('#register-page').removeClass('hidden');
 });
+
 });
+
 
