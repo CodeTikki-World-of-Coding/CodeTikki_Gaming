@@ -12454,11 +12454,35 @@ div.profile .grow .sidebar-profile_fetch label.profile-img img {
   height: 150px;
   margin-bottom: 10px;
 }
+div.profile .grow .sidebar-profile_fetch label.profile-img button {
+  margin-left: 100%;
+  background: none;
+  border: none;
+  color: #D0D0D0;
+  font-weight: 500;
+}
+div.profile .grow .sidebar-profile_fetch label.profile-img button img {
+  width: 35px;
+  height: 25px;
+  border: none;
+}
 div.profile .grow .sidebar-profile_fetch label {
   color: gray;
   margin-left: 5%;
   font-size: 22px;
   font-weight: 500;
+}
+div.profile .grow .sidebar-profile_fetch label input {
+  background: none;
+  border: none;
+  color: #D0D0D0;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 5%;
+}
+div.profile .grow .sidebar-profile_fetch label .form-check-input {
+  border: 1px solid #D0D0D0;
+  background-color: #0170B8; /* Change to your desired color */
 }
 div.profile .grow .main-page {
   width: 65%;
@@ -12470,6 +12494,7 @@ div.profile .grow .main-page .row .problem-section {
   margin-left: 5%;
   background-color: #000000;
   border-radius: 10px;
+  color: #D0D0D0;
   height: 200px;
 }
 div.profile .grow .main-page .row .expierence-section {
@@ -12478,6 +12503,7 @@ div.profile .grow .main-page .row .expierence-section {
   height: 200px;
   background-color: #000000;
   border-radius: 10px;
+  color: #D0D0D0;
 }
 div.profile .grow .main-page .submission-section {
   border: 1px solid #D0D0D0;
@@ -12486,14 +12512,51 @@ div.profile .grow .main-page .submission-section {
   height: 200px;
   background-color: #000000;
   border-radius: 10px;
+  color: #D0D0D0;
 }
 div.profile .row .left_profile_footer {
   height: 200px;
   margin: 1%;
+  color: #D0D0D0;
+  border-radius: 10px;
 }
 div.profile .row .right_profile_footer {
   height: 200px;
   margin: 1%;
+  color: #D0D0D0;
+  border-radius: 10px;
+}
+div.profile .editModalProfile .modal-dialog {
+  width: 80%;
+  max-width: none; /* Remove max-width constraint */
+  border-radius: 10px;
+  border: #D0D0D0;
+  color: #D0D0D0;
+}
+div.profile .editModalProfile .modal-dialog .modal-content {
+  background: #646464;
+}
+div.profile .editModalProfile .modal-dialog .modal-content .modal-body label {
+  width: 100%;
+  margin-top: 5%;
+}
+div.profile .editModalProfile .modal-dialog .modal-content .modal-body label input.insertName {
+  width: 80%;
+  border-radius: 5px;
+}
+div.profile .editModalProfile .modal-dialog .modal-content .modal-body label input.insertNumber {
+  width: 80%;
+  border-radius: 5px;
+}
+div.profile .editModalProfile .modal-dialog .modal-content .modal-body .form-check {
+  margin-left: 20%;
+}
+div.profile .editModalProfile .modal-dialog .modal-content .modal-footer {
+  margin: 0 auto;
+  border: none;
+}
+div.profile .editModalProfile.modal-backdrop {
+  opacity: 0.5; /* Adjust the opacity for a faded background effect */
 }
 
 div.control-page {
@@ -13070,7 +13133,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   margin: 5px;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
-  width: 200px !important;
+  width: 300px !important;
   height: 50px !important;
   background-color: #FFFFFF !important;
   color: #000 !important;
@@ -13082,7 +13145,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-view {
   height: 50px !important;
   background-color: #FFFFFF !important;
   color: #000 !important;
-  margin-left: 40%;
+  margin-left: 30%;
   font-size: 22px;
   font-weight: 700;
 }
@@ -13836,7 +13899,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin: 5px;
 }
 .cpanel-container button.btn-add {
-  width: 200px !important;
+  width: 300px !important;
   height: 50px !important;
   background-color: #FFFFFF !important;
   color: #000 !important;
@@ -13848,7 +13911,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   height: 50px !important;
   background-color: #FFFFFF !important;
   color: #000 !important;
-  margin-left: 40%;
+  margin-left: 30%;
   font-size: 22px;
   font-weight: 700;
 }

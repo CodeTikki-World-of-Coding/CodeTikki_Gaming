@@ -132,13 +132,40 @@ div.profile{
                     height: 150px;
                     margin-bottom: 10px;
                 }
+                button{
+                    margin-left: 100%;
+                    background: none;
+                    border: none;
+                    color: #D0D0D0;
+                    font-weight: 500;
+                    img{
+                        width: 35px;
+                        height: 25px;
+                        border: none;
+                    }
+                }
             }
             label{
                 color: gray;
                 margin-left: 5%;
                 font-size: 22px;
                 font-weight: 500;
+                input{
+                    background: none ;
+                    border: none;
+                    color: #D0D0D0;
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin-left: 5%;
+                }
+                .form-check-input{
+                    border: 1px solid #D0D0D0;
+                    background-color: #0170B8; /* Change to your desired color */
+                }
+               
+                
             }
+           
         }
         .main-page{
             width: 65%;
@@ -151,6 +178,7 @@ div.profile{
                     margin-left:5%;
                     background-color: #000000;
                     border-radius: 10px;
+                    color: #D0D0D0;
 
                     height:200px;
                 }
@@ -160,6 +188,7 @@ div.profile{
                     height:200px;
                     background-color: #000000;
                     border-radius: 10px;
+                    color: #D0D0D0;
 
                 }
             }
@@ -170,6 +199,7 @@ div.profile{
                 height:200px;
                 background-color: #000000;
                 border-radius: 10px;
+                color: #D0D0D0;
 
             
             }
@@ -179,12 +209,59 @@ div.profile{
         .left_profile_footer{
             height: 200px;
             margin: 1%;
-            
+            color: #D0D0D0;
+            border-radius: 10px;
+
+
         }
         .right_profile_footer{
             height: 200px;
             margin: 1%;
+            color: #D0D0D0;
+            border-radius: 10px;
+
 
         }
     }
+    .editModalProfile{
+        .modal-dialog{
+            width: 80%;
+            max-width: none; /* Remove max-width constraint */   
+            border-radius: 10px;
+            border: #D0D0D0;
+            color: #D0D0D0;     
+            .modal-content{
+                background: #646464;
+                .modal-body{
+                    label{
+                        width: 100%;
+                        margin-top: 5%;
+                        input.insertName{
+                            width: 80%;
+                            border-radius: 5px;
+                        }
+                        input.insertNumber{
+                            width: 80%;
+                            border-radius: 5px;
+                        }
+                    }
+                    
+                    
+                    .form-check{
+                        margin-left:20%;
+                    }
+                }
+                .modal-footer{
+                    margin: 0 auto;
+                    border: none;
+                }
+
+            }
+        }
+        
+    }
+    .editModalProfile.modal-backdrop {
+        opacity: 0.5; /* Adjust the opacity for a faded background effect */
+    }
+    
 }
