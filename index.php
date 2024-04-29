@@ -14,21 +14,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $verifyStmt->fetch(PDO::FETCH_ASSOC);
   
         if ($user) {
-            $hashed_password_from_db = $user['password'];
-
-            if (password_verify($password, $hashed_password_from_db)) {
-                
-                $_SESSION['userid'] = $user['Id'];
-                $_SESSION['username'] = $user['username'];
-                $_SESSION['mailid'] = $user['email'];
-                header("Location: home.php"); // Redirect to dashboard page
-                exit();
-            } else {
-                $error_message = "Invalid username or password.";
-            }
-        } else {
-            $error_message = "User not found.";
-        }
+          $hashed_password_from_db = $user['password'];
+      
+          if (password_verify($password, $hashed_password_from_db)) {
+              $_SESSION['userid'] = $user['Id'];
+              $_SESSION['username'] = $user['username'];
+              $_SESSION['mailid'] = $user['email'];
+              
+              // Redirect to home.php
+              header("Location: home.php");
+              exit();
+          } else {
+              $error_message = "Invalid username or password.";
+          }
+      } else {
+          $error_message = "User not found.";
+      }
+      
     } catch (\PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
