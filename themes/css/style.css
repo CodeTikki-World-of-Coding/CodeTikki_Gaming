@@ -11859,6 +11859,8 @@ div.login-page .row {
 div.login-page .row div.logo-pic img {
   margin-left: 80%;
   margin-bottom: 10%;
+  width: 100px;
+  height: 70px;
 }
 div.login-page .row .login-box {
   background: linear-gradient(to bottom left, black, #605c5c, black) !important;

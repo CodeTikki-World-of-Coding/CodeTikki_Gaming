@@ -3,7 +3,7 @@ session_start();
 include '../../setting.php';
 
 // Validate and sanitize the input data (not shown for brevity)
-$user_id = isset($_SESSION['userid']) ? $_SESSION['userid'] : '';
+$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
 
 
 // Get the form data

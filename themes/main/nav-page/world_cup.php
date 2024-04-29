@@ -16,11 +16,11 @@ session_start();
             <div class="form-inner">
                 <span>
                     <label>UserID1:</label>
-                    <input type="text" name="text" value="<?php echo htmlspecialchars($_SESSION['userid']); ?>" readonly >
+                    <input type="text" name="text" value="<?php echo htmlspecialchars($_SESSION['user_id']); ?>" readonly >
                 </span>
                 <span>
                     <label>MailID1:</label>
-                    <input type="email" name="email" value="<?php echo htmlspecialchars($_SESSION['mailid']); ?>"   readonly >
+                    <input type="email" name="email" value="<?php echo htmlspecialchars($_SESSION['mail_id']); ?>"   readonly >
                 </span>
                 <input type="submit" id="next-btn" value="Next">
             </div>

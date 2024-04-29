@@ -3,7 +3,7 @@ session_start();
 include '../../setting.php';
 
 // Check if user ID is set in the session
-$user_id = isset($_SESSION['userid']) ? $_SESSION['userid'] : '';
+$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
 
 if ($user_id !== null) {
     // Collect data from POST request

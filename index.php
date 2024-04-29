@@ -7,6 +7,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = isset($_POST['text']) ? $_POST['text'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
+    function fetchUserID($name, $pdo) {
+      try {
+          $stmt = $pdo->prepare("SELECT Id FROM User WHERE username = :username ");
+          $stmt->bindParam(':username', $name);
+          $stmt->execute();
+          $user_id = $stmt->fetchColumn();
+          return $user_id;
+      } catch(PDOException $e) {
+          echo "Error fetching user ID: " . $e->getMessage();
+          return null;
+      }
+  }
+  $user_id = fetchUserID($username, $pdo);
+  $_SESSION['user_id'] = $user_id;
+  //for make a email session 
+  
     try {
         $verifyStmt = $pdo->prepare("SELECT * FROM User WHERE username = :username ");
         $verifyStmt->bindParam(':username', $username);
@@ -55,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p><?php echo $error_message; ?></p>
     <?php } ?>
         
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form method="post" action="home.php">
           <div class="form-group form-group_login">
             <input type="text" id="text" name="text" class="form-control" placeholder="Username">
           </div>

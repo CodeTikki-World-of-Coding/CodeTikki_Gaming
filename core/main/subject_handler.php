@@ -3,7 +3,7 @@ session_start();
 include '../../setting.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $user_id = isset($_SESSION['userid']) ? $_SESSION['userid'] : '';
+        $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
     if (isset($_POST['subject']) && is_string($_POST['subject'])) {
         $subjects = explode(',', $_POST['subject']);
   
