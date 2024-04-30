@@ -16,8 +16,8 @@
             $result = $verifyStmt->fetch(PDO::FETCH_ASSOC);
             if ($result) {
                 // Data exists in the database, store in session variables
-                $_SESSION['userid'] = $userid;
-                $_SESSION['mailid'] = $mailid;
+                $_SESSION['user_id'] = $userid;
+                $_SESSION['mail_id'] = $mailid;
                 // Redirect to the next page
                 header("Location: world-cup.php");
                 exit();

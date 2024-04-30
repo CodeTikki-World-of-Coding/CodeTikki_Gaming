@@ -244,16 +244,13 @@
             $('.edit-btn').on('click', function() {
         $('#editModal').modal('show');
     });
-    //         $('.closeBtn').on('click', function() {
-    //     $('#editModal').modal('hide');
-    // });
-
+   
     $('.saveChanges').on('click', function() {
         var formData = {
-            name: $('.insertName').val() || null, // Set to null if empty
-            phoneNumber: $('.insertNumber').val() || null, // Set to null if empty
-            gender: $('input[name="Gender"]:checked').val() || null, // Set to null if no gender selected
-            country: $('.fetchCountry').find('option:selected').val() || null // Get the selected country value from the dropdown
+            name: $('.insertName').val() || null, 
+            phoneNumber: $('.insertNumber').val() || null, 
+            gender: $('input[name="Gender"]:checked').val() || null,
+            country: $('.fetchCountry').find('option:selected').val() || null 
         };
 
 

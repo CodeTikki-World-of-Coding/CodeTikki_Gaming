@@ -63,6 +63,11 @@
                                     Create quiz <img src="themes/images/ooui_next-ltr.svg" alt=" arrow" >
                                 </a>                
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown"  aria-expanded="false">
+                                    My Question 
+                                </a>                
+                            </li>
                         </ul>
                     </div>
                     <div class="position-sticky pt-3 mt-4  rounded border-dark section">

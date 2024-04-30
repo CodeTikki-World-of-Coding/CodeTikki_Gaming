@@ -19,7 +19,6 @@ $(document).ready(function() {
         });
     }
 
-    // Call the fetchUserInfo function when the document is ready
     fetchUserInfo();
 
     $('#uploadButton').click(function() {
@@ -30,15 +29,13 @@ $(document).ready(function() {
             return;
         }
 
-        // Check file type
         const fileType = file.type;
         if (!(fileType === 'image/jpeg' || fileType === 'image/png')) {
             alert('Please select a JPEG or PNG image file.');
             return;
         }
 
-        // Check file size (maximum 5MB)
-        const maxSize = 5 * 1024 * 1024; // 5MB in bytes
+        const maxSize = 5 * 1024 * 1024; 
         if (file.size > maxSize) {
             alert('File size exceeds the maximum allowed limit (5MB).');
             return;
@@ -59,7 +56,7 @@ $(document).ready(function() {
                         const result = JSON.parse(response);
                         if (result.success) {
                             const imagePath = result.filePath;
-                            console.log('Image Path:', imagePath); // Add this line for debugging
+                            console.log('Image Path:', imagePath); 
 
                             $('#imageContainer').html(`<img src="core/main/${imagePath}" alt="Uploaded Picture" width="200" />`);
                             alert('Image uploaded successfully.');
@@ -81,4 +78,67 @@ $(document).ready(function() {
             }
         });
     });
+//     $.getJSON('core/main/fetch-profile_data.php', function(data) {
+
+//         $('.fetchName').val(data.name);
+//         $('.fetchUserName').val(data.username);
+//         $('.fetchEmail').val(data.email);
+//         $('.fetchGender').val(data.Gender);
+//         $('.fetchCountry').val(data.Country);
+//         $('.fetchProfession').val(data.profession);
+//         $('.fetchInstitute').val(data.institute);
+//         $('.fetchRating').val(data.rating);
+//     });
+//     $('.edit-btn').on('click', function() {
+// $('#editModal').modal('show');
+// });
+
+// $('.saveChanges').on('click', function() {
+// var formData = {
+//     name: $('.insertName').val() || null, 
+//     phoneNumber: $('.insertNumber').val() || null, 
+//     gender: $('input[name="Gender"]:checked').val() || null,
+//     country: $('.fetchCountry').find('option:selected').val() || null 
+// };
+
+
+// $.ajax({
+//     type: 'POST',
+//     url: 'core/main/insert_profiledata.php',
+//     data: formData,
+//     success: function(response) {
+
+       
+//     },
+//     error: function(xhr, status, error) {
+//         // Handle error
+//         console.error('Error saving data:', error);
+//     }
+// });
+// });
+// $('#workingExperienceTitle').hide();
+//         $('#workingExperience').hide();
+
+// $('input[name="working"]').on('change', function() {
+//     if ($(this).is(':checked')) {
+//         $('#workingExperienceTitle').show();
+//         $('#workingExperience').show();
+//         $('#studentExperienceTitle').hide();
+//         $('#studentExperience').hide();
+// }});
+// $('#studentExperienceTitle').hide();
+//         $('#studentExperience').hide();
+// // Function to show or hide the Student Experience section
+// $('input[name="student"]').on('change', function() {
+//     if ($(this).is(':checked')) {
+//         $('#studentExperienceTitle').show();
+//         $('#studentExperience').show();
+//         $('#workingExperienceTitle').hide();
+//         $('#workingExperience').hide();
+
+//     }
+// });
+
+
+
 });
