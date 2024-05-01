@@ -1,6 +1,4 @@
-
-
- <div class="container">
+<div class="container">
     <h1 class="mt-4">My Questions</h1>
     <table id="questionList" class="table mt-4">
     </table>
