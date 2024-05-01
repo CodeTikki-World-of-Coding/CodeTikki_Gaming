@@ -29,7 +29,7 @@
                             </li>
                             <li class="nav-item">
                                 <div class="d-flex align-items-center">
-                                    <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/questionBank.php">
+                                    <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/admin/questionBank.php">
                                         Question Bank
                                     </a>
                                 </div>
@@ -78,7 +78,6 @@
                         </ul>
                     </div>
                 </nav>
-                 <!-- Main Content -->
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main">
                     <div class="container mt-4" id="main-content">
                         
@@ -88,24 +87,23 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
 <script>
             $(document).ready(function () {
                 $('.menu').click(function (e) {
-                    e.preventDefault(); // Prevent default link behavior
-                    var url = $(this).attr('href'); // Get the URL from the clicked menu item
+                    e.preventDefault(); 
+                    var url = $(this).attr('href'); 
                 $.ajax({
                     url: url,
                     type: 'GET',
                     dataType: 'html',
                     success: function (response) {
-                        $('#main-content').html(response); // Update main-content area with response
+                        $('#main-content').html(response);
                     },
                     error: function (xhr, status, error) {
-                        console.log(error); // Log any errors to the console
+                        console.log(error); 
                     }
                 });
             });
