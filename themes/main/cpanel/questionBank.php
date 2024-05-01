@@ -1,3 +1,6 @@
+<?php
+$currentDate = date('Y-m-d');
+?>
 <div class="container" id="container">
     <button type="button" class="btn  btn-add mt-4" id="add">Add New Question</button>
 </div>
@@ -6,7 +9,9 @@
         <div class="row g-3">
             <div class="col-md-6"><label >Level</label><input type="number" id="level" name="level" class="form-control" placeholder="Enter Level" required>
             </div>
-            <div class="col-md-6"><label for="time">Time:</label><span id="currentTime"></span>
+            <div class="col-md-6"><input type="hidden" name="currentDate" value="<?php echo $currentDate; ?>">
+
+
             </div>
             <div class="col-md-12">
                 <label for="text" class="form-label "><span class="question-number ">1</span>Question:</label>
@@ -59,7 +64,6 @@
         <button type="button" class="btn view-preview-btn btn-view mt-4" style="display: none;">View Preview</button>
     </div>
 </div>
-<!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

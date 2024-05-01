@@ -44,6 +44,10 @@
                         <label for="option4">Option 4</label>
                         <input type="text" class="form-control" id="option4" name="option4" required>
                     </div>
+                    <div class="form-group">
+                        <label for="correctAnswere">Correct Answere</label>
+                        <input type="text" class="form-control" id="correctAnswere" name="correctAnswere" required>
+                    </div>
                     <button type="button" id="saveChangesBtn" class="btn btn-primary">Save Changes</button>
                 </form>
             </div>
@@ -51,61 +55,4 @@
     </div>
 </div>
 
-    <script>
-
-fetch('core/main/fetch_myQuestion.php')
-    .then(response => response.text())
-    .then(html => {
-        // Get the element where you want to display the questions
-        const questionList = document.getElementById('questionList');
-
-        questionList.innerHTML = html;
-
-        function editQuestion(questionId) {
-            $('#editQuestionModal').modal('show');
-            
-            const questionIdDisplay = document.getElementById('questionIdDisplay');
-            questionIdDisplay.innerText = "Question ID: " + questionId;
-            document.getElementById('questionId').value = questionId;
-
-           
-    }
-
-        questionList.addEventListener('click', function(event) {
-            const target = event.target;
-            if (target.classList.contains('edit-button')) {
-                const questionId = target.getAttribute('data-question-id');
-                editQuestion(questionId);
-            }
-        });
-    })
-    .catch(error => console.error('Error fetching questions:', error));
-   
-    document.getElementById('saveChangesBtn').addEventListener('click', function() {
-    const formData = new FormData(document.getElementById('editQuestionForm'));
-
-    // Get the question ID from the form
-    const questionId = document.getElementById('questionId').value;
-
-    // Append the question ID to the form data
-    formData.append('questionId', questionId);
-
-    fetch('core/main/update_question.php', {
-        method: 'POST', // Specify the request method
-        body: formData // Set the form data as the request body
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json(); 
-    })
-    .then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
-
-    </script>
+    <script src="themes/main/cpanel/quizMaster/my_question/js/my_question-script.js"></script>

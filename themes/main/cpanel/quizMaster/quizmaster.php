@@ -1,7 +1,7 @@
     <div class="cpanel-container">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-cpanel ">
             <div class="container">
-                <a class="navbar-brand" href="home.php">            
+                <a class="navbar-brand" href="#">            
                     <img src="themes/images/image-removebg-preview (50) 2.png" alt="Logo" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
