@@ -11851,6 +11851,7 @@ div.login-page {
   align-items: center;
   height: 100vh;
   margin: 0;
+  overflow: auto;
 }
 div.login-page .row {
   width: 55% !important;
@@ -11908,6 +11909,9 @@ div.login-page .row .login-box form div.form-group_login button.btn-register a {
 
 div.registration-page {
   background-color: #000000 !important;
+  overflow: auto;
+  width: 100%;
+  height: auto;
 }
 div.registration-page div.registration-row {
   background: linear-gradient(to bottom left, black, #605c5c, black) !important;
@@ -11947,7 +11951,6 @@ body {
   height: 100vh !important;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Hide scroll bars */
 }
 body div.main {
   padding: 0;

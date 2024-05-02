@@ -5,6 +5,7 @@ div.login-page{
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: auto;
     .row{
         width: 55% !important;
         padding: 0 !important;
@@ -74,6 +75,9 @@ div.login-page{
 //registration code
 div.registration-page{
     background-color: #000000 !important;
+    overflow:auto ;
+    width: 100%;
+    height: auto;
     div.registration-row{
         background: linear-gradient(to bottom left, black, #605c5c, black) !important;
         .form-col{

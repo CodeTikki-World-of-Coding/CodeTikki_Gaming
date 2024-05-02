@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $confirmPassword = isset($_POST['confirmPassword']) ? $_POST['confirmPassword'] : '';
     $agreeTerms = isset($_POST['agreeTerms']) ? $_POST['agreeTerms'] : '';
 
-    // Validate the form data (e.g., check if passwords match, validate email format, etc.)
     if ($password != $confirmPassword) {
         $response = ['success' => false, 'message' => "Passwords do not match."];
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -18,11 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } elseif (!$agreeTerms) {
         $response = ['success' => false, 'message' => "Please agree to the terms and conditions."];
     } else {
-        // Hash the password before storing it in the database
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         try {
-            // Check if the username already exists in the database
             $checkUsernameStmt = $pdo->prepare("SELECT * FROM User WHERE username = :username");
             $checkUsernameStmt->bindParam(':username', $username);
             $checkUsernameStmt->execute();
@@ -31,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($existingUsername) {
                 $response = ['success' => false, 'message' => "Username already exists."];
             } else {
-                // Insert the new user data into the database
                 $insertStmt = $pdo->prepare("INSERT INTO User (username, email, password) VALUES (:username, :email, :password)");
                 $insertStmt->bindParam(':username', $username);
                 $insertStmt->bindParam(':email', $email);
@@ -39,10 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $insertStmt->execute();
 
                 $_SESSION['success_message'] = "Registration successful. You can now log in.";
-                $response = ['success' => true];
-                header("Location: ../../index.php");
-                exit();
-
+                $response = ['success' => true, 'message' => "Registration successful. You can now log in."];
             }
         } catch (\PDOException $e) {
             $response = ['success' => false, 'message' => "Error: " . $e->getMessage()];
@@ -53,4 +46,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode($response);
     exit();
 }
+
 ?>
