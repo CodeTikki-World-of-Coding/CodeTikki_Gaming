@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    overflow: auto;
+    // overflow: auto;
     .navbar-cpanel{
         // background: #000 ;
         border-bottom: 2px solid gray !important;
@@ -80,6 +80,8 @@
             }
             .main{
                 width:70%;
+                
+                
                             
             }
         }
@@ -320,7 +322,7 @@
             }            
         }
         .sidebar{
-            width:30%;           
+            width:25%;           
             ul{ 
                 .nav-item.active a.nav-link {
                     color: #FFFFFF !important;
@@ -381,7 +383,10 @@
             }
         }
         .main{
-            width:70%;
+            width:75%;
+            background-color: #FFFFFF;
+            min-height: 100vh;
+            padding-bottom: 5%;
             div.showEventContainer{
                 margin-top: 10px;
                 display: flex;

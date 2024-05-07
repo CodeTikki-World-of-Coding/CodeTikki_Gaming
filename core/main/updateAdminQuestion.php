@@ -26,7 +26,7 @@ try {
     $queryQuestions .= " AND qb.Level >= :minLevel AND qb.Level <= :maxLevel";
 
     if ($sortBy === 'asc') {
-        $queryQuestions .= " ORDER BY qb.QuestionID ASC";
+        $queryQuestions .= " ORDER BY qb.Level ASC";
     } else {
         $queryQuestions .= " ORDER BY qb.Level DESC";
     }

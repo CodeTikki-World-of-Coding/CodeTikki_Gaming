@@ -1,0 +1,125 @@
+.myQuestion-container{
+    width: 100%;
+    
+    .heading-row{
+        .heading{
+            display: flex;
+            h1{
+                color: #2E3E64;
+                font-weight: 600;
+                font-size: 29px;
+            }
+        }
+        
+        .search-box{
+            width: 30%;
+            height: 40px;
+            border: 1px solid#0000004D;
+            box-shadow: 0 4px 5px #00000040;
+            border-radius: 20px;
+            background-color: #F2F2F2;
+            color: #0000004D;
+            input{
+                border: none;
+                background: none;
+            }
+            button{
+                border: none;
+            }
+            span{
+                img{
+                    border: none;
+                }
+            }
+        }
+    }
+    .criteria{
+        .total-question{
+            box-shadow: 0 4px 5px #00000040;
+            height: 100px;
+            color: #252422;
+            font-weight: 400;
+            font-size: 25px;
+            width: 270px;
+            margin-right: 4px;
+            .row{
+                 .total-question-count{
+                    margin-left: 30%;
+                    color: #FBC658;
+                 }
+            }
+        }
+        .accepted{
+            box-shadow: 0 4px 5px #00000040;
+            height: 100px;
+            color: #252422;
+            font-weight: 400;
+            font-size: 25px;
+            width: 270px;
+            margin-right: 4px;
+            .row{
+                img{
+                    width: 94px;
+                    height: 84px;
+                }
+                text-align: center;
+                .accepted-count{
+                    margin-left: 20%;
+                    color: #18CE0F;
+                }
+                .accepted-text{
+                    margin: 0 auto;
+                }
+           }
+        }
+        .decline{
+            box-shadow: 0 4px 5px #00000040;
+            height: 100px;
+            color: #252422;
+            font-weight: 400;
+            font-size: 25px;
+            width: 270px;
+            margin-right: 4px;
+            .row{
+                img{
+                    width: 94px;
+                    height: 84px;                }
+                .decline-count{
+                    margin-left: 20%;
+                   color: #FF6363;
+                }
+                .decline-text{
+                    margin: 0 auto;
+                }
+           }
+        }
+        .pending{
+            box-shadow: 0 4px 5px #00000040;
+            height: 100px;
+            color: #252422;
+            font-weight: 400;
+            font-size: 25px;
+            width: 270px;
+            .row{
+                img{
+                    width: 94px;
+                    height: 84px;                }
+                .pending-count{
+                    margin-left: 20%;
+                    color: #78E1FF;
+                }
+                .pending-text{
+                    margin: 0 auto;
+                }
+           }
+        }
+    }
+       h3{
+        color:#252422 ;
+        font-size: 21px;
+        font-weight: 400;
+        margin: 20px 0 0 20px;
+
+    }
+    
+}

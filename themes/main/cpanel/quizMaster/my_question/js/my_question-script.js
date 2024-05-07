@@ -1,6 +1,8 @@
 fetch('core/main/fetch_myQuestion.php')
     .then(response => response.text())
+
     .then(html => {
+
         const questionList = document.getElementById('questionList');
 
         questionList.innerHTML = html;
@@ -22,6 +24,8 @@ fetch('core/main/fetch_myQuestion.php')
                 editQuestion(questionId);
             }
         });
+        
+
     })
     .catch(error => console.error('Error fetching questions:', error));
    

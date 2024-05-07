@@ -10,22 +10,32 @@ $stmt->bindParam(':userid', $user_id);
 $stmt->execute();
 
 $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $totalQuestions = count($questions); // Calculate total questions
+
+// echo "<script>";
+// echo "const totalQuestions = $totalQuestions;"; // Output total questions as JavaScript variable
+// echo "</script>";
+
 
 if ($questions) {
     echo "<table border='1'>";
-    echo "<tr><th>Question ID</th><th>Question Title</th><th>Level</th><th>Create Date</th><th></th></tr>";
+    echo "<tr><th>Question ID</th><th>Question Title</th><th>Level</th><th>Status</th><th>Payment</th><th>Date</th><th></th></tr>";
     foreach ($questions as $question) {
         echo "<tr>";
         echo "<td>".$question['QuestionId']."</td>";
         echo "<td>".$question['QuestionTitle']."</td>";
         echo "<td>".$question['Level']."</td>";
+        echo "<td>".''."</td>";
+        echo "<td>".''."</td>";
         echo "<td>".$question['CreateDate']."</td>";
         echo "<td><button class='edit-button' data-question-id='".$question['QuestionId']."'>Edit</button></td>"; // Add class and data attribute
 
         echo "</tr>";
     }
     echo "</table>";
+
 } else {
     echo "No questions found.";
 }
+
 ?>

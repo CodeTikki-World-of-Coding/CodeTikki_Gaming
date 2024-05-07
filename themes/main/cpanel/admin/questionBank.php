@@ -1,4 +1,11 @@
-<div class="container mt-5">
+<head>
+    <style>
+        .correct-answer{
+            background-color:green;
+        }
+    </style>
+</head>
+<div class="container mt-5 admin_questionBank">
     <h2>Question Bank</h2>
     <form id="filter-form">
         <div class="row mb-3">

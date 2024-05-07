@@ -12595,7 +12595,6 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  overflow: auto;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .navbar-cpanel {
   border-bottom: 2px solid gray !important;
@@ -12884,7 +12883,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   font-weight: 700;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar {
-  width: 30%;
+  width: 25%;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FFFFFF !important;
@@ -12938,7 +12937,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .s
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main {
-  width: 70%;
+  width: 75%;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  padding-bottom: 5%;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer {
   margin-top: 10px;
@@ -13361,7 +13363,6 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  overflow: auto;
 }
 .cpanel-container .navbar-cpanel {
   border-bottom: 2px solid gray !important;
@@ -13650,7 +13651,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   font-weight: 700;
 }
 .cpanel-container div.quizMaster .sidebar {
-  width: 30%;
+  width: 25%;
 }
 .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FFFFFF !important;
@@ -13704,7 +13705,10 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 .cpanel-container div.quizMaster .main {
-  width: 70%;
+  width: 75%;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  padding-bottom: 5%;
 }
 .cpanel-container div.quizMaster .main div.showEventContainer {
   margin-top: 10px;
@@ -14150,6 +14154,118 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   font-size: 22px;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+.myQuestion-container {
+  width: 100%;
+}
+.myQuestion-container .heading-row .heading {
+  display: flex;
+}
+.myQuestion-container .heading-row .heading h1, .myQuestion-container .heading-row .heading .h1 {
+  color: #2E3E64;
+  font-weight: 600;
+  font-size: 29px;
+}
+.myQuestion-container .heading-row .search-box {
+  width: 30%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  color: rgba(0, 0, 0, 0.3019607843);
+}
+.myQuestion-container .heading-row .search-box input {
+  border: none;
+  background: none;
+}
+.myQuestion-container .heading-row .search-box button {
+  border: none;
+}
+.myQuestion-container .heading-row .search-box span img {
+  border: none;
+}
+.myQuestion-container .criteria .total-question {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2509803922);
+  height: 100px;
+  color: #252422;
+  font-weight: 400;
+  font-size: 25px;
+  width: 270px;
+  margin-right: 4px;
+}
+.myQuestion-container .criteria .total-question .row .total-question-count {
+  margin-left: 30%;
+  color: #FBC658;
+}
+.myQuestion-container .criteria .accepted {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2509803922);
+  height: 100px;
+  color: #252422;
+  font-weight: 400;
+  font-size: 25px;
+  width: 270px;
+  margin-right: 4px;
+}
+.myQuestion-container .criteria .accepted .row {
+  text-align: center;
+}
+.myQuestion-container .criteria .accepted .row img {
+  width: 94px;
+  height: 84px;
+}
+.myQuestion-container .criteria .accepted .row .accepted-count {
+  margin-left: 20%;
+  color: #18CE0F;
+}
+.myQuestion-container .criteria .accepted .row .accepted-text {
+  margin: 0 auto;
+}
+.myQuestion-container .criteria .decline {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2509803922);
+  height: 100px;
+  color: #252422;
+  font-weight: 400;
+  font-size: 25px;
+  width: 270px;
+  margin-right: 4px;
+}
+.myQuestion-container .criteria .decline .row img {
+  width: 94px;
+  height: 84px;
+}
+.myQuestion-container .criteria .decline .row .decline-count {
+  margin-left: 20%;
+  color: #FF6363;
+}
+.myQuestion-container .criteria .decline .row .decline-text {
+  margin: 0 auto;
+}
+.myQuestion-container .criteria .pending {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2509803922);
+  height: 100px;
+  color: #252422;
+  font-weight: 400;
+  font-size: 25px;
+  width: 270px;
+}
+.myQuestion-container .criteria .pending .row img {
+  width: 94px;
+  height: 84px;
+}
+.myQuestion-container .criteria .pending .row .pending-count {
+  margin-left: 20%;
+  color: #78E1FF;
+}
+.myQuestion-container .criteria .pending .row .pending-text {
+  margin: 0 auto;
+}
+.myQuestion-container h3, .myQuestion-container .h3 {
+  color: #252422;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 20px 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
