@@ -10,7 +10,7 @@
     <link href="./themes/css/style.css" rel="stylesheet">
     <style>
         body {
-            background-color: #000000 !important;
+            background: linear-gradient(to bottom, #000000  , #29209614 ) !important; /* Adjust colors as needed */
         }
     </style>
 </head>
@@ -18,43 +18,51 @@
 <div class="container mt-5 registration-page">
         <div class="row registration-row">
             <div class="col-md-6 form-col">
-                <form class="registration-form p-5" action="core/main/register.php" method="POST">
-                    <div class="mb-3">
+                <form class="registration-form p-2" action="core/main/register.php" method="POST">
+                    <div class="mb-1">
                         <label for="username" class="form-label">Username</label>
                         <input type="text" class="form-control" id="username" name="username" required minlength="6" maxlength="14" pattern="[a-zA-Z][a-zA-Z0-9]{5,13}" oninput="validateUsername(this)" onchange="convertToLowercase(this)">
                         <div id="usernameFeedback" class="feedback text-danger fs-6"></div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" name="password" required minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$" oninput="validatePassword(this)">
                         <div id="passwordFeedback" class="feedback text-danger fs-6"></div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required oninput="validateConfirmPassword(this)">
                         <div id="confirmPasswordFeedback" class="feedback text-danger fs-6"></div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <label for="referralCode" class="form-label">Referral Code (Optional)</label>
                         <input type="text" class="form-control" name="referralCode">
                     </div>
                     
-                    <div class="mb-3 form-check">
+                    <div class="mb-1 form-check">
                         <input type="checkbox" class="form-check-input" id="agreeTerms" name="agreeTerms" required>
                         <label class="form-check-label " for="agreeTerms">I agree to the terms and privacy policy</label>
                     </div>
-                    <button type="submit" class="btn ">Register</button>
-                    <a href="#" class="btn btn-link">Forgot Password?</a>
+                    <div class="mb-1 button-group">
+                        <button type="submit" class="btn ">Register</button>
+                        <a href="#" class="btn btn-link">Forgot Password?</a>
+                        <p>OR Login With </p>
+                        <div class="social_media">
+                            <a href=""> <img src="themes/images/image 34.svg" alt="Google"></a>
+                            <a href=""><img src="themes/images/image 33.svg" alt="github"></a>
+                            <a href=""><img src="themes/images/image 35.svg" alt="Facebook"></a>
+                        </div>
+                    </div>
                     <div id="successMessage" class="feedback text-success fs-5"></div>
 
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 girl-image">
                 <img src="themes/images/https_/lottiefiles.com/animations/login-blue-zSJxUZS7i4.svg" alt="Image" class="img-fluid">
             </div>
         </div>

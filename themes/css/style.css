@@ -11908,16 +11908,14 @@ div.login-page .row .login-box form div.form-group_login button.btn-register a {
 }
 
 div.registration-page {
-  background-color: #000000 !important;
   overflow: auto;
   width: 100%;
   height: auto;
 }
-div.registration-page div.registration-row {
-  background: linear-gradient(to bottom left, black, #605c5c, black) !important;
-}
 div.registration-page div.registration-row .form-col {
-  border-right: 1px solid #f9f9f9;
+  background: linear-gradient(to bottom, rgba(255, 253, 253, 0.4), #FFFBFB);
+  border-radius: 10PX;
+  width: 40%;
   font-size: 22px !important;
   color: #f9f9f9;
   font-weight: 500;
@@ -11926,23 +11924,49 @@ div.registration-page div.registration-row .form-col input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-radius: 0; /* Optional: Remove border-radius for a straight line */
+  border-radius: 20px; /* Optional: Remove border-radius for a straight line */
   border-bottom: 2px solid #948989 !important;
 }
 div.registration-page div.registration-row .form-col .form-check input {
   border: 1px solid #ff4d00;
 }
-div.registration-page div.registration-row .form-col form button {
-  background-color: #ff4d00;
-  color: #f9f9f9;
+div.registration-page div.registration-row .form-col form {
+  border: 1PX SOLID #000000;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10PX;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+div.registration-page div.registration-row .form-col form .button-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+div.registration-page div.registration-row .form-col form .button-group button {
+  background: linear-gradient(to bottom, #023859, rgba(0, 0, 0, 0));
   font-size: 18px;
   font-weight: 500;
+  border-radius: 50PX;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  color: #EDD922;
+  width: 95px;
+  margin: 0 auto;
+  padding: 10px;
 }
-div.registration-page div.registration-row .form-col form a {
+div.registration-page div.registration-row .form-col form .button-group a {
   text-decoration: none;
   color: #ff4d00 !important;
   font-size: 18px;
   font-weight: 700;
+}
+div.registration-page div.registration-row .form-col form .button-group p {
+  font-weight: 400;
+  font-size: 24px;
+}
+div.registration-page div.registration-row .girl-image {
+  margin-left: 8%;
 }
 
 body {
@@ -14266,6 +14290,14 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   font-size: 21px;
   font-weight: 400;
   margin: 20px 0 0 20px;
+}
+
+.admin_questionBank #question-table {
+  background-color: #ffffff;
+}
+.admin_questionBank #question-table .correct-answer {
+  background-color: lightgreen;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

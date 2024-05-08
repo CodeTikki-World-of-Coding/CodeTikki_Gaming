@@ -74,15 +74,17 @@ div.login-page{
        }
 //registration code
 div.registration-page{
-    background-color: #000000 !important;
+    // background: linear-gradient(to right, #000000, #292096); /* Adjust colors as needed */
     overflow:auto ;
     width: 100%;
     height: auto;
     div.registration-row{
-        background: linear-gradient(to bottom left, black, #605c5c, black) !important;
+        // background: linear-gradient(to bottom left, black, #605c5c, black) !important;
         .form-col{
-
-            border-right: 1px solid #f9f9f9;
+            background: linear-gradient(to bottom, #FFFDFD66  , #FFFBFB);
+            border-radius: 10PX;
+            width: 40%;
+            // border-right: 1px solid #f9f9f9;
             font-size: 22px !important;
             color: #f9f9f9;
             font-weight: 500;
@@ -90,7 +92,7 @@ div.registration-page{
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                border-radius: 0; /* Optional: Remove border-radius for a straight line */
+                border-radius: 20px; /* Optional: Remove border-radius for a straight line */
                 border-bottom:2px solid #948989 !important;
     
                }
@@ -100,20 +102,48 @@ div.registration-page{
                     }           
                 } 
                 form{
-                    button{
-                      background-color: #ff4d00;
-                       color: #f9f9f9;
-                       font-size: 18px;
-                       font-weight: 500;
-                       
-                   }
-                   a{
-                    text-decoration: none;
-                    color: #ff4d00 !important;
-                    font-size: 18px;
-                    font-weight: 700;
-                   }
+                    // background: linear-gradient(to bottom, #FFFDFD66  , #FFFBFB);
+                    // border-radius: 10PX;
+                    // width: 80%;
+                    border: 1PX SOLID #000000;
+                    color: #000000;
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 10PX;
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                    .button-group{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        button{
+                            background: linear-gradient(to bottom, #023859  , #00000000);
+                               font-size: 18px;
+                               font-weight: 500;
+                               border-radius: 50PX;
+                               box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                               border-bottom: none;
+                               color: #EDD922;
+                               width: 95px;
+                               margin: 0 auto;
+                               padding: 10px;
+                           }
+                           a{
+                            text-decoration: none;
+                            color: #ff4d00 !important;
+                            font-size: 18px;
+                            font-weight: 700;
+                           }
+                           p{
+                            font-weight: 400;
+                            font-size: 24px;
+
+                           }
+                    }
+                    
                }        
+            }
+            .girl-image{
+                margin-left: 8%;
             }
         }
     

@@ -6,7 +6,6 @@ $json_input = file_get_contents('php://input');
 
 $data = json_decode($json_input, true); 
 
-// Retrieve filter values
 $minLevel = isset($_POST['minLevel']) ? $_POST['minLevel'] : 0;
 $maxLevel = isset($_POST['maxLevel']) ? $_POST['maxLevel'] : 1000;
 $creator = isset($_POST['creator']) ? $_POST['creator'] : '';
@@ -43,6 +42,18 @@ try {
 
     $questions = $stmtQuestions->fetchAll(PDO::FETCH_ASSOC);
 
+
+foreach ($questions as &$question) {
+    $correctAnswer = $question['CorrectAnswer'];
+    $options = array(
+        array('text' => $question['Option1'], 'isCorrect' => ($question['Option1'] === $correctAnswer)),
+        array('text' => $question['Option2'], 'isCorrect' => ($question['Option2'] === $correctAnswer)),
+        array('text' => $question['Option3'], 'isCorrect' => ($question['Option3'] === $correctAnswer)),
+        array('text' => $question['Option4'], 'isCorrect' => ($question['Option4'] === $correctAnswer))
+    );
+    $question['Options'] = $options;
+}
+
     $uniqueCreators = array_unique(array_column($questions, 'Username'));
 
     header('Content-Type: application/json');
@@ -50,6 +61,5 @@ try {
 } catch (PDOException $e) {
     echo 'Error: ' . $e->getMessage();
 }
-
 
 ?>

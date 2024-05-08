@@ -6,32 +6,33 @@ $(document).ready(function() {
             data: formData,
             dataType: 'json',
             success: function(data) {
-                console.log("Received data from server:", data); 
+                console.log("Received data from server:", data); // Log the received data
+                console.log("Creators:", data.options);
+
                 $('#question-table tbody').empty();
                 if (data && data.questions && Array.isArray(data.questions)) {
                     $.each(data.questions, function(index, question) {
-                        var row = `
-                            <tr>
-                                <td>${question.QuestionID}</td>
-                                <td>${question.QuestionTitle}</td>
-                                <td>${question.Option1}</td>
-                                <td>${question.Option2}</td>
-                                <td>${question.Option3}</td>
-                                <td>${question.Option4}</td>
-                                <td>${question.CorrectAnswer}</td>
-                                <td>${question.Level}</td>
-                                <td>${question.Attempts}</td>
-                            </tr>
-                        `;
+                        console.log("Question ID:", question.QuestionID);
+                        console.log("Options:", question.Options); // Log the options
+                        var correctOption = question.Options.find(option => option.text.trim() === question.CorrectAnswer.trim());
+                        if (correctOption) {
+                            correctOption.isCorrect = true;
+                        }
+                        var row = '<tr>';
+                        row += `<td>${question.QuestionID}</td>`;
+                        row += `<td>${question.QuestionTitle}</td>`;
+                        question.Options.forEach(function(option) {
+                            row += `<td class="${option.isCorrect ? 'correct-answer' : ''}">${option.text}</td>`;
+                        });
+                        row += `<td>${question.Level}</td>`;
+                        row += `<td>${question.Attempts}</td>`;
+                        row += '</tr>';
                         $('#question-table tbody').append(row);
                     });
                 } else {
                     console.log("No questions found.");
                 }
-                console.log(data.creators);
-                $('#creator').empty(); 
-                $('#creator').append('<option value="">All</option>'); 
-
+                console.log("Creators:", data.creators);
                 $('#creator').empty(); 
                 $('#creator').append('<option value="">All</option>'); 
                 $.each(data.creators, function(index, creator) {
@@ -48,6 +49,7 @@ $(document).ready(function() {
     function loadAllQuestions() {
         fetchQuestions({});
     }
+
     $('#filter-form').on('submit', function(event) {
         event.preventDefault(); 
         var formData = {};
@@ -67,8 +69,6 @@ $(document).ready(function() {
         
         fetchQuestions(formData); 
     });
-
-    
 
     loadAllQuestions();
 });
