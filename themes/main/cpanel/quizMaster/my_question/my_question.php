@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="row criteria">
-        <div class="col-md-3 total-question">
+        <div class="col total-question">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-8">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 accepted">
+        <div class="col accepted">
             <div class="row">
                 <div class="col-md-4"><img src="themes/images/Check.svg" alt=""></div>
                 <div class="col-md-8">
@@ -34,7 +34,7 @@
                 </div>
             </div>  
         </div>
-        <div class="col-md-3 decline">
+        <div class="col decline">
             <div class="row">
                 <div class="col-md-4"><img src="themes/images/delete.svg" alt=""></div>
                 <div class="col-md-8">
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 pending">
+        <div class="col pending">
             <div class="row">
                 <div class="col-md-4"><img src="themes/images/timer 1.jpg" alt=""></div>
                 <div class="col-md-8">

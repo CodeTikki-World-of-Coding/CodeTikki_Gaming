@@ -14216,7 +14216,6 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   color: #252422;
   font-weight: 400;
   font-size: 25px;
-  width: 270px;
   margin-right: 4px;
 }
 .myQuestion-container .criteria .total-question .row .total-question-count {
@@ -14229,7 +14228,6 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   color: #252422;
   font-weight: 400;
   font-size: 25px;
-  width: 270px;
   margin-right: 4px;
 }
 .myQuestion-container .criteria .accepted .row {
@@ -14252,7 +14250,6 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   color: #252422;
   font-weight: 400;
   font-size: 25px;
-  width: 270px;
   margin-right: 4px;
 }
 .myQuestion-container .criteria .decline .row img {
@@ -14272,7 +14269,6 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   color: #252422;
   font-weight: 400;
   font-size: 25px;
-  width: 270px;
 }
 .myQuestion-container .criteria .pending .row img {
   width: 94px;
@@ -14292,6 +14288,13 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   margin: 20px 0 0 20px;
 }
 
+@media (max-width: 1552px) {
+  .criteria .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+}
 .admin_questionBank #question-table {
   background-color: #ffffff;
 }

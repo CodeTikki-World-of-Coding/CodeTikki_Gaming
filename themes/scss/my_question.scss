@@ -1,3 +1,9 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1552px; 
+
 .myQuestion-container{
     width: 100%;
     
@@ -40,7 +46,7 @@
             color: #252422;
             font-weight: 400;
             font-size: 25px;
-            width: 270px;
+            // width: 270px;
             margin-right: 4px;
             .row{
                  .total-question-count{
@@ -55,7 +61,7 @@
             color: #252422;
             font-weight: 400;
             font-size: 25px;
-            width: 270px;
+            // width: 270px;
             margin-right: 4px;
             .row{
                 img{
@@ -78,7 +84,7 @@
             color: #252422;
             font-weight: 400;
             font-size: 25px;
-            width: 270px;
+            // width: 270px;
             margin-right: 4px;
             .row{
                 img{
@@ -99,7 +105,7 @@
             color: #252422;
             font-weight: 400;
             font-size: 25px;
-            width: 270px;
+            // width: 270px;
             .row{
                 img{
                     width: 94px;
@@ -123,3 +129,15 @@
     }
     
 }
+
+
+@media (max-width: $breakpoint-xxl) {
+    .criteria {
+        .col {
+            flex: 0 0 50%; 
+            max-width: 50%; 
+            margin-top: 10px;
+        }
+    }
+}
+
