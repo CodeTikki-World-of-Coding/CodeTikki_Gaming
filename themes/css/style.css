@@ -13065,6 +13065,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   text-align: center;
   align-items: center;
   padding-bottom: 15%;
+  background-color: #000;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;
@@ -13095,6 +13096,9 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   font-size: 45px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions {
+  background-color: #000;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions .h2 {
   color: #FFFFFF;
@@ -13623,6 +13627,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   text-align: center;
   align-items: center;
   padding-bottom: 15%;
+  background-color: #000;
 }
 .cpanel-container div.quiz-container .welcome {
   color: #FF4D00;
@@ -13653,6 +13658,9 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   font-size: 45px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cpanel-container div.quiz-container div.quizQuestions {
+  background-color: #000;
 }
 .cpanel-container div.quiz-container div.quizQuestions h2, .cpanel-container div.quiz-container div.quizQuestions .h2 {
   color: #FFFFFF;
@@ -13883,6 +13891,23 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
 .admin_questionBank #question-table .correct-answer {
   background-color: lightgreen;
   color: #000;
+}
+
+.quiz-container #quizSet .questions {
+  border: 1px solid #fff;
+  margin-bottom: 2%;
+}
+.quiz-container #quizSet .questions h2, .quiz-container #quizSet .questions .h2 {
+  color: aliceblue;
+}
+.quiz-container #quizSet .questions ul {
+  list-style-type: none;
+}
+.quiz-container #quizSet .questions ul li {
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
