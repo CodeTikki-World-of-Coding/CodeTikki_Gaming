@@ -1,0 +1,20 @@
+.quiz-container{
+    #quizSet{
+        .questions{
+            border: 1px solid #fff;
+            margin-bottom: 2%;
+        h2{
+            color: aliceblue;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                text-decoration: none;
+                color: aliceblue;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    }
+}
