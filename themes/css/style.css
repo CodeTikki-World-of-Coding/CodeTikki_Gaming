@@ -13900,6 +13900,10 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
 .quiz-container #quizSet .questions h2, .quiz-container #quizSet .questions .h2 {
   color: aliceblue;
 }
+.quiz-container #quizSet .questions p {
+  color: aliceblue;
+  font-size: 22px;
+}
 .quiz-container #quizSet .questions ul {
   list-style-type: none;
 }
