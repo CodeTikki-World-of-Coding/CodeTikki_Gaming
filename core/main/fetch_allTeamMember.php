@@ -27,7 +27,7 @@ try {
                     $html .= "<li>" . $user['username'] . "</li>";
                 }
                 $html .= "</ul>";
-                echo $html; // Output the HTML content
+                echo $html; 
             } else {
                 echo "No users found for the selected event.";
             }

@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./themes/css/style.css" rel="stylesheet">
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+
 
     <title>Code Tikki</title>
 
@@ -28,6 +30,7 @@
         </div>
 
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

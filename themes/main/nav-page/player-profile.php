@@ -3,9 +3,15 @@
 <div class="row grow w-100 ">
     
     <div class="col-4 bg-dark border border-light  py-3 sidebar sidebar-profile_fetch">
-        <label class="profile-img"><img src="" alt=""> 
+        <div class="profile-img">
+            <img src="" alt="" id="profileImage">
+            <button class="profile-btn"  onclick="document.getElementById('profile-input').click();">
+                <img class="camera-icon"  src="themes/images/photo-icon.svg" alt="">
+            </button>
+            <input type="file" id="profile-input" style="display: none;" accept="image/*" onchange="loadImage(event)">
+        </div>
+         
         <button class="btn btn-primary edit-btn" data-toggle="modal" data-target="#editModal">Edit <img src="themes/images/Group.svg" alt=""></button>
-</label>
         <label>Name:
         <input type="text" class="fetchName" name="name"  readonly>
 
@@ -78,52 +84,53 @@
                     </label>
                 </div>
                 <div class="col-md-6">
-                    <label>Phonenumber:
-                        <input type="number" class="insertNumber form-control" name="number"   >
+                    <label>WhatsApp No:
+                    <input type="tel" class="insertNumber form-control" name="number" pattern="[0-9]{10}"  >
+                    <span class="text-danger error-msg_whatsapp"></span>
                     </label> 
                 </div>
                 <div class="col-md-12">
                     <label>Address:
-                        <input type="text" class="insertAddress form-control" name="address"  disabled >
+                        <input type="text" class="insertAddress form-control" name="address"   >
                     </label> 
                 </div>
                 <div class="col-md-4">
                     <label>City:
-                        <input type="text" class="insertCity form-control" name="city"  disabled >
+                        <input type="text" class="insertCity form-control" name="city"   >
                     </label>
                 </div>
                 <div class="col-md-4"> 
                     <label>State:
-                        <input type="text" class="insertState form-control" name="state" disabled  >
+                        <input type="text" class="insertState form-control" name="state"   >
                     </label> 
                 </div>
                 <div class="col-md-4">
-                    <label>Zipcode:
-                        <input type="text" class="insertZipcode form-control" name="zipcode"  disabled >
+                    <label>Pin code:
+                    <input type="text" class="insertZipcode form-control" name="zipcode" pattern="[0-9]{6}"  >
                     </label>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col">
                             <label>LinkdIn:
-                                <input type="text" class="insertLinkdin form-control" name="linkdin" disabled  >
+                                <input type="url" class="insertLinkdin form-control" name="linkdin"   >
                             </label>
                         </div>
                         <div class="col">
                             <label>Facebook:
-                                <input type="text" class="insertFacebook form-control" name="facebook" disabled  >
+                                <input type="url" class="insertFacebook form-control" name="facebook"   >
                             </label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label>twitter:
-                                <input type="text" class="insertTwitter form-control" name="twitter"  disabled >
+                                <input type="url" class="insertTwitter form-control" name="twitter"  disabled >
                             </label>
                         </div>
                         <div class="col">
                             <label>Tikkiality:
-                                <input type="text" class="insertTikkiality form-control" name="tikkiality"  disabled >
+                                <input type="url" class="insertTikkiality form-control" name="tikkiality"  disabled >
                             </label>
                         </div>
                     </div>
@@ -140,10 +147,13 @@
                         </div>
                 </div>
                 <div class="col-md-4">
-                    <label>Profession</label>
-                        <select class="form-control fetchCountry" name="Country">
-                            <option >select profession</option>
+                    <label>Profession:
+                        <select class="form-control" name="profession"  >
+                            <option value="">Select Profession</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Student">Student</option>
                         </select>
+                    </label>
                 </div>
                 <div class="col-md-4">
                     <label>Country</label>
@@ -175,8 +185,6 @@
         </div>
     </div>
 </div> 
-
-
 <div class="player-profile hidden" id="player-profile-content">
     <div class="player-profile_inner">
     <div class="profile-pic" id="imageContainer"></div>
@@ -226,7 +234,34 @@
         </div>
     </div>
  </div>
+ <!-- //profile photo modal  -->
 
+<div class="modal fade crop-modal" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content crop-modal-content">
+            <div class="modal-header crop-modal-header">
+                <h5 class="modal-title" id="previewModalLabel">Image Preview</h5>
+            </div>
+            <div class="modal-body text-center">
+                <img id="previewImage" src="" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="cropImage()">Crop</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Preview the cropped image before upload -->
+<div id="preview-container" class="text-center mt-4">
+    <img id="cropped-image-preview" class="img-fluid" src="">
+    <button class="btn btn-success mt-2" onclick="uploadImage()">Upload</button>
+</div>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+<script src="themes/main/nav-page/js/cropProfile.js"></script>
 <script src="themes/main/nav-page/js/player-profile_script.js"></script>
 <script>
         $(document).ready(function() {
@@ -291,7 +326,30 @@
             }
         });
 
+        $('[name="number"]').on('input', function () {
+            var whatsapp = $(this).val();
+            if (whatsapp.length > 10) {
+                $('.error-msg_whatsapp').text('WhatsApp number must be exactly 10 digits').css('color', 'red');
+            } else {
+                $('.error-msg_whatsapp').text('');
+            }
+        });
 
+        $('#profile-img').click(function () {
+            $('#profile-input').click(); // Trigger click on file input
+        });
+
+        $('#profile-input').change(function () {
+            var file = $(this).prop('files')[0];
+            if (file) {
+                // Display selected image in the profile picture
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#profile-img').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
 
         });
     </script>
