@@ -106,7 +106,7 @@
                 </div>
                 <div class="col-md-4">
                     <label>Pin code:
-                    <input type="text" class="insertZipcode form-control" name="zipcode" pattern="[0-9]{6}"  >
+                    <input type="text" class="insertZipcode form-control" name="zipcode" pattern="[0-9]{6}" maxlength="6" id="zipcode">
                     </label>
                 </div>
                 <div class="col-md-8">
@@ -263,93 +263,4 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
 <script src="themes/main/nav-page/js/cropProfile.js"></script>
 <script src="themes/main/nav-page/js/player-profile_script.js"></script>
-<script>
-        $(document).ready(function() {
-            $.getJSON('core/main/fetch-profile_data.php', function(data) {
-
-                $('.fetchName').val(data.name);
-                $('.fetchUserName').val(data.username);
-                $('.fetchEmail').val(data.email);
-                $('.fetchGender').val(data.Gender);
-                $('.fetchCountry').val(data.Country);
-                $('.fetchProfession').val(data.profession);
-                $('.fetchInstitute').val(data.institute);
-                $('.fetchRating').val(data.rating);
-            });
-            $('.edit-btn').on('click', function() {
-        $('#editModal').modal('show');
-    });
-   
-    $('.saveChanges').on('click', function() {
-        var formData = {
-            name: $('.insertName').val() || null, 
-            phoneNumber: $('.insertNumber').val() || null, 
-            gender: $('input[name="Gender"]:checked').val() || null,
-            country: $('.fetchCountry').find('option:selected').val() || null 
-        };
-
-
-        $.ajax({
-            type: 'POST',
-            url: 'core/main/insert_profiledata.php',
-            data: formData,
-            success: function(response) {
-
-               
-            },
-            error: function(xhr, status, error) {
-                // Handle error
-                console.error('Error saving data:', error);
-            }
-        });
-    });
-    $('#workingExperienceTitle').hide();
-                $('#workingExperience').hide();
-
-    $('input[name="working"]').on('change', function() {
-            if ($(this).is(':checked')) {
-                $('#workingExperienceTitle').show();
-                $('#workingExperience').show();
-                $('#studentExperienceTitle').hide();
-                $('#studentExperience').hide();
-        }});
-        $('#studentExperienceTitle').hide();
-                $('#studentExperience').hide();
-        // Function to show or hide the Student Experience section
-        $('input[name="student"]').on('change', function() {
-            if ($(this).is(':checked')) {
-                $('#studentExperienceTitle').show();
-                $('#studentExperience').show();
-                $('#workingExperienceTitle').hide();
-                $('#workingExperience').hide();
-
-            }
-        });
-
-        $('[name="number"]').on('input', function () {
-            var whatsapp = $(this).val();
-            if (whatsapp.length > 10) {
-                $('.error-msg_whatsapp').text('WhatsApp number must be exactly 10 digits').css('color', 'red');
-            } else {
-                $('.error-msg_whatsapp').text('');
-            }
-        });
-
-        $('#profile-img').click(function () {
-            $('#profile-input').click(); // Trigger click on file input
-        });
-
-        $('#profile-input').change(function () {
-            var file = $(this).prop('files')[0];
-            if (file) {
-                // Display selected image in the profile picture
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#profile-img').attr('src', e.target.result);
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        });
-    </script>
+<script src="themes/main/nav-page/js/insertAndFetch_data.js"></script>

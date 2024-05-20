@@ -13,20 +13,22 @@ if ($user_id !== null) {
     // $address = isset($_POST['address']) ? $_POST['address'] : '';
     // $city = isset($_POST['city']) ? $_POST['city'] : '';
     // $state = isset($_POST['state']) ? $_POST['state'] : '';
-    // $zipcode = isset($_POST['zipcode']) ? $_POST['zipcode'] : '';
+    $zipcode = isset($_POST['zipcode']) ? $_POST['zipcode'] : '';
     // $linkdin = isset($_POST['linkdin']) ? $_POST['linkdin'] : '';
     // $facebook = isset($_POST['facebook']) ? $_POST['facebook'] : '';
     // $twitter = isset($_POST['twitter']) ? $_POST['twitter'] : '';
     // $tikkiality = isset($_POST['tikkiality']) ? $_POST['tikkiality'] : '';
     $gender = isset($_POST['gender']) ? $_POST['gender'] : null;
     $country = isset($_POST['country']) ? $_POST['country'] : null;
+    
     try {
         // Prepare and execute the update query
         $stmt = $pdo->prepare("UPDATE User SET 
             name = :name,
             W_NUM = :W_NUM,
             Gender = :gender,
-            Country = :country
+            Country = :country,
+            Zip=   :zipcode
             WHERE Id = :user_id");
         if ($phoneNumber === '') {
             $stmt->bindValue(':W_NUM', null, PDO::PARAM_NULL); // Set to NULL if empty
@@ -38,6 +40,7 @@ if ($user_id !== null) {
         $stmt->bindParam(':gender', $gender);
         $stmt->bindParam(':country', $country);
         $stmt->bindParam(':user_id', $user_id);
+        $stmt->bindParam(':zipcode', $zipcode);
 
         $stmt->execute();
         // Respond with success message
