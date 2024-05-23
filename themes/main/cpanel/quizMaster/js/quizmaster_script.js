@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(document).on('click', '.menu', function (e) {
         e.preventDefault(); 
@@ -18,4 +19,5 @@ $(document).ready(function () {
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
     });
+    
 });

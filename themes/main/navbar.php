@@ -164,12 +164,6 @@
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
-        <li class="nav-item ">
-            <a href="themes/main/nav-page/referral.php" class="nav-link">
-            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
-            <span class="icon-text">Referral Dashboard</span>
-            </a>
-        </li>
         <li class="nav-item logout">
                 <a href="logout.php" class="nav-link">
                 <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">

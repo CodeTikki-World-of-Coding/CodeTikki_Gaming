@@ -1,8 +1,10 @@
 .cpanel-container{
     background: #000 !important;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
+    background-color:#212529 ;
+    padding-bottom: 10%;
     .navbar-cpanel{
         border-bottom: 2px solid gray !important;
         color: #FFFFFF;

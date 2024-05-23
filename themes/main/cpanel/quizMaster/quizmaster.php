@@ -50,6 +50,13 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center">
+                                <a class="nav-link events-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/quizMaster/Events/Quiz_events.php">
+                                    Events
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="position-sticky pt-3 mt-4  rounded border-dark section">
@@ -91,7 +98,9 @@
                 </button>
             </div>
         </div>
-           
+        <div class="mainContent" id="mainContent">
+
+        </div>   
     </div>
 </div>
 
@@ -109,6 +118,12 @@
         $('.sidebar-toggle button').click(function() {
             $('#sidebarCollapse').toggleClass('show'); // Toggle the 'show' class on the sidebar collapse element
         });
+        $(document).on('click', '.events-link', function(e) {
+    e.preventDefault();
+    $('.quizMaster').hide();
+    $('#mainContent').load($(this).attr('href')); // Load the content into the main area
+});
+
     });
 
 </script>

@@ -158,7 +158,7 @@
                 <div class="col-md-4">
                     <label>Country</label>
                         <select class="form-control fetchCountry" name="Country">
-                            <option value="USA">Select Country</option>
+                            <option >Select Country</option>
                             <option value="USA">United States</option>
                             <option value="UK">United Kingdom</option>
                             <option value="Canada">Canada</option>
