@@ -1,28 +1,57 @@
-
 <div class="container-fluid quiz_events">
   <div class="row">
     <div class="col-md-3 col-12 sidebar">
-        <label >Choose your Events</label>
-        <!-- <select class="form-control" id="selectOption">
-          <option  >Select Events</option>
-          <option value="algorithm" >Algorithm Arena</option>
-          <option value="code_logic" >Code Logic ShowDown</option>
-          <option value="codeCraft_quiz" >CodeCraft Quiz Series</option>
-          <option value="byte_battle" >Byte Battle Royale</option>
-          <option value="brainy_legends">Brainy Legends League</option>
-        </select> -->
-        <select id="mySelect" onchange="myFunction()">
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  <option value="option3">Option 3</option>
-</select>
-<p id="demo"></p>
+      <nav class="  sidebar" >
 
+         <form action="">
+         <select id="eventSelector" class="form-select" onchange="$('#mainContentEvent').load($(this).val());">
+         <option  value="">Select</option>
+        <option  value="themes/main/cpanel/quizMaster/Events/algorithm_arena.php">Algorithm Arena</option>
+        <option  value="themes/main/cpanel/quizMaster/Events/code_logic.php">Code Logic ShowDown</option>
+        <option  value="themes/main/cpanel/quizMaster/Events/codeCraft_quiz.php">CodeCraft Quiz Series</option>
+        <option  value="themes/main/cpanel/quizMaster/Events/byte_battle-royale.php">Byte Battle Royale</option>
+        <option  value="themes/main/cpanel/quizMaster/Events/brainy_legends-league.php">Brainy Legends League</option>
+      </select>
 
+      </form>
+          
+      </nav>
+</div>
+    <div class="col-md-9 col-12 " id="mainContentEvent">
     </div>
-    <div class="col-md-9 col-12 main" id="mainContent">
-      <!-- Default content goes here -->
-      <div class="row">
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+// $(document).ready(function () {
+    // $(document).on('click', '.menu', function (e) {
+    //     e.preventDefault();
+    //     var url = $(this).attr('value');
+    //     $.ajax({
+    //         url: url,
+    //         type: 'GET',
+    //         dataType: 'html',
+    //         success: function (response) {
+    //             $('#mainContentEvent').html(response);
+    //         },
+    //         error: function (xhr, status, error) {
+    //             console.log(error);
+    //         }
+    //     });
+    // });
+
+    // $(document).on('click', '.nav-item', function () {
+    //     $('.nav-item').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+    
+// });
+</script>
+
+<!-- Default content goes here -->
+      <!-- <div class="row">
         <div class="col-lg-8 col-md-12 left">
           <div class="row">
             <div class="col-lg-11 col-12 first">
@@ -76,17 +105,4 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-9 col-12 main-content" id="main-Content" style="display: none;"></div>
-  </div>
-</div>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("mySelect");
-    var i = x.selectedIndex;
-    document.getElementById("demo").innerHTML = x.options[i].text;
-  }
-
-  </script>
+      </div> -->

@@ -1,10 +1,10 @@
-<div class="container myQuestion-container">
+<div class=" myQuestion-container">
     <div class="heading-row mt-3 mb-3 row">
         <div class="col-md-6 heading">
             <span><img src="themes/images/back.svg" alt=""></span>
         <h1>MY QUESTIONS</h1>
         </div>
-        <div class="col-md-4 input-group search-box">
+        <div class="col-md-4  input-group search-box">
              <input type="text" class="form-control " placeholder="Search for questions..." aria-label="Search for questions..." aria-describedby="searchButton">
              <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="searchButton"><img src="themes/images/search-icon.svg" alt=""></button>
@@ -20,7 +20,7 @@
                 <div class="col-md-8">
                     <div class="row total-question-count">7
                     </div>
-                    <div class="row">Total Questions</div>
+                    <div class="row totalquestion">Total Questions</div>
                 </div>
             </div>
         </div>

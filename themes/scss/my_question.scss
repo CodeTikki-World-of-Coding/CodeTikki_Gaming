@@ -5,9 +5,10 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1552px; 
 
 .myQuestion-container{
-    width: 100%;
+    max-width: 100% !important;
     background-color: #fff;
     min-height:100% ;
+    padding: 20px;
     .heading-row{
         .heading{
             display: flex;
@@ -132,13 +133,28 @@ $breakpoint-xxl: 1552px;
 }
 
 
-@media (max-width: $breakpoint-xxl) {
-    .criteria {
-        .col {
-            flex: 0 0 50%; 
-            max-width: 50%; 
-            margin-top: 10px;
+  @media (max-width: $breakpoint-lg) {
+    .heading-row {
+      flex: 0 0 33%;
+  
+      .heading {
+        h1 {
+          font-size: 14px;
         }
+        
+      } 
+      .search-box {
+        min-width: 70%;
+        margin-top: 10px;
+      }
     }
-}
-
+  
+    .criteria {
+      .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+  
