@@ -13968,130 +13968,47 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   flex-direction: column;
 }
 
-.quiz_events .sidebar {
-  width: 100%;
-  height: fit-content;
-}
-.quiz_events .sidebar nav ul {
+div.quiz_events .sidebar_event nav ul li {
   list-style-type: none;
 }
-.quiz_events .sidebar nav ul li a {
+div.quiz_events .sidebar_event nav ul li button {
+  background: none;
+  border: none;
+}
+div.quiz_events .sidebar_event nav .section {
+  margin-bottom: 20%;
+}
+div.quiz_events .sidebar_event nav .section ul li {
+  list-style-type: none;
+}
+div.quiz_events .sidebar_event nav .section ul li label {
+  color: #fff;
+  font-size: 28px;
+}
+div.quiz_events .sidebar_event nav .section ul li select option {
+  font-size: 22px;
+}
+div.quiz_events .sidebar_event nav .section ul li a {
   color: #fff;
   font-size: 22px;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 2s all;
 }
-.quiz_events .main .Brainy {
-  background-image: url("../images/2.svg");
-  background-repeat: none;
-  height: 90vh;
-  overflow: hidden;
+div.quiz_events .mainContentEvent {
+  text-align: center;
 }
-.quiz_events .main .Brainy .content {
-  margin-left: 60%;
-}
-.quiz_events .main .Brainy .content h1, .quiz_events .main .Brainy .content .h1 {
-  font-weight: 400;
-  box-shadow: 0px 4px 8.4px 0px #000000;
-  box-shadow: 0px 4px 8.4px 0px rgba(0, 0, 0, 0.2509803922);
-  font-size: 88px;
+div.quiz_events .mainContentEvent .Brainy {
   color: #fff;
 }
-.quiz_events .main .Brainy .content p {
-  font-size: 22px;
-  font-weight: 400;
+div.quiz_events .mainContentEvent .Algo {
   color: #fff;
 }
-.quiz_events .main .Brainy .content button.read-more {
-  font-size: 28px;
-  color: #fff;
-  background: linear-gradient(90deg, #00C4F4 0%, #267DFA 98.6%);
-  border-radius: 20px;
-  margin: 20;
-  padding: 10px;
-}
-.quiz_events .main .Brainy .content .date-time {
-  width: 200px;
-  padding: 10px;
-  display: flex;
-  background-color: #122745;
-  color: #fff;
-  margin: 20px;
-}
-.quiz_events .main .Brainy .content .date-time span.date {
-  border-right: 2px solid #fff;
-  padding-right: 25%;
-}
-.quiz_events .main .Brainy .content .date-time span.time {
-  padding-left: 5%;
-}
-.quiz_events .main .Brainy .content button.register {
-  background: linear-gradient(95.56deg, #8930F0 6.95%, #9418C1 93.56%);
-  width: 200px;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  color: #fff;
-  padding: 10px;
-  margin: 20px;
-  font-size: 28px;
-  font-weight: 400;
-}
-.quiz_events .main .Algo {
-  background-image: url("../images/3.svg");
-  background-repeat: none;
-  height: 90vh;
-  overflow: hidden;
-}
-.quiz_events .main .Algo .content {
-  margin-left: 60%;
-}
-.quiz_events .main .Algo .content h1, .quiz_events .main .Algo .content .h1 {
-  font-weight: 400;
-  box-shadow: 0px 4px 8.4px 0px #000000;
-  box-shadow: 0px 4px 8.4px 0px rgba(0, 0, 0, 0.2509803922);
-  font-size: 88px;
+div.quiz_events .mainContentEvent .Byte {
   color: #fff;
 }
-.quiz_events .main .Algo .content p {
-  font-size: 22px;
-  font-weight: 400;
+div.quiz_events .mainContentEvent .Code {
   color: #fff;
 }
-.quiz_events .main .Algo .content button.read-more {
-  font-size: 28px;
+div.quiz_events .mainContentEvent .CodeCraft {
   color: #fff;
-  background: linear-gradient(90deg, #00C4F4 0%, #267DFA 98.6%);
-  border-radius: 20px;
-  margin: 20;
-  padding: 10px;
-}
-.quiz_events .main .Algo .content .date-time {
-  width: 200px;
-  padding: 10px;
-  display: flex;
-  background-color: #122745;
-  color: #fff;
-  margin: 20px;
-}
-.quiz_events .main .Algo .content .date-time span.date {
-  border-right: 2px solid #fff;
-  padding-right: 25%;
-}
-.quiz_events .main .Algo .content .date-time span.time {
-  padding-left: 5%;
-}
-.quiz_events .main .Algo .content button.register {
-  background: linear-gradient(95.56deg, #8930F0 6.95%, #9418C1 93.56%);
-  width: 200px;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  color: #fff;
-  padding: 10px;
-  margin: 20px;
-  font-size: 28px;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
