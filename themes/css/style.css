@@ -12739,6 +12739,9 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .s
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li {
+  padding-bottom: 10px;
+}
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
@@ -12785,6 +12788,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .s
   margin: 0 auto;
   border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main {
   max-width: 100%;
@@ -13307,6 +13311,9 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 .cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
+.cpanel-container div.quizMaster .sidebar ul li {
+  padding-bottom: 10px;
+}
 .cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
@@ -13353,6 +13360,7 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin: 0 auto;
   border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 .cpanel-container div.quizMaster .main {
   max-width: 100%;
@@ -13981,6 +13989,9 @@ div.quiz_events .sidebar_event nav .section {
 div.quiz_events .sidebar_event nav .section ul li {
   list-style-type: none;
 }
+div.quiz_events .sidebar_event nav .section ul li select {
+  width: 80% !important;
+}
 div.quiz_events .sidebar_event nav .section ul li label {
   color: #fff;
   font-size: 28px;
@@ -13991,6 +14002,9 @@ div.quiz_events .sidebar_event nav .section ul li select option {
 div.quiz_events .sidebar_event nav .section ul li a {
   color: #fff;
   font-size: 22px;
+}
+div.quiz_events .sidebar_event nav .section ul li .creat-quiz {
+  font-size: 28px;
 }
 div.quiz_events .mainContentEvent {
   text-align: center;
