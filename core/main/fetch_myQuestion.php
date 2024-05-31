@@ -19,7 +19,7 @@ $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if ($questions) {
     echo "<table border='1'>";
-    echo "<tr><th>Question ID</th><th>Question Title</th><th>Level</th><th>Status</th><th>Payment</th><th>Date</th><th></th></tr>";
+    echo "<tr><th width='8%' >Question ID</th><th width='48%'>Question Title</th><th>Level</th><th>Status</th><th>Payment</th><th>Date</th><th></th></tr>";
     foreach ($questions as $question) {
         echo "<tr>";
         echo "<td>".$question['QuestionId']."</td>";

@@ -28,7 +28,7 @@
                         </li>
                         <li class="nav-item">
                             <div class="d-flex align-items-center">
-                            <img src="" alt="logo" class="me-1 ms-1">
+                            <img src="themes/images/building-columns-solid.svg" alt="logo" class="me-1 ms-1" style="width: 20px;">
                                 <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/questionBank.php">
                                     Question Bank
                                 </a>
@@ -58,7 +58,7 @@
                     <li class="nav-item">
                             <div class="d-flex align-items-center">
                             <img src="themes/images/quizzz 2.svg" alt="logo" class="me-1 ms-1" style="width:30px">
-                                <a class="nav-link events-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/quizMaster/Events/Quiz_events.phtml">
+                                <a class="nav-link events-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/quizMaster/Events/Quiz_events.php">
                                     Events
                                 </a>
                             </div>
@@ -72,19 +72,25 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/create_quiz/create-quiz.php" id="navbarDropdown" aria-expanded="false">
-                                Create quiz 
-                            </a>                
+                            <div class="d-flex align-items-center">
+                                <img src="themes/images/plus-solid.svg" alt="logo" class="me-1 ms-1" style="width:20px">
+                                <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/create_quiz/create-quiz.php" id="navbarDropdown" aria-expanded="false">
+                                    Create quiz 
+                                </a>  
+                            </div>              
                         </li>
                         
                     </ul>
                 </div>
                 <div class="position-sticky pt-3 mt-4 rounded border-dark section">
                     <ul class="nav flex-column"> 
-                    <li class="nav-item dropdown">
-                            <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
-                                My Question 
-                            </a>                
+                        <li class="nav-item dropdown">
+                            <div class="d-flex align-items-center">
+                                <img src="themes/images/database-solid.svg" alt="logo" class="me-1 ms-1" style="width:20px">
+                                <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
+                                    My Question 
+                                </a>
+                            </div>                
                         </li>        
                     </ul>
                 </div>

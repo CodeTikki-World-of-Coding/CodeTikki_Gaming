@@ -16,7 +16,7 @@
     <div class="row criteria">
         <div class="col total-question">
             <div class="row">
-                <div class="col-md-4"></div>
+                <div class="col-md-4"><img src="themes/images/paper.svg" alt=""></div>
                 <div class="col-md-8">
                     <div class="row total-question-count">7
                     </div>
@@ -108,5 +108,7 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script src="themes/main/cpanel/quizMaster/my_question/js/my_question-script.js"></script>

@@ -26,8 +26,8 @@
           <div class="position-sticky pt-5 mt-5 rounded border-dark section">
             <ul>
               <li class="nav-item mt-5">
-                  <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="">
-                    Creat Quiz
+                  <a class="nav-link creat-quiz menu active d-flex justify-content-between align-items-center" aria-current="page" href="">
+                    Create Quiz
                   </a>
               </li>
             </ul>

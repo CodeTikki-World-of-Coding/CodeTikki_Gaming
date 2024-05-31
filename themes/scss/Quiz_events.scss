@@ -15,7 +15,9 @@ div.quiz_events{
             ul{
                 li{
                     list-style-type: none;
-
+                    select{
+                        width: 80% !important;
+                    }
                     label{
                         color: #fff;
                         font-size: 28px;
@@ -29,6 +31,9 @@ div.quiz_events{
                     a{
                         color: #fff;
                         font-size: 22px;
+                    }
+                    .creat-quiz{
+                        font-size: 28px;
                     }
                 }
             }
