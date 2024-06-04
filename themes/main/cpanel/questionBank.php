@@ -5,8 +5,8 @@ $currentDate = date('Y-m-d');
     <button type="button" class="btn  btn-add mt-4" id="add">Add New Question</button>
 </div>
 <div class="form-container" style="display:none"  id="Form">
-    <form method="post" action="core/main/question_bank.php"  id="questionForm" class="row g-3 border rounded question-form" >
-        <div class="row g-3">
+    <form method="post" action="core/main/question_bank.php"  id="questionForm" class="row  border rounded pb-3 question-form" >
+        <div class="row ">
             <div class="col-md-6"><label >Level</label><input type="number" id="level" name="level" class="form-control" placeholder="Enter Level" required>
             </div>
             <div class="col-md-6"><input type="hidden" name="currentDate" value="<?php echo $currentDate; ?>">
@@ -14,7 +14,7 @@ $currentDate = date('Y-m-d');
 
             </div>
             <div class="col-md-12">
-                <label for="text" class="form-label "><span class="question-number ">1</span>Question:</label>
+                <label for="text" class="form-label mt-3 "><span class="question-number ">1</span>Question:</label>
                     <textarea id="question-1" name="question" class="form-control" rows="2" required></textarea>
             </div>
             <div class="col-md-12 mb-4">
@@ -59,7 +59,7 @@ $currentDate = date('Y-m-d');
     <div class="col-12" id="clone-container">
     </div>
     <div class="col-12">
-        <button type="button" class="btn add-question-btn btn-add mt-4">Add New Question</button>
+        <button type="button" class="btn add-question-btn  btn-add mt-4">Add New Question</button>
         <button type="submit" id="submit" class="btn submit-btn btn-submit mt-4">Submit</button>
         <button type="button" class="btn view-preview-btn btn-view mt-4" style="display: none;">View Preview</button>
     </div>

@@ -5,7 +5,7 @@
         <div class="position-sticky pt-5 rounded border-dark ">
             <ul>
               <li class="nav-item ">
-                  <button id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button>
+                  <button class="bg-transparent" id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button>
                </li> <!--onchange="window.location.href=""  -->
             </ul>
 </div>

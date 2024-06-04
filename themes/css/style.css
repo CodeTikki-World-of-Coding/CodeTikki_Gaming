@@ -13005,8 +13005,6 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-view {
   width: 200px !important;
   height: 50px !important;
-  background-color: #FFFFFF !important;
-  color: #000 !important;
   margin-left: 30%;
   font-size: 22px;
   font-weight: 700;
@@ -13014,8 +13012,6 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-view {
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-submit {
   width: 200px !important;
   height: 50px !important;
-  background-color: #FFFFFF !important;
-  color: #000 !important;
   font-size: 22px;
   font-weight: 700;
 }
@@ -13023,10 +13019,16 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container {
   margin-bottom: 10%;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .question-form {
+  width: 100%;
   background-color: #646464;
   color: #000;
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 2%;
+}
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .add-question-btn, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .submit-btn, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .view-preview-btn {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container span.question-number {
   border: 1px solid;
@@ -13577,8 +13579,6 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 .cpanel-container button.btn-view {
   width: 200px !important;
   height: 50px !important;
-  background-color: #FFFFFF !important;
-  color: #000 !important;
   margin-left: 30%;
   font-size: 22px;
   font-weight: 700;
@@ -13586,8 +13586,6 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 .cpanel-container button.btn-submit {
   width: 200px !important;
   height: 50px !important;
-  background-color: #FFFFFF !important;
-  color: #000 !important;
   font-size: 22px;
   font-weight: 700;
 }
@@ -13595,10 +13593,16 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   margin-bottom: 10%;
 }
 .cpanel-container .form-container .question-form {
+  width: 100%;
   background-color: #646464;
   color: #000;
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 2%;
+}
+.cpanel-container .form-container .add-question-btn, .cpanel-container .form-container .submit-btn, .cpanel-container .form-container .view-preview-btn {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 .cpanel-container span.question-number {
   border: 1px solid;
