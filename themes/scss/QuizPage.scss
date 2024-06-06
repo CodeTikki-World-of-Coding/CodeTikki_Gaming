@@ -1,0 +1,36 @@
+.quizPage{
+     padding: 3% !important;
+    .OngoingQuiz{
+        font-family: 'syne';
+        // padding-left: 3%;
+        // padding-right: 3%;
+        h2{
+           font-family: 'syne';
+           margin-left: 1%;
+           border-bottom: 2px solid ;
+           width: fit-content;
+        }
+    }
+    .UpcomingQuiz{
+        font-family: 'syne';
+        // padding-left: 3%;
+        // padding-right: 3%;
+        h2{
+           font-family: 'syne';
+           margin-left: 1%;
+           border-bottom: 2px solid ;
+           width: fit-content;
+        }
+    }
+    .PastQuiz{
+        font-family: 'syne';
+        // padding-left: 3%;
+        // padding-right: 3%;
+        h2{
+           font-family: 'syne';
+           margin-left: 1%;
+           border-bottom: 2px solid ;
+           width: fit-content;
+        }
+    }
+}

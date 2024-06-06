@@ -12799,6 +12799,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   max-width: 100%;
   margin: 0;
 }
+nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div#main-content #backButton {
+  border: none;
+  background: none;
+}
 nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer {
   margin-top: 10px;
   display: flex;
@@ -13372,6 +13376,10 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 .cpanel-container div.quizMaster .main div#main-content {
   max-width: 100%;
   margin: 0;
+}
+.cpanel-container div.quizMaster .main div#main-content #backButton {
+  border: none;
+  background: none;
 }
 .cpanel-container div.quizMaster .main div.showEventContainer {
   margin-top: 10px;
@@ -14027,6 +14035,37 @@ div.quiz_events .mainContentEvent .Code {
 }
 div.quiz_events .mainContentEvent .CodeCraft {
   color: #fff;
+}
+
+.quizPage {
+  padding: 3% !important;
+}
+.quizPage .OngoingQuiz {
+  font-family: "syne";
+}
+.quizPage .OngoingQuiz h2, .quizPage .OngoingQuiz .h2 {
+  font-family: "syne";
+  margin-left: 1%;
+  border-bottom: 2px solid;
+  width: fit-content;
+}
+.quizPage .UpcomingQuiz {
+  font-family: "syne";
+}
+.quizPage .UpcomingQuiz h2, .quizPage .UpcomingQuiz .h2 {
+  font-family: "syne";
+  margin-left: 1%;
+  border-bottom: 2px solid;
+  width: fit-content;
+}
+.quizPage .PastQuiz {
+  font-family: "syne";
+}
+.quizPage .PastQuiz h2, .quizPage .PastQuiz .h2 {
+  font-family: "syne";
+  margin-left: 1%;
+  border-bottom: 2px solid;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=style.css.map */

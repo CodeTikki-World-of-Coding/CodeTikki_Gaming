@@ -18,7 +18,7 @@
 </head>
 <body>  
 
-<div class="container-fluid main">
+<div class="container-fluid main" id="mainPageContainer">
 <?php include './themes/main/navbar.php'; ?> 
 
 <div class="row " >

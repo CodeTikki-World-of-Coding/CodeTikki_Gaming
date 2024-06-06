@@ -4,9 +4,11 @@
 <div class="cpanel-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-cpanel">
         <div class="container">
+
             <a class="navbar-brand" href="#">            
                 <img src="themes/images/image-removebg-preview (50) 2.png" alt="Logo" height="30">
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,6 +100,8 @@
             <!-- Main Content -->
             <main class="col-md-9 col-lg-10 main">
                 <div class="col-md-9 col-lg-10 mt-4" id="main-content">
+                <button class="bg-transparent" id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button>
+
                 </div>
             </main>
             <div class="sidebar-toggle d-md-none">
@@ -133,4 +137,11 @@
             $('#mainContent').load($(this).attr('href')); // Load the content into the main area
         });
     });
+    function SameTab() {
+    setTimeout(function() {
+        location.reload();
+    }, 1000); 
+
+        }
+        
 </script>
