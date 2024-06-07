@@ -1,0 +1,703 @@
+div#mainHomePage{
+    margin: 0;
+    padding: 0;
+    background: #150917;
+    overflow: hidden;
+
+    nav.navHomePage{
+        background: #321634 !important;
+        padding: 10px;
+        a{
+            color: #ED8530;
+            font-size: 32px;
+            font-family: 'Ramaraja';
+        }
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    font-size: 20px;
+
+                }
+            }
+        }
+
+    }
+    .main_page{
+        margin: 0;
+        padding: 0;
+
+        .firstCol{
+            background: url(../images/12\ 6.png);
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            opacity: .9;
+            .content{
+                padding-top: 14%;
+                padding-left: 5%;
+                h3{
+                    color: #fff;
+                    font-family: 'Rommetto One';
+                    font-size: 45px;
+                    font-weight: bolder;
+                    opacity: .8;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+                }
+                p{
+                    color: #fff;
+                    font-family: 'Krona One';
+                    font-size: 20px;
+    
+                }
+                button{
+                    background-color: #0A0081;
+                    color: #ED8530;
+                    font-size: 22px;
+                    border-radius: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+                }
+            }
+        }
+        .secondCol{
+            text-align: center;
+            padding-bottom: 2%;
+            h3{
+               color: #ED8530;
+               font-family: 'Goldman'; 
+               font-size: 45px;
+               margin-top: 4%;
+            }
+            .subColCodeLogic{
+                background: url(../images/Algorithm\ arena\ \(2\)\ 4.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+                border: 4px solid #fff;
+                box-shadow: 2px 2px 4px #46FFFF, -2px 2px 4px #46FFFF, 2px -2px 4px #46FFFF, -2px -2px 4px #46FFFF;
+                margin-left: 10%;
+                margin-top: 5%;
+
+
+            }
+            .subColCodeLogicShowdown{
+
+                margin-left: 6%;
+                margin-top: 5%;
+                color: #fff;
+                h3{
+                    color: #46FFFF;
+                    font-family: 'Limelight';
+                    font-weight: bolder;
+                    font-size: 45px;
+                    text-shadow: 2px 2px 4px #46FFFF; 
+
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 2%;
+                        img{
+                            margin-right: 3%;
+                        }
+                        .beginnerText{
+                            padding-top: 4%;
+                            margin-left: 0;
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .intermediateQuizes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .expertQuizzes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+                            }
+                        }
+                    }
+                }
+
+            }
+            .subColByteBattleRoyale{
+                background: url(../images/bytee\ 1.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+                border: 4px solid #fff;
+                box-shadow: 2px 2px 4px #A93FFF, -2px 2px 4px #A93FFF, 2px -2px 4px #A93FFF, -2px -2px 4px #A93FFF;
+                margin-left: 10%;
+                margin-top: 5%;
+
+
+            }
+            .subColByteBattleRoyalePic{
+
+                margin-left: 6%;
+                margin-top: 5%;
+                color: #fff;
+                h3{
+                    color: #A93FFF;
+                    font-family: 'Limelight';
+                    font-weight: bolder;
+                    font-size: 45px;
+                    text-shadow: 2px 2px 4px #A93FFF; 
+
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 2%;
+                        img{
+                            margin-right: 3%;
+                        }
+                        .beginnerText{
+                            padding-top: 4%;
+                            margin-left: 0;
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .intermediateQuizes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .expertQuizzes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+                            }
+                        }
+                    }
+                }
+
+            }
+            .subColBrainyLegend{
+                background: url(../images/Mask\ group.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+                border: 4px solid #fff;
+                box-shadow: 2px 2px 4px #FF2FFD, -2px 2px 4px #FF2FFD, 2px -2px 4px #FF2FFD, -2px -2px 4px #FF2FFD;
+                margin-left: 10%;
+                margin-top: 5%;
+
+
+            }
+            .subColBrainyLegendleague{
+
+                margin-left: 6%;
+                margin-top: 5%;
+                color: #fff;
+                h3{
+                    color: #FF2FFD;
+                    font-family: 'Limelight';
+                    font-weight: bolder;
+                    font-size: 45px;
+                    text-shadow: 2px 2px 4px #FF2FFD; 
+
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 2%;
+                        img{
+                            margin-right: 3%;
+                        }
+                        .beginnerText{
+                            padding-top: 4%;
+                            margin-left: 0;
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .intermediateQuizes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .expertQuizzes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+                            }
+                        }
+                    }
+                }
+
+            }
+            .subColCodeCraftQuiz{
+                background: url(../images/code\ craft\ \(1\)\ 1.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+                border: 4px solid #fff;
+                box-shadow: 2px 2px 4px #3751FF, -2px 2px 4px #3751FF, 2px -2px 4px #3751FF, -2px -2px 4px #3751FF;
+                margin-left: 10%;
+                margin-top: 5%;
+
+
+            }
+            .subColCodeCraftQuizSeries{
+
+                margin-left: 6%;
+                margin-top: 5%;
+                color: #fff;
+                h3{
+                    color: #3751FF;
+                    font-family: 'Limelight';
+                    font-weight: bolder;
+                    font-size: 45px;
+                    text-shadow: 2px 2px 4px #3751FF; 
+
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 2%;
+                        img{
+                            margin-right: 3%;
+                        }
+                        .beginnerText{
+                            padding-top: 4%;
+                            margin-left: 0;
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .intermediateQuizes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .expertQuizzes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+                            }
+                        }
+                    }
+                }
+
+            }
+            .subAlgorithemArena{
+                background: url(../images/code\ craft\ \(1\)\ 1.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+                border: 4px solid #fff;
+                box-shadow: 2px 2px 4px #46FFFF, -2px 2px 4px #46FFFF, 2px -2px 4px #46FFFF, -2px -2px 4px #46FFFF;
+                margin-left: 10%;
+                margin-top: 5%;
+
+
+            }
+            .subAlgorithemArenaQuiz{
+
+                margin-left: 6%;
+                margin-top: 5%;
+                color: #fff;
+                h3{
+                    color: #46FFFF;
+                    font-family: 'Limelight';
+                    font-weight: bolder;
+                    font-size: 45px;
+                    text-shadow: 2px 2px 4px #46FFFF; 
+
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 2%;
+                        img{
+                            margin-right: 3%;
+                        }
+                        .beginnerText{
+                            padding-top: 4%;
+                            margin-left: 0;
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .intermediateQuizes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+
+                            }
+                        }
+                        .expertQuizzes{
+                            padding-top: 4%;
+                            margin-left: 2%;
+
+
+                            h4{
+                                font-family: 'AbeeZee';
+                                text-align: start;
+
+                            }
+                            p{
+                                color: #B272C9;
+                                font-size: 15px;
+                                font-family: 'AbeeZee';
+                            }
+                        }
+                    }
+                }
+
+            }
+            .subjects{
+                padding-left: 15%;
+                margin-top: 3%;
+                .python{
+                   img{
+                    width: 600px;
+                   }    
+                }
+                .javascriptFoundation{
+                    img{
+                        width: 600px;
+                        padding-top:25% ;
+                       }    
+                                }
+                .algorithem{
+                    img{
+                        width: 600px;
+                       }       
+                    
+                    }
+                .dataStructure{
+                    img{
+                        width: 600px;
+                        padding-top:25% ;
+
+                       }    
+                                }
+            }
+            .QuestionSection{
+                h3{
+                    margin: 0 auto;
+                    font-family: 'Goldman';
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+                hr{
+                    width: 600px;
+                    height: 4px;
+                    margin: 0 auto;
+                    color: #ED8530;
+                    opacity: .9;
+                }
+                .questionAnswereSection{
+                    margin-left: 5%;
+                    margin-top: 5%;
+                    .firstQuestion{
+                        background: url(../images/1\ \(1\).png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+                    }
+                    .secondQuestion{
+                        background: url(../images/11.png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+
+                    }
+                    .thirdQuestion{
+                        background: url(../images/2.png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+
+                    }
+                    .fourthQuestion{
+                        background: url(../images/22.png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+
+                    }
+                    .fifthQuestion{
+                        background: url(../images/3.png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+
+                    }
+                    .sixthQuestion{
+                        background: url(../images/33.png);
+                        background-repeat: no-repeat;
+                        height:100px;
+                        margin: 20px;
+
+                    }
+     
+                }
+                
+            }
+            .ContactArea{
+                display: flex;
+                flex-direction: row;
+                .Contact{
+                    margin-left: 10%;
+                    margin-top: 5%;
+                    img{
+                        width: 550px;
+                        height: 500px;
+                    }
+    
+    
+                }
+                .ContactGroup{
+    
+                    margin-left: 6%;
+                    margin-top: 6%;
+                    color: #fff;
+                    h3{
+                        margin: 0 auto;
+                        color: #F8D959;
+                        font-family: 'Goldman';
+                        border-bottom: 1px solid #F8D959;
+                        width: fit-content;
+                        font-weight: bolder;
+                        font-size: 45px;
+                        text-shadow: 2px 2px 4px #46FFFF; 
+    
+                    }
+                    ul{
+                        li{
+                            margin-top: 5%;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: row;
+                            margin-left: 2%;
+                            img{
+                                margin-right: 3%;
+                                height: 75px;
+                            }
+                            .email{
+                                h4{
+                                    color: #ED8530;
+                                    text-align: start;
+                                }
+                                p{
+                                    font-size: 30px;
+                                }
+                            }
+                            .name{
+                                h4{
+                                    color: #ED8530;
+                                    text-align: start;
+
+
+                                }
+                                p{
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+    }
+    footer{
+        background: #321634;
+        border-top: 2px solid;
+        height: 250px;
+        color: #fff;
+        a{
+            text-decoration: none;
+            color: #ED8530;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Abel';
+        }
+        h4{
+            color: #ED8530;
+        }
+        .codetikki{
+            color: #fff;
+            text-align: center;  
+        }
+    }
+}

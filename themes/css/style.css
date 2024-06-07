@@ -14068,4 +14068,569 @@ div.quiz_events .mainContentEvent .CodeCraft {
   width: fit-content;
 }
 
+div#mainHomePage {
+  margin: 0;
+  padding: 0;
+  background: #150917;
+  overflow: hidden;
+}
+div#mainHomePage nav.navHomePage {
+  background: #321634 !important;
+  padding: 10px;
+}
+div#mainHomePage nav.navHomePage a {
+  color: #ED8530;
+  font-size: 32px;
+  font-family: "Ramaraja";
+}
+div#mainHomePage nav.navHomePage ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+div#mainHomePage .main_page {
+  margin: 0;
+  padding: 0;
+}
+div#mainHomePage .main_page .firstCol {
+  background: url(../images/12\ 6.png);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+div#mainHomePage .main_page .firstCol .content {
+  padding-top: 14%;
+  padding-left: 5%;
+}
+div#mainHomePage .main_page .firstCol .content h3, div#mainHomePage .main_page .firstCol .content .h3 {
+  color: #fff;
+  font-family: "Rommetto One";
+  font-size: 45px;
+  font-weight: bolder;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+div#mainHomePage .main_page .firstCol .content p {
+  color: #fff;
+  font-family: "Krona One";
+  font-size: 20px;
+}
+div#mainHomePage .main_page .firstCol .content button {
+  background-color: #0A0081;
+  color: #ED8530;
+  font-size: 22px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+div#mainHomePage .main_page .secondCol {
+  text-align: center;
+  padding-bottom: 2%;
+}
+div#mainHomePage .main_page .secondCol h3, div#mainHomePage .main_page .secondCol .h3 {
+  color: #ED8530;
+  font-family: "Goldman";
+  font-size: 45px;
+  margin-top: 4%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogic {
+  background: url(../images/Algorithm\ arena\ \(2\)\ 4.png);
+  background-repeat: no-repeat;
+  height: 441px;
+  width: 507px;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 4px #46FFFF, -2px 2px 4px #46FFFF, 2px -2px 4px #46FFFF, -2px -2px 4px #46FFFF;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown {
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown h3, div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown .h3 {
+  color: #46FFFF;
+  font-family: "Limelight";
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #46FFFF;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li img {
+  margin-right: 3%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .beginnerText {
+  padding-top: 4%;
+  margin-left: 0;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .beginnerText h4, div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .beginnerText .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .beginnerText p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .intermediateQuizes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .intermediateQuizes h4, div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .intermediateQuizes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .intermediateQuizes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .expertQuizzes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .expertQuizzes h4, div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .expertQuizzes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeLogicShowdown ul li .expertQuizzes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyale {
+  background: url(../images/bytee\ 1.png);
+  background-repeat: no-repeat;
+  height: 441px;
+  width: 507px;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 4px #A93FFF, -2px 2px 4px #A93FFF, 2px -2px 4px #A93FFF, -2px -2px 4px #A93FFF;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic {
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic h3, div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic .h3 {
+  color: #A93FFF;
+  font-family: "Limelight";
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #A93FFF;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li img {
+  margin-right: 3%;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .beginnerText {
+  padding-top: 4%;
+  margin-left: 0;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .beginnerText h4, div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .beginnerText .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .beginnerText p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .intermediateQuizes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .intermediateQuizes h4, div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .intermediateQuizes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .intermediateQuizes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .expertQuizzes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .expertQuizzes h4, div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .expertQuizzes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColByteBattleRoyalePic ul li .expertQuizzes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegend {
+  background: url(../images/Mask\ group.png);
+  background-repeat: no-repeat;
+  height: 441px;
+  width: 507px;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 4px #FF2FFD, -2px 2px 4px #FF2FFD, 2px -2px 4px #FF2FFD, -2px -2px 4px #FF2FFD;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague {
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague h3, div#mainHomePage .main_page .secondCol .subColBrainyLegendleague .h3 {
+  color: #FF2FFD;
+  font-family: "Limelight";
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #FF2FFD;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li img {
+  margin-right: 3%;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .beginnerText {
+  padding-top: 4%;
+  margin-left: 0;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .beginnerText h4, div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .beginnerText .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .beginnerText p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .intermediateQuizes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .intermediateQuizes h4, div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .intermediateQuizes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .intermediateQuizes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .expertQuizzes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .expertQuizzes h4, div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .expertQuizzes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColBrainyLegendleague ul li .expertQuizzes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuiz {
+  background: url(../images/code\ craft\ \(1\)\ 1.png);
+  background-repeat: no-repeat;
+  height: 441px;
+  width: 507px;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 4px #3751FF, -2px 2px 4px #3751FF, 2px -2px 4px #3751FF, -2px -2px 4px #3751FF;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries {
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries h3, div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries .h3 {
+  color: #3751FF;
+  font-family: "Limelight";
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #3751FF;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li img {
+  margin-right: 3%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .beginnerText {
+  padding-top: 4%;
+  margin-left: 0;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .beginnerText h4, div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .beginnerText .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .beginnerText p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .intermediateQuizes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .intermediateQuizes h4, div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .intermediateQuizes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .intermediateQuizes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .expertQuizzes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .expertQuizzes h4, div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .expertQuizzes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subColCodeCraftQuizSeries ul li .expertQuizzes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArena {
+  background: url(../images/code\ craft\ \(1\)\ 1.png);
+  background-repeat: no-repeat;
+  height: 441px;
+  width: 507px;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 4px #46FFFF, -2px 2px 4px #46FFFF, 2px -2px 4px #46FFFF, -2px -2px 4px #46FFFF;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz {
+  margin-left: 6%;
+  margin-top: 5%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz h3, div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz .h3 {
+  color: #46FFFF;
+  font-family: "Limelight";
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #46FFFF;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li img {
+  margin-right: 3%;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .beginnerText {
+  padding-top: 4%;
+  margin-left: 0;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .beginnerText h4, div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .beginnerText .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .beginnerText p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .intermediateQuizes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .intermediateQuizes h4, div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .intermediateQuizes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .intermediateQuizes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .expertQuizzes {
+  padding-top: 4%;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .expertQuizzes h4, div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .expertQuizzes .h4 {
+  font-family: "AbeeZee";
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .subAlgorithemArenaQuiz ul li .expertQuizzes p {
+  color: #B272C9;
+  font-size: 15px;
+  font-family: "AbeeZee";
+}
+div#mainHomePage .main_page .secondCol .subjects {
+  padding-left: 15%;
+  margin-top: 3%;
+}
+div#mainHomePage .main_page .secondCol .subjects .python img {
+  width: 600px;
+}
+div#mainHomePage .main_page .secondCol .subjects .javascriptFoundation img {
+  width: 600px;
+  padding-top: 25%;
+}
+div#mainHomePage .main_page .secondCol .subjects .algorithem img {
+  width: 600px;
+}
+div#mainHomePage .main_page .secondCol .subjects .dataStructure img {
+  width: 600px;
+  padding-top: 25%;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection h3, div#mainHomePage .main_page .secondCol .QuestionSection .h3 {
+  margin: 0 auto;
+  font-family: "Goldman";
+  font-size: 40px;
+  font-weight: bold;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection hr {
+  width: 600px;
+  height: 4px;
+  margin: 0 auto;
+  color: #ED8530;
+  opacity: 0.9;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .firstQuestion {
+  background: url(../images/1\ \(1\).png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .secondQuestion {
+  background: url(../images/11.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .thirdQuestion {
+  background: url(../images/2.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .fourthQuestion {
+  background: url(../images/22.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .fifthQuestion {
+  background: url(../images/3.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .QuestionSection .questionAnswereSection .sixthQuestion {
+  background: url(../images/33.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: 20px;
+}
+div#mainHomePage .main_page .secondCol .ContactArea {
+  display: flex;
+  flex-direction: row;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .Contact {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .Contact img {
+  width: 550px;
+  height: 500px;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup {
+  margin-left: 6%;
+  margin-top: 6%;
+  color: #fff;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup h3, div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup .h3 {
+  margin: 0 auto;
+  color: #F8D959;
+  font-family: "Goldman";
+  border-bottom: 1px solid #F8D959;
+  width: fit-content;
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #46FFFF;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li {
+  margin-top: 5%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li img {
+  margin-right: 3%;
+  height: 75px;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .email h4, div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .email .h4 {
+  color: #ED8530;
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .email p {
+  font-size: 30px;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .name h4, div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .name .h4 {
+  color: #ED8530;
+  text-align: start;
+}
+div#mainHomePage .main_page .secondCol .ContactArea .ContactGroup ul li .name p {
+  font-size: 30px;
+}
+div#mainHomePage footer {
+  background: #321634;
+  border-top: 2px solid;
+  height: 250px;
+  color: #fff;
+}
+div#mainHomePage footer a {
+  text-decoration: none;
+  color: #ED8530;
+  font-size: 40px;
+  font-weight: 700;
+}
+div#mainHomePage footer p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Abel";
+}
+div#mainHomePage footer h4, div#mainHomePage footer .h4 {
+  color: #ED8530;
+}
+div#mainHomePage footer .codetikki {
+  color: #fff;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
