@@ -1,10 +1,10 @@
 .cpanel-container{
-    background: #000 !important;
-    height: 100vh;
     width: 100%;
     object-fit: cover;
     background-color:#212529 ;
-    padding-bottom: 10%;
+    // margin-bottom: 0;
+    // padding-bottom: 10%;
+    overflow: hidden;
     .navbar-cpanel{
         border-bottom: 2px solid gray !important;
         color: #FFFFFF;
@@ -16,16 +16,18 @@
             .sidebar{
                 width:30%;           
                 ul{ 
+                    
                     .nav-item.active a.nav-link {
                         color: #FFFFFF !important;
                         font-size: 20px;
                         font-weight: 600;
     
                     }
+
                     .nav-item a.nav-link:hover {
                         cursor: pointer;
                     }
-            
+                    
                     li {
                         .dropdown-toggle::after {
                             display: none !important;
@@ -87,10 +89,10 @@
         }
     div.quizMaster{
         background: #000 !important;
-        height: 100vh;
+        height: 90vh;
         object-fit: cover;
         .sidebar{
-            width:25%;           
+            width:30%;
             ul{ 
                 .nav-item.active a.nav-link {
                     color: #FFFFFF !important;
@@ -151,24 +153,27 @@
             }
             .section{
                 background-color: #646464 ;
-                opacity: .9;
-                width:278px;
-                height:215px;
+                // opacity: .9;
+                width:247px;
+                height:auto;
                 margin:0 auto;
-                border:.5px ;
                 box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
                 padding: 10px;
+                border: 6px solid #29FF80 !important;
                 
             }
         }
         .main{
-            max-width:100%;
+            width:100%;
             // background-color: #FFFFFF;
-            min-height: 100vh;
-            padding-bottom: 5%;
+            // min-height: 100vh;
+            // padding-bottom: 5%;
+            background: url(../images/efhsed\ 1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 75%;
+            height: 801px;
             div#main-content{
-                max-width: 100%;
-                // padding: 0;
+                padding: 0;
                 margin: 0;
                 #backButton{
                     border: none;
@@ -518,35 +523,160 @@ div.quiz-container{
     align-items:center;
     padding-bottom: 15%;
     background-color: #000;
-    .welcome{
-        color:#FF4D00;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-        font-weight:800;        
-    }
-    label{
-        width:484px;
-        height: 100px;
-        border-color:#FFFFFF !important;
-        border:1px solid;
-        border-radius:5px;
-        margin:15px;
-        font-size:45px;
-        font-weight:700;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-        color:#FFFFFF;
-        cursor: pointer;
-        display: inline-block; 
-        line-height: 100px; 
-        button{
-            border: none;
+    
+    
+    .CreatQuizSection{
+        background: url(../images/fygv\ 1.png);
+        background-repeat: no-repeat;
+        // height: auto;
+        background-size: cover;
+        width: 1385px;
+        height: 90vh;
+        label.daily{
+            width:245px;
+            height: 55px;
+            border-color:#FF0000 !important;
+            border:2px solid;
+            border-radius:15px;
+            margin:15px;
+            font-size:35px;
+            font-weight:500;
+            font-family: 'Nico Moji';
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
             color:#FFFFFF;
             cursor: pointer;
-            background: none;
-            font-size:45px;
-            font-weight:700;
+            display: inline-block; 
+            text-align: center;
+            background-color: #FF0000;
+            button{
+                border: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                color:#FFFFFF;
+                cursor: pointer;
+                background: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+            }
+            
+        }
+        label.weekly{
+            width:245px;
+            height: 55px;
+            border-color:#00A8A8 !important;
+            border:2px solid ;
+            border-radius:15px;
+            margin:15px;
+            font-size:35px;
+            font-weight:500;
+            font-family: 'Nico Moji';
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-           
+            color:#FFFFFF;
+            cursor: pointer;
+            display: inline-block; 
+            text-align: center;
+            background-color: #33E9C6;
+            button{
+                border: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                color:#FFFFFF;
+                cursor: pointer;
+                background: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+            }
+            
+        }
+        label.monthly{
+            width:245px;
+            height: 55px;
+            border-color:#FF922D !important;
+            border:2px solid;
+            border-radius:15px;
+            margin:15px;
+            font-size:35px;
+            font-weight:500;
+            font-family: 'Nico Moji';
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            color:#FFFFFF;
+            cursor: pointer;
+            display: inline-block; 
+            text-align: center;
+            background-color: #FF922D;
+            button{
+                border: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                color:#FFFFFF;
+                cursor: pointer;
+                background: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+            }
+            
+        }
+        label.custom{
+            width:245px;
+            height: 55px;
+            border-color:#FF3780 !important;
+            border:2px solid;
+            border-radius:15px;
+            margin:15px;
+            font-size:35px;
+            font-weight:500;
+            font-family: 'Nico Moji';
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            color:#FFFFFF;
+            cursor: pointer;
+            display: inline-block; 
+            text-align: center;
+            background-color: #FF3780;
+            button{
+                border: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                color:#FFFFFF;
+                cursor: pointer;
+                background: none;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+            }
+            
+        }
+    }
+    form.showSecondFormBtn{
+        background: url(../images/cvjh\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 82%;
+        width: 1385px;
+        height: 801px;
+        label.automaticBtn{
+            margin-top:9%;
+            
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
+        }
+        label.manualBtn{
+            margin-top:12%;
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
         }
     }
     div.quizQuestions{

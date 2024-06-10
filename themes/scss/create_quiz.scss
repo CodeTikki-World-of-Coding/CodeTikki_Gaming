@@ -1,24 +1,29 @@
-.quiz-container{
-    #quizSet{
-        .questions{
-            border: 1px solid #fff;
-            margin-bottom: 2%;
-        h2{
-            color: aliceblue;
-        }
-        p{
-            color: aliceblue;
-            font-size: 22px;
-        }
-        ul{
-            list-style-type: none;
-            li{
-                text-decoration: none;
+#main-content{
+    margin: 0;
+    padding: 0;
+    .quiz-container{
+        #quizSet{
+            background-color: black;
+            .questions{
+                border: 1px solid #fff;
+                margin-bottom: 2%;
+            h2{
                 color: aliceblue;
-                display: flex;
-                flex-direction: column;
+            }
+            p{
+                color: aliceblue;
+                font-size: 22px;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    text-decoration: none;
+                    color: aliceblue;
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
-    }
+        }
     }
 }

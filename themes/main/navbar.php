@@ -43,12 +43,17 @@
     if(isset($_SESSION['user_role'])) {
         $user_role = $_SESSION['user_role'];
     
-     echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+     echo '<nav class="navbar navbar-expand-lg  " >
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto" id="navbar-nav">';
+                    <ul class="navbar-nav ml-auto" id="navbar-nav">
+                    <li class="nav-item">
+                    <a href="index.php" class="nav-link">
+                        <img class="icon_codetikki" src="themes/images/hbhb 3.png" alt="icon" style="width:60px;">
+                    </a>
+                </li>';
 
                     
                     if ($user_role == 'ContentModerator' || $user_role == 'QuestionMaster') {
@@ -60,7 +65,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="themes/main/nav-page/player-profile.php" class="nav-link">
-                        <img class="icon" src="themes/images/user-regular.svg" alt="icon">
+                        <img class="icon" src="themes/images/iconamoon_profile-circle-fill.svg" alt="icon">
                         <span class="icon-text">Player Profile</span>
                     </a>
                 </li>
@@ -74,19 +79,19 @@
             </li> 
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
-                <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/mdi_events-check.svg" alt="icon">
                 <span class="icon-text">Events</span>
                 </a>
             </li>
             <li class="nav-item ">
             <a href="themes/main/nav-page/referral.php" class="nav-link">
-            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <img class="icon" src="themes/images/ri_dashboard-fill.svg" alt="icon">
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
             <li class="nav-item logout">
                 <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/solar_logout-3-bold.svg" alt="icon">
                 <span class="icon-text">Logout</span>
                 </a>
             </li>
@@ -100,7 +105,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="themes/main/nav-page/player-profile.php" class="nav-link">
-                        <img class="icon" src="themes/images/user-regular.svg" alt="icon">
+                        <img class="icon" src="themes/images/iconamoon_profile-circle-fill.svg" alt="icon">
                         <span class="icon-text">Player Profile</span>
                     </a>
                 </li>
@@ -114,19 +119,19 @@
             </li> 
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
-                <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/mdi_events-check.svg" alt="icon">
                 <span class="icon-text">Events</span>
                 </a>
             </li>
             <li class="nav-item ">
             <a href="themes/main/nav-page/referral.php" class="nav-link">
-            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <img class="icon" src="themes/images/ri_dashboard-fill.svg" alt="icon">
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
             <li class="nav-item logout">
                 <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/solar_logout-3-bold.svg" alt="icon">
                 <span class="icon-text">Logout</span>
                 </a>
             </li>
@@ -141,7 +146,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="themes/main/nav-page/player-profile.php" class="nav-link">
-                        <img class="icon" src="themes/images/user-regular.svg" alt="icon">
+                        <img class="icon" src="themes/images/iconamoon_profile-circle-fill.svg" alt="icon">
                         <span class="icon-text">Player Profile</span>
                     </a>
                 </li>
@@ -154,13 +159,13 @@
                  
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
-                <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/mdi_events-check.svg" alt="icon">
                 <span class="icon-text">Events</span>
                 </a>
             </li> 
             <li class="nav-item ">
             <a href="themes/main/nav-page/referral.php" class="nav-link">
-            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <img class="icon" src="themes/images/ri_dashboard-fill.svg" alt="icon">
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
@@ -172,7 +177,7 @@
         </li>
         <li class="nav-item logout">
                 <a href="logout.php" class="nav-link">
-                <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/solar_logout-3-bold.svg" alt="icon">
                 <span class="icon-text">Logout</span>
                 </a>
             </li>
@@ -187,7 +192,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="themes/main/nav-page/player-profile.php" class="nav-link">
-                        <img class="icon" src="themes/images/user-regular.svg" alt="icon">
+                        <img class="icon" src="themes/images/iconamoon_profile-circle-fill.svg" alt="icon">
                         <span class="icon-text">Player Profile</span>
                     </a>
                     </li>
@@ -201,19 +206,19 @@
              
                 <li class="nav-item ">
                 <a href="themes/main/nav-page/events.php" class="nav-link">
-                <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+                <img class="icon" src="themes/images/mdi_events-check.svg" alt="icon">
                 <span class="icon-text">Events</span>
                 </a>
             </li>
             <li class="nav-item ">
             <a href="themes/main/nav-page/referral.php" class="nav-link">
-            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <img class="icon" src="themes/images/ri_dashboard-fill.svg" alt="icon">
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
             <li class="nav-item logout">
             <a href="logout.php" class="nav-link">
-            <img class="icon" src="themes/images/right-from-bracket-solid.svg" alt="icon">
+            <img class="icon" src="themes/images/solar_logout-3-bold.svg" alt="icon">
             <span class="icon-text">Logout</span>
             </a>
         </li>

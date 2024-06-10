@@ -1,15 +1,14 @@
-<div class="container quiz-container" >
-<form class="row" id="rowDaily">
-        <div class="col-md-12"><img src="themes/images/icon-quiz-removebg-preview 1.png" alt="quiz" class="quiz-image"></div>
-        <div class="col-md-12"><h3 class="welcome">WELCOME</h3></div>
-        <div class="col-md-12"><label><button onclick="showSecondForm(event)">Daily</button></label></div>
-        <div class="col-md-12"><label  >Weekly</label></div>
-        <div class="col-md-12"><label >Monthly</label></div>
-        <div class="col-md-12"><label >Custom</label></div>
+<div class="container-fluid quiz-container" >
+<form class="row CreatQuizSection" id="rowDaily">
+        <div class="col-md-8"><img src="themes/images/cgj 1.png" alt="quiz" class="quiz-image"></div>
+        <div class="col-md-5"><label class="daily"><button  onclick="showSecondForm(event)">Daily</button></label></div>
+        <div class="col-md-5"><label class="weekly" ><button  >Weekly</button> </label></div>
+        <div class="col-md-5"><label class="monthly" ><button >Monthly</button> </label></div>
+        <div class="col-md-5"><label class="custom"><button >Custom</button> </label></div>
     </form>
-    <form id="showSecondFormBtn" style="display:none">
-    <div class="col-md-12"><label><button onclick="showAutomatic(event)">Automatic</button></label></div>
-    <div class="col-md-12"><label><button >manual</button></label></div>
+    <form  class="showSecondFormBtn" id="showSecondFormBtn" style="display:none">
+    <div class="col-md-12"><label class="automaticBtn" ><button onclick="showAutomatic(event)">AUTOMATIC</button></label></div>
+    <div class="col-md-12"><label class="manualBtn"><button >MANUAL</button></label></div>
 
 
 </form>

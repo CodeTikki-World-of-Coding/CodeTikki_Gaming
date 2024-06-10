@@ -63,12 +63,14 @@ $(document).ready(function() {
             data.forEach(function(quiz) {
                 var startDate = new Date(quiz.start_date);
                 var endDate = new Date(quiz.ends_date);
-
+                
                 var row = '<tr>' +
                             '<td>' + quiz.sub_quiz_id + '</td>' +
                             '<td>' + 'CT-Daily-' + quiz.sub_quiz_id + '</td>' +
                             '<td>' + quiz.start_date.split(' ')[0] + '</td>' +
+                            // '<td>' + quiz.start_date + '</td>' +
                             '<td>1 Minute</td>' + // Hardcoded duration
+                            // '<td>' + quiz.end_date+ '</td>' +
                             '<td>' + quiz.end_date.split(' ')[0] + '</td>' +
                           '</tr>';
 
@@ -79,6 +81,7 @@ $(document).ready(function() {
                 } else if (endDate < now) {
                     $('#PastQuiz').append(row);
                 }
+                
             });
         },
         error: function(error) {

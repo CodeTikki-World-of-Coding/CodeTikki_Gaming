@@ -12634,84 +12634,85 @@ div.control-page .color-options .color-option {
   cursor: pointer;
 }
 
-nav {
-  background-color: black !important;
+nav.navbar {
+  background-color: #202300 !important;
   padding: 0 !important;
   height: 60px !important;
 }
-nav .navbar-toggler .navbar-toggler-icon {
+nav.navbar .navbar-toggler .navbar-toggler-icon {
   color: #FFFFFF !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a {
+nav.navbar .navbar-collapse .navbar-nav .nav-item {
+  padding-top: 10px;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a {
   color: #FFFFFF;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container {
-  background: #000 !important;
-  height: 100vh;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container {
   width: 100%;
   object-fit: cover;
   background-color: #212529;
-  padding-bottom: 10%;
+  overflow: hidden;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .navbar-cpanel {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .navbar-cpanel {
   border-bottom: 2px solid gray !important;
   color: #FFFFFF;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel {
   background: #000 !important;
   height: 100vh;
   object-fit: cover;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar {
   width: 30%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul .nav-item.active a.nav-link {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul .nav-item.active a.nav-link {
   color: #FFFFFF !important;
   font-size: 20px;
   font-weight: 600;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul .nav-item a.nav-link:hover {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-toggle::after {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-menu {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-menu {
   right: -132px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .page-layout {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .page-layout {
   right: -265px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .world-cup {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .world-cup {
   right: -287px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-menu li a {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li .dropdown-menu li a {
   text-decoration: none;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a {
   color: #000 !important;
   font-size: 22px;
   font-weight: 500;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-d {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-d {
   margin-left: 98% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-s {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-s {
   margin-left: 76% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-p {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-p {
   margin-left: 94% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-w {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar ul li a .arrow-w {
   margin-left: 119% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar .section {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .sidebar .section {
   background-color: #646464 !important;
   width: 278px;
   height: 215px;
@@ -12720,95 +12721,96 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .main {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.adminCpanel .main {
   width: 70%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster {
   background: #000 !important;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar {
-  width: 25%;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar {
+  width: 30%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FFFFFF !important;
   font-size: 20px;
   font-weight: 600;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul .nav-item a.nav-link:hover {
   cursor: pointer;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li {
   padding-bottom: 10px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-toggle::after {
   display: none !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu {
   right: -132px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .page-layout {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .page-layout {
   right: -265px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .world-cup {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .world-cup {
   right: -287px !important;
   left: auto !important;
   top: -30px !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu li a {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li .dropdown-menu li a {
   text-decoration: none;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a {
   color: #000 !important;
   font-size: 22px;
   font-weight: 500;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-d {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-d {
   margin-left: 98% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-s {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-s {
   margin-left: 76% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-p {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-p {
   margin-left: 94% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-w {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar ul li a .arrow-w {
   margin-left: 119% !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar .section {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .sidebar .section {
   background-color: #646464;
-  opacity: 0.9;
-  width: 278px;
-  height: 215px;
+  width: 247px;
+  height: auto;
   margin: 0 auto;
-  border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
+  border: 6px solid #29FF80 !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main {
-  max-width: 100%;
-  min-height: 100vh;
-  padding-bottom: 5%;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main {
+  width: 100%;
+  background: url(../images/efhsed\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  height: 801px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div#main-content {
-  max-width: 100%;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div#main-content {
+  padding: 0;
   margin: 0;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div#main-content #backButton {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div#main-content #backButton {
   border: none;
   background: none;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer {
   border: 2px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -12822,10 +12824,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   height: 250px;
   text-align: center;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer .h2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer h2, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer .h2 {
   padding-top: 35%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer {
   border: 2px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -12839,10 +12841,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   height: 250px;
   text-align: center;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer .h2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer h2, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .analyticsContainer .h2 {
   padding-top: 35%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer {
   border: 2px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -12856,10 +12858,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   height: 250px;
   text-align: center;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer .h2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer h2, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .rewardContainer .h2 {
   padding-top: 35%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer {
   border: 2px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -12873,10 +12875,10 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   height: 250px;
   text-align: center;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer .h2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer h2, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .quizSetContainer .h2 {
   padding-top: 35%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content {
   border-radius: 5px;
   padding-top: 5px;
   padding-right: 5px;
@@ -12884,20 +12886,20 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   margin: 5px;
   width: 100%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content {
   display: flex;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content button {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content button {
   width: 40px;
   border: none;
   background: none;
   opacity: 0.5;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams {
   display: flex;
   margin: 20px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content {
   border: 3px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 30%;
@@ -12906,16 +12908,16 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   border-radius: 10px;
   margin-left: 5%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content h5, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .h5 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content h5, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .h5 {
   text-align: center;
   color: #FFFFFF;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .teamList ul {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .teamList ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .teamList ul li {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .teams .teamList-content .teamList ul li {
   border: 2px solid #FFFFFF;
   padding: 10px;
   background-color: #FFFFFF;
@@ -12926,7 +12928,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 300;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content {
   border: 3px solid #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-left: 5%;
@@ -12935,16 +12937,16 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   min-height: 400px;
   border-radius: 10px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content h5, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .h5 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content h5, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .h5 {
   text-align: center;
   color: #FFFFFF;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .allTeamMember ul {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .allTeamMember ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .allTeamMember ul li {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.showEventContainer .teamContainer-content .modal-content .allTeamMember-content .allTeamMember ul li {
   padding: 10px;
   color: #FFFFFF;
   margin-bottom: 5px;
@@ -12953,40 +12955,40 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 700;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container {
   color: #FFE7D5;
   font-size: 22px;
   font-weight: 400;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container #setRequirementsForm button {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container #setRequirementsForm button {
   margin-top: 3%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer {
   margin: 2%;
   margin-bottom: 10%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer {
   border: 2px solid #FFFFFF;
   padding: 1%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .quizSet {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .quizSet {
   font-size: 22px;
   color: #FFFFFF;
   margin: 0 auto;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question {
   font-size: 18px;
   margin: 0 auto;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 500;
   margin-top: 4%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question ul {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question ul {
   display: flex;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question ul li {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .main div.quiz_set-container .questionContainer .quizSetContainer .question ul li {
   list-style-type: none;
   color: #000;
   font-size: 16px;
@@ -12998,7 +13000,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quizMaster .m
   padding: 10px;
   margin: 5px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
   width: 300px !important;
   height: 50px !important;
   background-color: #FFFFFF !important;
@@ -13006,23 +13008,23 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-add {
   font-size: 22px;
   font-weight: 700;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-view {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-view {
   width: 200px !important;
   height: 50px !important;
   margin-left: 30%;
   font-size: 22px;
   font-weight: 700;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-submit {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container button.btn-submit {
   width: 200px !important;
   height: 50px !important;
   font-size: 22px;
   font-weight: 700;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container {
   margin-bottom: 10%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .question-form {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .question-form {
   width: 100%;
   background-color: #646464;
   color: #000;
@@ -13030,18 +13032,18 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .
   font-weight: 700;
   margin-bottom: 2%;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .add-question-btn, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .submit-btn, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .view-preview-btn {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .add-question-btn, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .submit-btn, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container .form-container .view-preview-btn {
   background-color: #000 !important;
   color: #fff !important;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container span.question-number {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container span.question-number {
   border: 1px solid;
   border-radius: 50%;
   background-color: aliceblue;
   padding: 5px !important;
   margin: 10px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-1 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-1 {
   border: 1px solid rgb(96, 154, 235);
   height: 280px;
   background-color: rgb(96, 154, 235);
@@ -13050,7 +13052,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .bo
   margin: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 {
   border: 1px solid aliceblue;
   height: 280px;
   background-color: aliceblue;
@@ -13061,12 +13063,12 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .bo
   flex-direction: column;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 label {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 label {
   color: #000;
   font-size: 22px;
   font-weight: 400;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 button {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-2 button {
   background-color: #FFFFFF;
   width: 100px;
   height: 40px;
@@ -13075,7 +13077,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .bo
   font-size: 22px;
   font-weight: 700;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-3 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-3 {
   border: 1px solid #FFFFFF;
   height: 370px;
   background-color: #FFFFFF;
@@ -13087,7 +13089,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .bo
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-4 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .box-4 {
   border: 1px solid #FFFFFF;
   height: 185px;
   background-color: #FFFFFF;
@@ -13098,60 +13100,170 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard .bo
   font-weight: 400;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard label.box1 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard label.box1 {
   color: red;
   font-weight: 700;
   font-size: 40px;
   display: flex;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard span.box1 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.dashboard span.box1 {
   background-color: #fff;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container {
   margin: 0 auto;
   text-align: center;
   align-items: center;
   padding-bottom: 15%;
   background-color: #000;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .welcome {
-  color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-weight: 800;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection {
+  background: url(../images/fygv\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1385px;
+  height: 90vh;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container label {
-  width: 484px;
-  height: 100px;
-  border-color: #FFFFFF !important;
-  border: 1px solid;
-  border-radius: 5px;
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.daily {
+  width: 245px;
+  height: 55px;
+  border-color: #FF0000 !important;
+  border: 2px solid;
+  border-radius: 15px;
   margin: 15px;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  line-height: 100px;
+  text-align: center;
+  background-color: #FF0000;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container label button {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.daily button {
   border: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   cursor: pointer;
   background: none;
-  font-size: 45px;
-  font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.weekly {
+  width: 245px;
+  height: 55px;
+  border-color: #00A8A8 !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #33E9C6;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.weekly button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.monthly {
+  width: 245px;
+  height: 55px;
+  border-color: #FF922D !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #FF922D;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.monthly button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.custom {
+  width: 245px;
+  height: 55px;
+  border-color: #FF3780 !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #FF3780;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container .CreatQuizSection label.custom button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container form.showSecondFormBtn {
+  background: url(../images/cvjh\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 82%;
+  width: 1385px;
+  height: 801px;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container form.showSecondFormBtn label.automaticBtn {
+  margin-top: 9%;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container form.showSecondFormBtn label.automaticBtn button {
+  color: #F8D959;
+  font-family: "Revaliya";
+  font-weight: 600;
+  font-size: 81px;
+  background: none;
+  border: none;
+  text-shadow: 2px 2px 4px #F8D959;
+  cursor: pointer;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container form.showSecondFormBtn label.manualBtn {
+  margin-top: 12%;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container form.showSecondFormBtn label.manualBtn button {
+  color: #F8D959;
+  font-family: "Revaliya";
+  font-weight: 600;
+  font-size: 81px;
+  background: none;
+  border: none;
+  text-shadow: 2px 2px 4px #F8D959;
+  cursor: pointer;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions {
   background-color: #000;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions h2, nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions .h2 {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions h2, nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions .h2 {
   color: #FFFFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions p {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions p {
   border-color: #FFFFFF !important;
   border: 1px solid;
   border-radius: 5px;
@@ -13162,12 +13274,12 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   color: #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions ul {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions ul li {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-container div.quizQuestions ul li {
   border: 1px solid #FFFFFF;
   background-color: #FFFFFF;
   color: #000;
@@ -13179,7 +13291,7 @@ nav .navbar-collapse .navbar-nav .nav-item a .cpanel-container div.quiz-containe
   font-weight: 400;
   font-size: 18px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz form.pseudoForm button.pseudo-btn {
   background-color: #FFFFFF;
   padding: 10px;
   cursor: pointer;
@@ -13190,7 +13302,7 @@ nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz form.pseudoFor
   font-weight: 300;
   width: 200px;
 }
-nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam select {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTeam select {
   width: 400px;
   height: 40px;
   color: #000;
@@ -13200,36 +13312,41 @@ nav .navbar-collapse .navbar-nav .nav-item a div.pseudoBattleQuiz .registeredTea
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-collapse .navbar-nav .nav-item a .icon {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .icon-codetikki {
+  width: 50px;
+  height: auto;
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  margin-right: 10px;
+  margin-right: 7px;
+}
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  margin-right: 7px;
   transition: opacity 0.3s ease;
 }
-nav .navbar-collapse .navbar-nav .nav-item a .icon-text {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a .icon-text {
   opacity: 0.1;
   transition: opacity 2s ease;
   border: 2px solid transparent;
   padding: 16px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
-nav .navbar-collapse .navbar-nav .nav-item a:hover .icon {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a:hover .icon {
   opacity: 0;
 }
-nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
+nav.navbar .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   opacity: 1;
   color: #FFEE59;
 }
 
 .cpanel-container {
-  background: #000 !important;
-  height: 100vh;
   width: 100%;
   object-fit: cover;
   background-color: #212529;
-  padding-bottom: 10%;
+  overflow: hidden;
 }
 .cpanel-container .navbar-cpanel {
   border-bottom: 2px solid gray !important;
@@ -13303,11 +13420,11 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 }
 .cpanel-container div.quizMaster {
   background: #000 !important;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover;
 }
 .cpanel-container div.quizMaster .sidebar {
-  width: 25%;
+  width: 30%;
 }
 .cpanel-container div.quizMaster .sidebar ul .nav-item.active a.nav-link {
   color: #FFFFFF !important;
@@ -13360,21 +13477,22 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
 }
 .cpanel-container div.quizMaster .sidebar .section {
   background-color: #646464;
-  opacity: 0.9;
-  width: 278px;
-  height: 215px;
+  width: 247px;
+  height: auto;
   margin: 0 auto;
-  border: 0.5px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
+  border: 6px solid #29FF80 !important;
 }
 .cpanel-container div.quizMaster .main {
-  max-width: 100%;
-  min-height: 100vh;
-  padding-bottom: 5%;
+  width: 100%;
+  background: url(../images/efhsed\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  height: 801px;
 }
 .cpanel-container div.quizMaster .main div#main-content {
-  max-width: 100%;
+  padding: 0;
   margin: 0;
 }
 .cpanel-container div.quizMaster .main div#main-content #backButton {
@@ -13692,35 +13810,145 @@ nav .navbar-collapse .navbar-nav .nav-item a:hover .icon-text {
   padding-bottom: 15%;
   background-color: #000;
 }
-.cpanel-container div.quiz-container .welcome {
-  color: #FF4D00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-weight: 800;
+.cpanel-container div.quiz-container .CreatQuizSection {
+  background: url(../images/fygv\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1385px;
+  height: 90vh;
 }
-.cpanel-container div.quiz-container label {
-  width: 484px;
-  height: 100px;
-  border-color: #FFFFFF !important;
-  border: 1px solid;
-  border-radius: 5px;
+.cpanel-container div.quiz-container .CreatQuizSection label.daily {
+  width: 245px;
+  height: 55px;
+  border-color: #FF0000 !important;
+  border: 2px solid;
+  border-radius: 15px;
   margin: 15px;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  line-height: 100px;
+  text-align: center;
+  background-color: #FF0000;
 }
-.cpanel-container div.quiz-container label button {
+.cpanel-container div.quiz-container .CreatQuizSection label.daily button {
   border: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   cursor: pointer;
   background: none;
-  font-size: 45px;
-  font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.weekly {
+  width: 245px;
+  height: 55px;
+  border-color: #00A8A8 !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #33E9C6;
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.weekly button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.monthly {
+  width: 245px;
+  height: 55px;
+  border-color: #FF922D !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #FF922D;
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.monthly button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.custom {
+  width: 245px;
+  height: 55px;
+  border-color: #FF3780 !important;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Nico Moji";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #FF3780;
+}
+.cpanel-container div.quiz-container .CreatQuizSection label.custom button {
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cpanel-container div.quiz-container form.showSecondFormBtn {
+  background: url(../images/cvjh\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 82%;
+  width: 1385px;
+  height: 801px;
+}
+.cpanel-container div.quiz-container form.showSecondFormBtn label.automaticBtn {
+  margin-top: 9%;
+}
+.cpanel-container div.quiz-container form.showSecondFormBtn label.automaticBtn button {
+  color: #F8D959;
+  font-family: "Revaliya";
+  font-weight: 600;
+  font-size: 81px;
+  background: none;
+  border: none;
+  text-shadow: 2px 2px 4px #F8D959;
+  cursor: pointer;
+}
+.cpanel-container div.quiz-container form.showSecondFormBtn label.manualBtn {
+  margin-top: 12%;
+}
+.cpanel-container div.quiz-container form.showSecondFormBtn label.manualBtn button {
+  color: #F8D959;
+  font-family: "Revaliya";
+  font-weight: 600;
+  font-size: 81px;
+  background: none;
+  border: none;
+  text-shadow: 2px 2px 4px #F8D959;
+  cursor: pointer;
 }
 .cpanel-container div.quiz-container div.quizQuestions {
   background-color: #000;
@@ -13967,21 +14195,28 @@ div.pseudoBattle .pseudoBattle-button p#registeredMessage {
   color: #000;
 }
 
-.quiz-container #quizSet .questions {
+#main-content {
+  margin: 0;
+  padding: 0;
+}
+#main-content .quiz-container #quizSet {
+  background-color: black;
+}
+#main-content .quiz-container #quizSet .questions {
   border: 1px solid #fff;
   margin-bottom: 2%;
 }
-.quiz-container #quizSet .questions h2, .quiz-container #quizSet .questions .h2 {
+#main-content .quiz-container #quizSet .questions h2, #main-content .quiz-container #quizSet .questions .h2 {
   color: aliceblue;
 }
-.quiz-container #quizSet .questions p {
+#main-content .quiz-container #quizSet .questions p {
   color: aliceblue;
   font-size: 22px;
 }
-.quiz-container #quizSet .questions ul {
+#main-content .quiz-container #quizSet .questions ul {
   list-style-type: none;
 }
-.quiz-container #quizSet .questions ul li {
+#main-content .quiz-container #quizSet .questions ul li {
   text-decoration: none;
   color: aliceblue;
   display: flex;

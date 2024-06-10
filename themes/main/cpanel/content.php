@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="row adminCpanel">
                 <nav class="col-md-3 col-lg-2 d-md-block  sidebar">
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                    <div class="position-sticky pt-3 mt-4 bg-white rounded  section">
                         <ul class="nav flex-column nav-margin">
                             <li class="nav-item">
                                 <div class="d-flex align-items-center">
@@ -52,7 +52,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                    <div class="position-sticky pt-3 mt-4 bg-white rounded  section">
                         <ul class="nav flex-column">            
                             
                             <li class="nav-item dropdown">
@@ -68,7 +68,7 @@
                             
                         </ul>
                     </div>
-                    <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
+                    <div class="position-sticky pt-3 mt-4 bg-white rounded  section">
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link active d-flex justify-content-between align-items-center" aria-current="page" href="#">Option 3

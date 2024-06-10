@@ -22,7 +22,7 @@
                     <ul class="nav flex-column nav-margin">
                         <li class="nav-item">
                             <div class="d-flex align-items-center">
-                                <img src="themes/images/mdi-light_view-dashboard.svg" alt="logo" class="me-1 ms-1">
+                                <img src="themes/images/ri_dashboard-fill (1).svg" alt="logo" class="me-1 ms-1" style="width: 20px;">
                                 <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/dashboard.php">
                                     Dashboard
                                 </a>
@@ -30,7 +30,7 @@
                         </li>
                         <li class="nav-item">
                             <div class="d-flex align-items-center">
-                            <img src="themes/images/building-columns-solid.svg" alt="logo" class="me-1 ms-1" style="width: 20px;">
+                            <img src="themes/images/mingcute_bank-fill.svg" alt="logo" class="me-1 ms-1" style="width: 20px;">
                                 <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/questionBank.php">
                                     Question Bank
                                 </a>
@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <div class="d-flex align-items-center">
-                                <img src="themes/images/Vector.svg" alt="" class="me-1 ms-1">
+                                <img src="themes/images/gridicons_trophy.png" alt="" class="me-1 ms-1" style="width: 20px;">
                                 <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-expanded="false">
                                     World Cup <img src="themes/images/ooui_next-ltr.svg" alt="arrow" class="arrow-w">
                                 </a>
@@ -59,7 +59,7 @@
                     <ul class="nav flex-column">  
                     <li class="nav-item">
                             <div class="d-flex align-items-center">
-                            <img src="themes/images/quizzz 2.svg" alt="logo" class="me-1 ms-1" style="width:30px">
+                            <img src="themes/images/fluent_brain-circuit-20-filled.svg" alt="logo" class="me-1 ms-1" style="width:20px">
                                 <a class="nav-link events-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/quizMaster/Events/Quiz_events.php">
                                     Events
                                 </a>
@@ -67,7 +67,7 @@
                         </li>          
                         <li class="nav-item">
                             <div class="d-flex align-items-center">
-                                <img src="themes/images/battle-net.svg" alt="logo" class="me-1 ms-1" style="width:30px">
+                                <img src="themes/images/fa6-brands_battle-net.svg" alt="logo" class="me-1 ms-1" style="width:20px">
                                 <a class="nav-link menu active d-flex justify-content-between align-items-center" aria-current="page" href="themes/main/cpanel/quizMaster/pseudoBattle.php">
                                     PseudoBattle
                                 </a>
@@ -75,7 +75,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <div class="d-flex align-items-center">
-                                <img src="themes/images/plus-solid.svg" alt="logo" class="me-1 ms-1" style="width:20px">
+                                <img src="themes/images/ion_create.svg" alt="logo" class="me-1 ms-1" style="width:20px">
                                 <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/create_quiz/create-quiz.php" id="navbarDropdown" aria-expanded="false">
                                     Create quiz 
                                 </a>  
@@ -88,7 +88,7 @@
                     <ul class="nav flex-column"> 
                         <li class="nav-item dropdown">
                             <div class="d-flex align-items-center">
-                                <img src="themes/images/database-solid.svg" alt="logo" class="me-1 ms-1" style="width:20px">
+                                <img src="themes/images/mdi_frequently-asked-questions.svg" alt="logo" class="me-1 ms-1" style="width:20px">
                                 <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
                                     My Question 
                                 </a>
@@ -99,7 +99,7 @@
             </nav>
             <!-- Main Content -->
             <main class="col-md-9 col-lg-10 main">
-                <div class="col-md-9 col-lg-10 mt-4" id="main-content">
+                <div class="col-md-9 col-lg-10 " id="main-content">
                 <button class="bg-transparent" id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button>
 
                 </div>
