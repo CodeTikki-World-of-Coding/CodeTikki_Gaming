@@ -15282,4 +15282,63 @@ div#pseudoCodePage .main_pseudoPage .fifthCol ul li ul li.Register span {
   color: #fff;
 }
 
+.pseudoPageRegisterPopup .modal-dialog .modal-content {
+  background: #005769;
+  box-shadow: inset #fff 0px 0px 60px -12px;
+  opacity: 0.9;
+  margin-left: 121%;
+  margin-top: 17%;
+  width: 398px;
+  height: 369px;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body {
+  padding: 10%;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body h1, .pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body .h1 {
+  color: #85E8FF;
+  font-weight: bold;
+  font-family: "Readax Pro";
+  margin-top: 3%;
+  width: fit-content;
+  border-bottom: 4px solid #64E4FF;
+  margin: 0 auto;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form {
+  padding: 5%;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form label {
+  color: #6DCEFF;
+  font-size: 18px;
+  padding-top: 2%;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form input.username {
+  width: 287px;
+  height: 37px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #979797;
+  border: none;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form input.EventDate {
+  border: none;
+  background: none;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form input.EventPass {
+  border: none;
+  background: none;
+}
+.pseudoPageRegisterPopup .modal-dialog .modal-content .modal-body form .registrationBtn {
+  margin-left: 35%;
+  margin-top: 10%;
+  background: #2A869A;
+  box-shadow: inset #fff 0px 0px 10px -3px;
+  border-radius: 10px;
+  color: #DADADA;
+  font-weight: 600;
+  width: 163px;
+  height: 28px;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */
