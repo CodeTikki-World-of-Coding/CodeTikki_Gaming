@@ -38,42 +38,28 @@
 
 <script> 
         $(document).ready(function(){
+   
     $("#navbar-nav a").click(function(e){
-        var page = $(this).attr("href");
+    var page = $(this).attr("href");
 
-        // Check if the link contains 'cpanel'
-        if (page.includes('cpanel')) {
-            // Load Control Panel content in the current tab
-            e.preventDefault(); 
-            $(".main").load(page); 
+    // Check if the link has class 'icon-codetikki'
+    if ($(this).hasClass('icon_codetikki')) {
+        window.location.href = page;
+        window.location.reload();
+    } 
+    // Check if the link contains 'cpanel'
+    // else if (page.includes('cpanel')) {
+    //     // Load Control Panel content in the current tab
+    //     e.preventDefault(); 
+    //     $(".main").load(page); 
+    // } 
+    else {
+        // Load other links in the current tab
+        e.preventDefault(); 
+        $(".row").load(page); 
 
-        } else {
-            // Load other links in the current tab
-            e.preventDefault(); 
-            $(".row").load(page); 
-        }
-        
-    });
-//     $("#navbar-nav a").click(function(e){
-//     var page = $(this).attr("href");
-
-//     // Check if the link has class 'icon-codetikki'
-//     if ($(this).hasClass('icon_codetikki')) {
-//         window.location.href = page;
-//         window.location.reload();
-//     } 
-//     // Check if the link contains 'cpanel'
-//     else if (page.includes('cpanel')) {
-//         // Load Control Panel content in the current tab
-//         e.preventDefault(); 
-//         $(".main").load(page); 
-//     } 
-//     else {
-//         // Load other links in the current tab
-//         e.preventDefault(); 
-//         $(".row").load(page); 
-//     }
-// });
+    }
+});
 
     $(".navbar-toggler").click(function(){
             $(".navbar-collapse").toggleClass("show");

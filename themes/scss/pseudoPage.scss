@@ -1,0 +1,288 @@
+div#pseudoCodePage{
+    margin: 0;
+    padding: 0;
+    background: #150917;
+    overflow: hidden;
+
+    nav.navPseudoPage{
+        background: #0296B5 !important;
+        padding: 10px;
+        height: 76px !important;
+        box-shadow:inset #000 0px 0px 60px -12px;
+
+        a{
+          img{
+            width: 100px;
+          }            
+        }
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    font-size: 25px;
+                    padding-right: 25px;
+                    font-family: Readux Pro;
+                    img{
+                        width: 50px;
+                        border-radius: 50%;
+                        border: 1px solid;
+                    }
+
+                }
+            }
+        }
+
+    }
+    .main_pseudoPage{
+        margin: 0;
+        padding: 0;
+        .firstCol{
+            background: url(../images/Frame\ 48095508.png);
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            opacity: .9;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .content{
+                padding-top: 14%;
+                padding-left: 5%;
+                h3{
+                    color: #80E8FF;
+                    font-family: 'Alegreya SC';
+                    font-size: 65px;
+                    font-weight:900;
+                    opacity: .9;
+                    text-shadow: 2px 2px 4px #ffffff,2px 2px 4px #000; 
+    
+                }
+                p{
+                    color: #fff;
+                    font-family: Josefin Sans;
+                    font-size: 32px;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+    
+                }
+                button{
+                    background-color: #120078;
+                    color: #fff;
+                    font-size: 20px;
+                    border-radius: 17px;
+                    font-family: Josefin Sans;
+                    // padding-left: 10px;
+                    // padding-right: 10px;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),2px 2px 4px rgba(0, 0, 0, 0.5); 
+                    margin-left: 30%;
+                    width: 151px;
+                    height: 45px;
+                }
+            }
+            .pics{
+                padding-left: 14%;
+            }
+        }
+        .secondCol{
+            
+            h1{
+                color: #64E4FF;
+                font-weight: bold;
+                font-family:'Kodchasan';
+                margin-top: 3%;
+                width: fit-content;
+                border-bottom: 2px solid #64E4FF;
+                margin: 0 auto;
+
+            }
+            hr{
+                height: 2px solid #fff;
+                width: 100px;
+            }
+            .leftSideBattleIntro{
+                background: url(../images/Group\ 48096049.png);
+                background-repeat: no-repeat;
+                height: 441px;
+                width: 507px;
+
+            }
+            .rightSideBattleIntro{
+                h2{
+                    font-family: 'Kelly Slab';
+                    font-size: 30px;
+                    color: #B4A7FF ;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),2px 2px 4px rgba(0, 0, 0, 0.5); 
+                    padding-top: 5%;
+                }
+                p{
+                    color: #fff;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),2px 2px 4px rgba(0, 0, 0, 0.5); 
+                    font-size: 25px;
+                    font-family: 'Inria Sans';
+                    
+                }
+                
+            }
+        }
+        .thirdCol{
+            padding-top: 3%;
+            h1{
+                color: #64E4FF;
+                font-weight: bold;
+                font-family:'Kodchasan';
+                margin-top: 3%;
+                width: fit-content;
+                border-bottom: 2px solid #64E4FF;
+                margin: 0 auto;
+
+            }
+            hr{
+                height: 2px solid #fff;
+                width: 100px;
+            }
+            .exitingRewards{
+                padding: 4%;
+                color: #fff;
+                h2{
+                    color: #0170B8;
+                    font-size: 36px;
+                    font-family: 'Krona One';
+                    text-shadow: 4px 1px 3px  #fff,1px 1px 0px #fff; 
+                    font-weight: bolder;
+                    opacity: .9;
+                    
+
+                }
+                h3{
+                    color: #B4A7FF;
+                    font-family: 'Kelly Slab';
+                    font-weight: 400;
+                    font-size: 30px;
+                    
+                    img.first{
+                        float: right;
+                        padding-right: 3%;
+                        height: 178px;
+                    }
+                    img.second{
+                        float: right;
+                    }
+                }
+                ul{
+                    li{
+                        font-size: 21px;
+                        color: #07C3B9;
+
+                        span{
+                            color: #fff;
+
+                        }
+                        
+                    }
+                }
+                p{
+                    font-size: 21px;
+                }
+               
+            }
+        }
+        .fourthCol{
+            padding-top: 4%;
+            h1{
+                color: #64E4FF;
+                font-weight: bold;
+                font-family:'Kodchasan';
+                margin-top: 3%;
+                width: fit-content;
+                border-bottom: 2px solid #64E4FF;
+                margin: 0 auto;
+
+            }
+            hr{
+                height: 2px solid #fff;
+                width: 100px;
+            }
+            .meetTopEarners{
+                h3{
+                    color: #ffffff;
+                    text-shadow: 2px 2px 4px  #FF922D,2px 2px 4px #FF922D; 
+                    font-weight: 900;
+                    padding-left: 4%;                    
+                }
+                .first{
+                    background: url(../images/Group\ 48096062.png);
+                     height: 600px;
+                    background-repeat: no-repeat;
+                    opacity: .9;
+                    
+                }
+                .second{
+                    background: url(../images/Group\ 48096061.png);
+                    height: 730px;
+                    background-repeat: no-repeat;
+                    opacity: .9;
+                }
+                .third{
+                    background: url(../images/Group\ 48096063\ \(1\).png);
+                    height: 600px;
+                    background-repeat: no-repeat;
+                    opacity: .9;
+                }
+            }
+        }
+        .fifthCol{
+            padding: 4%;
+            h1{
+                color: #64E4FF;
+                font-weight: bold;
+                font-family:'Kodchasan';
+                margin-top: 3%;
+                width: fit-content;
+                border-bottom: 2px solid #64E4FF;
+                margin: 0 auto;
+
+            }
+            hr{
+                height: 2px solid #fff;
+                width: 100px;
+            }
+            p{
+                color: #F8D959;
+                font-size: 25px;
+            }
+            ul{
+                li{
+                    color: #B4A7FF;
+                    list-style: decimal;
+                    font-size: 30px;
+                    h3{
+                        color: #B4A7FF;
+                        font-size: 30px;
+                        font-weight: 400;
+                        font-family: 'Krona One';
+                    }
+                    ul{
+                        li{
+                           list-style-type: disc;
+                           color: #fff;
+                           font-size: 25px;                          
+                        }
+                        li.Register{
+                            list-style-type: disc;
+                            color: #07C3B9;
+                            font-size: 25px; 
+                            span{
+                                color: #fff;
+                            }                         
+                            
+                        }
+                    }
+
+                }
+                
+                    
+                
+            }
+        }
+    }
+}

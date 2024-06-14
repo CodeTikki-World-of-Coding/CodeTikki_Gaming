@@ -51,6 +51,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="login.php">Login/Register</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="themes/main/pseudoCode/pseudoCodePage.php">PsuedoBattle</a>
+        </li>
       </div>
     </div>
   </nav>

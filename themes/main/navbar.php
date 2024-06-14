@@ -48,9 +48,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto" id="navbar-nav">
+                    <ul class="navbar-nav " id="navbar-nav">
                     <li class="nav-item">
-                    <a href="index.php" class="nav-link">
+                    <a href="index.php" class="nav-link icon_codetikki">
                         <img class="icon_codetikki" src="themes/images/hbhb 3.png" alt="icon" style="width:60px;">
                     </a>
                 </li>';

@@ -1,17 +1,17 @@
-.cpanel-container{
-    width: 100%;
-    object-fit: cover;
-    background-color:#212529 ;
-    // margin-bottom: 0;
-    // padding-bottom: 10%;
-    overflow: hidden;
-    .navbar-cpanel{
-        border-bottom: 2px solid gray !important;
-        color: #FFFFFF;
-        }
+// .cpanel-container{
+//     width: 100%;
+//     object-fit: cover;
+//     background-color:#212529 ;
+//     // margin-bottom: 0;
+//     // padding-bottom: 10%;
+    // overflow: auto;
+    // .navbar-cpanel{
+    //     border-bottom: 2px solid gray !important;
+    //     color: #FFFFFF;
+    //     }
         div.adminCpanel{
             background: #000 !important;
-            height: 100vh;
+            height: 90vh;
             object-fit: cover;
             .sidebar{
                 width:30%;           
@@ -89,8 +89,9 @@
         }
     div.quizMaster{
         background: #000 !important;
-        height: 90vh;
+        // height: 90vh;
         object-fit: cover;
+        margin: 0;
         .sidebar{
             width:30%;
             ul{ 
@@ -170,8 +171,8 @@
             // padding-bottom: 5%;
             background: url(../images/efhsed\ 1.png);
             background-repeat: no-repeat;
-            background-size: 100% 75%;
-            height: 801px;
+            background-size: 100% 100%;
+            height: 636px;
             div#main-content{
                 padding: 0;
                 margin: 0;
@@ -521,7 +522,7 @@ div.quiz-container{
     margin:0 auto;
      text-align:center;
     align-items:center;
-    padding-bottom: 15%;
+    // padding-bottom: 15%;
     background-color: #000;
     
     
@@ -529,9 +530,10 @@ div.quiz-container{
         background: url(../images/fygv\ 1.png);
         background-repeat: no-repeat;
         // height: auto;
-        background-size: cover;
-        width: 1385px;
-        height: 90vh;
+        // background-size: cover;
+        width: 1308px;
+        background-size: 100% 100%;
+        height: 636px;
         label.daily{
             width:245px;
             height: 55px;
@@ -644,11 +646,11 @@ div.quiz-container{
     form.showSecondFormBtn{
         background: url(../images/cvjh\ 1.png);
         background-repeat: no-repeat;
-        background-size: 100% 82%;
-        width: 1385px;
-        height: 801px;
+        background-size: 100% 100%;
+        width: 1295px;
+        height: 636px;
         label.automaticBtn{
-            margin-top:9%;
+            margin-top:8%;
             
             button{
                 color: #F8D959;
@@ -664,7 +666,83 @@ div.quiz-container{
             }
         }
         label.manualBtn{
-            margin-top:12%;
+            margin-top:11%;
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
+        }
+    }
+    form.showThirdFormBtn{
+        background: url(../images/cvjh\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 1295px;
+        height: 636px;
+        label.automaticBtn{
+            margin-top:8%;
+            
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
+        }
+        label.manualBtn{
+            margin-top:11%;
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
+        }
+    }
+    form.showFourthFormBtn{
+        background: url(../images/cvjh\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 1295px;
+        height: 636px;
+        label.automaticBtn{
+            margin-top:8%;
+            
+            button{
+                color: #F8D959;
+            font-family: 'Revaliya';
+            font-weight: 600;
+            font-size: 81px;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 4px #F8D959; 
+             cursor: pointer;
+
+
+            }
+        }
+        label.manualBtn{
+            margin-top:11%;
             button{
                 color: #F8D959;
             font-family: 'Revaliya';
@@ -715,7 +793,7 @@ div.quiz-container{
         }
    }
 }
-}
+
 div.pseudoBattleQuiz{    
     form.pseudoForm{
         button.pseudo-btn{

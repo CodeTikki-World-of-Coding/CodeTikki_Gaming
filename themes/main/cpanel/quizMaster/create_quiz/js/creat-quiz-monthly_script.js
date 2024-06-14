@@ -1,32 +1,28 @@
-function showSecondForm(event) {
+function showFourthForm(event) {
     event.preventDefault();
-    document.getElementById("showSecondFormBtn").style.display = "block";
+    document.getElementById("showFourthFormBtn").style.display = "block";
     document.getElementById("rowDaily").style.display = "none";
 }
 
-function showAutomatic(event) {
+function showMonthlyAutomatic(event) {
     event.preventDefault();
-    document.getElementById("quizModal").style.display = "block";
-    document.getElementById("showSecondFormBtn").style.display = "none";
+    document.getElementById("quizModalMonthly").style.display = "block";
 }
-
-function closeModal() {
-    document.getElementById("quizModal").style.display = "none";
-}
-
 function fetchQuizIdAndGenerateSets(questions) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 var quizId = xhr.responseText;
+                displayQuizId(quizId); 
                 generateQuizSets(questions, quizId);
+
             } else {
                 console.error('Failed to fetch quiz ID. Status code:', xhr.status);
             }
         }
     };
-    xhr.open('GET', 'core/main/create_quiz_id.php', true);
+    xhr.open('GET', 'core/main/create_monthly_quiz_id.php', true);
     xhr.send();
 }
 
@@ -121,12 +117,10 @@ function generateQuizSets(questions, quizId) {
         }
     });
 
-    // Generate sets and send them to the server
     for (var levelRange in setsByLevel) {
         if (setsByLevel.hasOwnProperty(levelRange)) {
             var questionsForSet = setsByLevel[levelRange];
             if (questionsForSet.length > 0) {
-                // Pass levelRange to createQuizSet
                 var quizSet = createQuizSet(questionsForSet, quizId, levelRange);
                 sendQuizSetToServer(quizSet);
             }
@@ -139,7 +133,7 @@ function createQuizSet(questionsData, quizId, levelRange) {
     var quizData = {
         quiz_id: quizId, 
         level: levelRange,
-        num_questions: 10,
+        num_questions: 30,
         questions: []
     };
     var filteredQuestions = questionsData.filter(function(question) {
@@ -176,7 +170,6 @@ function sendQuizSetToServer(quizSetData) {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 var quizSetInfo = JSON.parse(xhr.responseText); 
-                displayQuizSet(quizSetInfo); 
             } else {
                 console.error('Failed to send quiz set. Status code:', xhr.status);
             }
@@ -187,72 +180,23 @@ function sendQuizSetToServer(quizSetData) {
     xhr.send(JSON.stringify(quizSetData));
 }
 
-function displayQuizSet(quizSetInfo) {
-    const container = document.getElementById('quizSet');
-    if (!container) {
-        console.error('Container element not found!');
-        return;
-    }
-
-    const setDiv = document.createElement('div');
-    setDiv.classList.add('questions');
-
-    const setName = document.createElement('h2');
-    setName.textContent = `Quiz Set `; 
-    setDiv.appendChild(setName);
-
-    const setLevel = document.createElement('p');
-    setLevel.textContent = `Level: ${quizSetInfo.level}`;
-    setDiv.appendChild(setLevel);
-     
-    const questionsList = document.createElement('ul');
-    quizSetInfo.questions.forEach((question, questionIndex) => {
-        const questionItem = document.createElement('li');
-
-        const questionNumber = document.createElement('span');
-        questionNumber.textContent = `Question ${questionIndex + 1}:`;
-        questionItem.appendChild(questionNumber);
-
-        for (const key in question) {
-            if (question.hasOwnProperty(key)) {
-                const propertyItem = document.createElement('span');
-                propertyItem.textContent = ` ${question[key]}`;
-                
-                switch (key) {
-                    case 'QuestionTitle':
-                        propertyItem.classList.add('question-title');
-                        break;
-                    case 'Pseudocode':
-                        propertyItem.classList.add('pseudocode');
-                        break;
-                    case 'Option1':
-                    case 'Option2':
-                    case 'Option3':
-                    case 'Option4':
-                        propertyItem.classList.add('option');
-                        break;
-                    default:
-                        propertyItem.classList.add('generic-property');
-                }
-                
-                questionItem.appendChild(propertyItem);
-            }
-        }
-
-        questionsList.appendChild(questionItem);
-    });
-    setDiv.appendChild(questionsList);
-
-    container.appendChild(setDiv);
-}
-
-document.getElementById("quizForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    fetchQuestionsAndGenerateQuiz(event);
-    closeModal();
-    document.getElementById("quizSet").style.display = "block"; 
-    document.getElementById("showSecondFormBtn").style.display = "none";
-
-});
 
 document.getElementById("showSecondFormBtn").addEventListener("click", showSecondForm);
+
+function generateBtn(event) {
+    event.preventDefault();
+    fetchQuestionsAndGenerateQuiz(event);
+    document.getElementById("quizModalMonthly2").style.display = "block"; 
+   document.getElementById("quizModalMonthly").style.display = "none";
+
+}
+
+function displayQuizId(quizId) {
+    const quizSetIdContainer = document.getElementById('MonthlyQuizSetId');
+    if (!quizSetIdContainer) {
+        console.error('QuizSetId container not found!');
+        return;
+    }
+    quizSetIdContainer.textContent = `Quiz ID: ${quizId}`;
+    quizSetIdContainer.style.display = 'block';
+}

@@ -7,6 +7,7 @@
                         <tr>
                             <th class="bg-primary text-white">Code</th>
                             <th class="bg-primary text-white">Name</th>
+                            <th class="bg-primary text-white">Quiz Type</th>
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
@@ -23,6 +24,7 @@
                         <tr>
                             <th class="bg-primary text-white">Code</th>
                             <th class="bg-primary text-white">Name</th>
+                            <th class="bg-primary text-white">Quiz Type</th>
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
@@ -39,6 +41,7 @@
                         <tr>
                             <th class="bg-primary text-white">Code</th>
                             <th class="bg-primary text-white">Name</th>
+                            <th class="bg-primary text-white">Quiz Type</th>
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
@@ -50,43 +53,7 @@
         </div>
     </div>
 </div>
-<script>
-$(document).ready(function() {
-    $.ajax({
-        url: 'core/main/fetch_quiz.php',
-        type: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            var now = new Date();
-            var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
 
-            data.forEach(function(quiz) {
-                var startDate = new Date(quiz.start_date);
-                var endDate = new Date(quiz.ends_date);
-                
-                var row = '<tr>' +
-                            '<td>' + quiz.sub_quiz_id + '</td>' +
-                            '<td>' + 'CT-Daily-' + quiz.sub_quiz_id + '</td>' +
-                            '<td>' + quiz.start_date.split(' ')[0] + '</td>' +
-                            // '<td>' + quiz.start_date + '</td>' +
-                            '<td>1 Minute</td>' + // Hardcoded duration
-                            // '<td>' + quiz.end_date+ '</td>' +
-                            '<td>' + quiz.end_date.split(' ')[0] + '</td>' +
-                          '</tr>';
 
-                if (startDate.toDateString() === tomorrow.toDateString()) {
-                    $('#UpcomingQuiz').append(row);
-                } else if (startDate <= now && endDate >= now) {
-                    $('#OngoingQuiz').append(row);
-                } else if (endDate < now) {
-                    $('#PastQuiz').append(row);
-                }
-                
-            });
-        },
-        error: function(error) {
-            console.log('Error fetching quiz data:', error);
-        }
-    });
-});
-</script>
+<script src="themes/main/nav-page/js/quizPage.js"></script>
+

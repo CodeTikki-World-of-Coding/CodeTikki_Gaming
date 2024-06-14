@@ -25,5 +25,69 @@
             }
         }
         }
+        .modalCreateQuiz{
+            margin-top: 2%;
+            margin-left: 8%;
+            .modal-dialog{
+                .modal-content{
+                    .modal-header{
+                        background-color: #F8D959;
+                        padding: none !important;
+                        height: 60px;
+                        box-shadow:inset #000 0px 0px 31px -12px;
+                        .modal-title{
+                            font-family: Aoboshi One;
+                            color: #222222;
+                            font-size: 22px;
+                            font-weight: bold;
+                            margin: 0 auto;
+                           
+                        }
+                        button.close-btn{
+                            background: none;
+                            border: none;
+                            font-size: 26px;
+                        }
+                    }
+                    .modal-body{
+                        #quizForm{
+                            padding: 10px;
+                            .form-group{
+                               p{
+                                font-weight: bold;
+                               }
+                               ul{
+                                li{
+                                    list-style-type: none;
+                                    text-align: start;
+                                    font-weight: bold;
+                                    
+                                }
+                               }
+                               
+                            }
+                            .QuizSetId{
+                                font-weight: bold;
+                                font-size: 20px;
+                                border: 1px solid #007bff;
+                            }
+                            .copyHere{
+                                border: 1px solid #007bff;
+                            }
+                            button.generateBtn{
+                                float:right ;
+                                font-size: 15px;
+                                border-radius: 10px;
+                                box-shadow: 2px 0px 2px #007BFF;
+                                background-color: #007BFF;
+                                height: 37px;
+                                width: 97px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

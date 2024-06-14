@@ -1,7 +1,7 @@
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<div class="cpanel-container">
+<!-- <div class="cpanel-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-cpanel">
         <div class="container">
 
@@ -14,8 +14,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>            
         </div>
-    </nav>        
-    <div class="container-fluid">
+    </nav>         -->
+    <div class=" container-fluid">
         <div class="row quizMaster">
             <nav class="col-md-3 col-lg-2 d-md-block sidebar" id="sidebarCollapse">
                 <div class="position-sticky pt-3 mt-4 rounded border-dark section">
@@ -90,6 +90,14 @@
                             <div class="d-flex align-items-center">
                                 <img src="themes/images/mdi_frequently-asked-questions.svg" alt="logo" class="me-1 ms-1" style="width:20px">
                                 <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
+                                    Quiz 
+                                </a>
+                            </div>                
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="d-flex align-items-center">
+                                <img src="themes/images/mdi_frequently-asked-questions.svg" alt="logo" class="me-1 ms-1" style="width:20px">
+                                <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
                                     My Question 
                                 </a>
                             </div>                
@@ -100,7 +108,7 @@
             <!-- Main Content -->
             <main class="col-md-9 col-lg-10 main">
                 <div class="col-md-9 col-lg-10 " id="main-content">
-                <button class="bg-transparent" id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button>
+                <!-- <button class="bg-transparent" id="backButton"onclick="SameTab()"><img src="themes/images/Group 48095613.svg" alt=""></button> -->
 
                 </div>
             </main>
@@ -137,11 +145,11 @@
             $('#mainContent').load($(this).attr('href')); // Load the content into the main area
         });
     });
-    function SameTab() {
-    setTimeout(function() {
-        location.reload();
-    }, 1000); 
+    // function SameTab() {
+    // setTimeout(function() {
+    //     location.reload();
+    // }, 1000); 
 
-        }
+    //     }
         
 </script>

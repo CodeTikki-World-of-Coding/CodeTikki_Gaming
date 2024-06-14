@@ -1,7 +1,7 @@
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head> 
-    <div class="cpanel-container">
+    <!-- <div class="cpanel-container">
         <nav class="navbar navbar-expand-lg navbar-light navbar-cpanel ">
             <div class="container">
                 <a class="navbar-brand" href="#">            
@@ -12,9 +12,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>            
             </div>
-        </nav>
-        <!-- Content for demonstration purposes -->
-        <div class="container-fluid">
+        </nav> -->
+        <div class=" container-fluid">
             <div class="row adminCpanel">
                 <nav class="col-md-3 col-lg-2 d-md-block  sidebar">
                     <div class="position-sticky pt-3 mt-4 bg-white rounded border-dark section">
@@ -85,7 +84,7 @@
                 </main>
             </div>
         </div>
-    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
