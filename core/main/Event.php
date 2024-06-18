@@ -1,14 +1,16 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
 
 
-function generateEventName($prefix = 'PB', $sequence = 1, $currentMonth) {
+function generateEventName($prefix = 'PB', $sequence = 1, $currentMonth)
+{
     $paddedSequence = str_pad($sequence, 3, '0', STR_PAD_LEFT);
-    
+
     $eventName = $prefix . $paddedSequence . $currentMonth;
-    
+
     return $eventName;
 }
 
@@ -36,4 +38,3 @@ try {
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
-?>

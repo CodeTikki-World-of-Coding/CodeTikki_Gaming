@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -11,10 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':userId', $user_id);
             $stmt->execute();
             $user_info = $stmt->fetch(PDO::FETCH_ASSOC);
-            
+
             if ($user_info !== false) {
                 $display_name = $user_info['name'] !== null ? $user_info['name'] : $user_info['username'];
-                
+
                 echo json_encode(['name' => $display_name, 'username' => $user_info['username']]);
             } else {
                 echo json_encode(['username' => '']);
@@ -29,4 +30,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(['error' => 'Invalid request method.']);
 }
-?>

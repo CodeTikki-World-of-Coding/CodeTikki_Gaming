@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -14,4 +15,3 @@ if ($row) {
 } else {
     echo 'Error: Profile image not found.';
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+
 // Enable error reporting and display for debugging purposes
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -31,6 +32,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo json_encode(['success' => false, 'message' => 'Error: Invalid request method.']);
     exit;
 }
-
-
-?>

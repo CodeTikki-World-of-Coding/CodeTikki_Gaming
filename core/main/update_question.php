@@ -1,9 +1,10 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST['questionId']) || empty($_POST['questionTitle']) || empty($_POST['option1']) || empty($_POST['option2']) || empty($_POST['option3']) || empty($_POST['option4'])|| empty($_POST['correctAnswere'])) {
+    if (empty($_POST['questionId']) || empty($_POST['questionTitle']) || empty($_POST['option1']) || empty($_POST['option2']) || empty($_POST['option3']) || empty($_POST['option4']) || empty($_POST['correctAnswere'])) {
         echo json_encode(array('success' => false, 'message' => 'All fields are required'));
         exit;
     }
@@ -15,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $option2 = $_POST['option2'];
     $option3 = $_POST['option3'];
     $option4 = $_POST['option4'];
-    $correctAnswere=$_POST['correctAnswere'];
+    $correctAnswere = $_POST['correctAnswere'];
     $stmt = $pdo->prepare("UPDATE QuestionBank SET QuestionTitle = :questionTitle,Level = :level, Option1 = :option1, Option2 = :option2, Option3 = :option3, Option4 = :option4, CorrectAnswer = :correctAnswere WHERE QuestionId = :questionId");
 
     $stmt->bindParam(':questionTitle', $questionTitle);
@@ -33,4 +34,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(array('success' => false, 'message' => 'Failed to update question'));
     }
 }
-?>

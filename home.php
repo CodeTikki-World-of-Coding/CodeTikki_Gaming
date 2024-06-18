@@ -1,7 +1,7 @@
 <?php
-   include 'setting.php';
+include 'setting.php';
 
-   ?>
+?>
    
 <!DOCTYPE html>
 <html lang="en">

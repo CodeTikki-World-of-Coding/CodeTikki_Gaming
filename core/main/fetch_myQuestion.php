@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -37,5 +38,3 @@ if ($questions) {
 } else {
     echo "No questions found.";
 }
-
-?>

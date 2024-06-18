@@ -1,6 +1,6 @@
 <?php
 
-include '../../setting.php'; 
+include '../../setting.php';
 session_start();
 
 try {
@@ -10,7 +10,7 @@ try {
 
     if (!$rowEventId) {
         echo json_encode(['success' => false, 'message' => 'Invalid event name.']);
-        exit; 
+        exit;
     }
 
     $eventID = $rowEventId['EventID'];

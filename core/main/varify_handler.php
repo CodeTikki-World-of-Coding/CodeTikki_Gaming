@@ -2,13 +2,13 @@
 session_start();
 include '../../setting.php';
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+
 //     $phoneNumber = isset($_POST['phone']) ? $_POST['phone'] : '';
 //  // Handle form submission
 //      $userId = isset($_SESSION['userid']) ? $_SESSION['userid'] : '';
 //     //  $EmailID = isset($_SESSION['mailid']) ? $_SESSION['mailid'] : '';
 //     // $phoneNumber = isset($_SESSION['phoneNumber']) ? $_SESSION['phoneNumber'] : '';
-      
+
 //     try{
 //         $sql = "UPDATE User SET W_NUM = :W_NUM WHERE Id = :userid";
 //         $stmt = $pdo->prepare($sql);
@@ -44,7 +44,7 @@ if ($user_id !== null) {
         if ($phoneNumber === '') {
             $stmt->bindValue(':W_NUM', null, PDO::PARAM_NULL); // Set to NULL if empty
         } else {
-            $stmt->bindParam(':W_NUM', $phoneNumber, PDO::PARAM_INT); 
+            $stmt->bindParam(':W_NUM', $phoneNumber, PDO::PARAM_INT);
         }
 
         $stmt->bindParam(':user_id', $user_id);

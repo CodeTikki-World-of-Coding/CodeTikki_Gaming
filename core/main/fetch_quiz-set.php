@@ -1,5 +1,6 @@
 <?php
-include '../../setting.php'; 
+
+include '../../setting.php';
 session_start();
 set_time_limit(300);
 try {
@@ -19,7 +20,7 @@ try {
     $quizSetIDs = $stmtQuizSetIDs->fetchAll(PDO::FETCH_COLUMN);
 
     if (!empty($quizSetIDs)) {
-        $quizSetData = []; 
+        $quizSetData = [];
 
         foreach ($quizSetIDs as $quizSetID) {
             $sqlFetchQuestionIDs = "SELECT QuestionID1, QuestionID2, QuestionID3, QuestionID4, QuestionID5, QuestionID6, QuestionID7, QuestionID8, QuestionID9, QuestionID10 FROM $tmpTableName WHERE QuizSetID = :quizSetID";
@@ -47,4 +48,3 @@ try {
 } catch (PDOException $e) {
     echo json_encode(['success' => false, 'message' => 'Database error: ' . $e->getMessage()]);
 }
-?>

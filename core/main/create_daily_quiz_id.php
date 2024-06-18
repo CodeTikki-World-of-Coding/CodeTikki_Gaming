@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -9,8 +10,8 @@ try {
     $end_date = date('Y-m-d ', strtotime('+2 days'));
 
     $stmt = $pdo->prepare("INSERT INTO quizzes (num_questions, total_score, start_date, end_date,quiz_type) VALUES (:num_questions, :total_score, :start_date, :end_date,:quiz_type)");
-    $stmt->bindValue(':num_questions', 10); 
-    $stmt->bindValue(':total_score', 100); 
+    $stmt->bindValue(':num_questions', 10);
+    $stmt->bindValue(':total_score', 100);
     $stmt->bindValue(':start_date', $start_date);
     $stmt->bindValue(':end_date', $end_date);
     $stmt->bindValue(':quiz_type', 'Daily');
@@ -24,4 +25,3 @@ try {
     $pdo->rollBack();
     echo json_encode(['error' => $e->getMessage()]);
 }
-?>
