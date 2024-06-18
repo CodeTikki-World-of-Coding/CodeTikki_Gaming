@@ -3,7 +3,8 @@
 session_start();
 include '../../setting.php';
 
-function sanitize($data) {
+function sanitize($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -21,7 +22,7 @@ if ($quizSetData !== null && isset($quizSetData->quiz_id) && isset($quizSetData-
         $level = sanitize($quizSetData->level);
         if ($quiz_id !== null && is_numeric($quiz_id) && $level !== null) {
             list($min_difficulty, $max_difficulty) = explode('-', $level);
-            
+
             $question_ids = [];
             if (isset($quizSetData->questions) && is_array($quizSetData->questions)) {
                 foreach ($quizSetData->questions as $question) {
@@ -43,11 +44,11 @@ if ($quizSetData !== null && isset($quizSetData->quiz_id) && isset($quizSetData-
             $stmt_question = $pdo->prepare("SELECT QuestionTitle, Option1, Option2, Option3, Option4 FROM QuestionBank WHERE QuestionID IN ($question_ids_str)");
             $stmt_question->execute();
             $questions_data = $stmt_question->fetchAll(PDO::FETCH_ASSOC);
-            
+
             $quiz_set_info = [
                 'quiz_id' => $quiz_id,
-                'level' => $level, 
-                'num_questions' => count($question_ids), 
+                'level' => $level,
+                'num_questions' => count($question_ids),
                 'questions' => $questions_data
             ];
             echo json_encode($quiz_set_info);
@@ -61,5 +62,3 @@ if ($quizSetData !== null && isset($quizSetData->quiz_id) && isset($quizSetData-
 } else {
     echo "Error: Invalid data received.";
 }
-
-?>

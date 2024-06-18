@@ -15,10 +15,8 @@ $options = [
 ];
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
 try {
-     $pdo = new \PDO($dsn, $user, $pass, $options);
-     // echo "Connected successfully";
+    $pdo = new \PDO($dsn, $user, $pass, $options);
+    // echo "Connected successfully";
 } catch (\PDOException $e) {
-     echo "Connection failed: " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
-
-?>

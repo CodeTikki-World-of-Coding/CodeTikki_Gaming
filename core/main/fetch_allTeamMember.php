@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -9,7 +10,7 @@ try {
                 FROM Event 
                 WHERE Event.EventName = :selectedEvent";
         $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':selectedEvent', $selectedEvent, PDO::PARAM_STR); 
+        $stmt->bindParam(':selectedEvent', $selectedEvent, PDO::PARAM_STR);
         $stmt->execute();
         $eventID = $stmt->fetchColumn();
         if ($eventID) {
@@ -27,7 +28,7 @@ try {
                     $html .= "<li>" . $user['username'] . "</li>";
                 }
                 $html .= "</ul>";
-                echo $html; 
+                echo $html;
             } else {
                 echo "No users found for the selected event.";
             }
@@ -40,4 +41,3 @@ try {
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
-?>

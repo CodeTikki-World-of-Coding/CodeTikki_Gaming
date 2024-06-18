@@ -16,7 +16,7 @@ if ($user_id !== null && !empty($user_id)) {
         $stmtCheckType->bindParam(':description', $selectedType);
         $stmtCheckType->execute();
         $typeResult = $stmtCheckType->fetch(PDO::FETCH_ASSOC);
-        
+
         if ($typeResult) {
             $questionTypeValue = $typeResult['Value'];
 

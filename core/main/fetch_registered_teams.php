@@ -10,7 +10,7 @@ try {
                 INNER JOIN EventUser ON Event.EventID = EventUser.EventID
                 WHERE Event.EventName = :selectedEvent";
         $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':selectedEvent', $selectedEvent, PDO::PARAM_STR); 
+        $stmt->bindParam(':selectedEvent', $selectedEvent, PDO::PARAM_STR);
         $stmt->execute();
         $eventID = $stmt->fetchColumn();
         if ($eventID) {
@@ -18,9 +18,9 @@ try {
                     FROM EventUser 
                     INNER JOIN User ON EventUser.UserID = User.Id
                     WHERE EventUser.EventID = :eventID";
-                    $stmt = $pdo->prepare($sql);
+            $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':eventID', $eventID, PDO::PARAM_INT);
-            
+
             $stmt->execute();
             if ($stmt->rowCount() > 0) {
                 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -28,9 +28,9 @@ try {
                 $pairs = array_chunk($users, 2);
                 if (count($users) % 2 !== 0) {
                     $lastUser = array_pop($users);
-                    $existingUsers = $users; 
-                    shuffle($existingUsers); 
-                    $existingUser = $existingUsers[0]; 
+                    $existingUsers = $users;
+                    shuffle($existingUsers);
+                    $existingUser = $existingUsers[0];
                     $pairs[] = array($lastUser, $existingUser);
                 }
                 $html = "<ul>";

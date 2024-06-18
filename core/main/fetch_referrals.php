@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -7,7 +8,7 @@ $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($user_id)) {
-       
+
         try {
             $stmt = $pdo->prepare("
                 SELECT referred_id, referral_status
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
             $stmt->execute();
             $referrals = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            
+
             $result = [];
             foreach ($referrals as $referral) {
                 $referredUserId = $referral['referred_id'];
@@ -49,4 +50,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(['error' => 'Invalid request method. Use POST method.']);
 }
-?>

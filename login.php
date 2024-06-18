@@ -7,46 +7,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = isset($_POST['text']) ? $_POST['text'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-    function fetchUserID($name, $pdo) {
-      try {
-          $stmt = $pdo->prepare("SELECT Id FROM User WHERE username = :username ");
-          $stmt->bindParam(':username', $name);
-          $stmt->execute();
-          $user_id = $stmt->fetchColumn();
-          return $user_id;
-      } catch(PDOException $e) {
-          echo "Error fetching user ID: " . $e->getMessage();
-          return null;
-      }
-  }
-  $user_id = fetchUserID($username, $pdo);
-  $_SESSION['user_id'] = $user_id;
-  //for make a email session 
-  
+    function fetchUserID($name, $pdo)
+    {
+        try {
+            $stmt = $pdo->prepare("SELECT Id FROM User WHERE username = :username ");
+            $stmt->bindParam(':username', $name);
+            $stmt->execute();
+            $user_id = $stmt->fetchColumn();
+            return $user_id;
+        } catch(PDOException $e) {
+            echo "Error fetching user ID: " . $e->getMessage();
+            return null;
+        }
+    }
+    $user_id = fetchUserID($username, $pdo);
+    $_SESSION['user_id'] = $user_id;
+    //for make a email session
+
     try {
         $verifyStmt = $pdo->prepare("SELECT * FROM User WHERE username = :username ");
         $verifyStmt->bindParam(':username', $username);
         $verifyStmt->execute();
         $user = $verifyStmt->fetch(PDO::FETCH_ASSOC);
-  
+
         if ($user) {
-          $hashed_password_from_db = $user['password'];
-      
-          if (password_verify($password, $hashed_password_from_db)) {
-              $_SESSION['userid'] = $user['Id'];
-              $_SESSION['username'] = $user['username'];
-              $_SESSION['mailid'] = $user['email'];
-              
-              // Redirect to home.php
-              header("Location: home.php");
-              exit();
-          } else {
-              $error_message = "Invalid username or password.";
-          }
-      } else {
-          $error_message = "User not found.";
-      }
-      
+            $hashed_password_from_db = $user['password'];
+
+            if (password_verify($password, $hashed_password_from_db)) {
+                $_SESSION['userid'] = $user['Id'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['mailid'] = $user['email'];
+
+                // Redirect to home.php
+                header("Location: home.php");
+                exit();
+            } else {
+                $error_message = "Invalid username or password.";
+            }
+        } else {
+            $error_message = "User not found.";
+        }
+
     } catch (\PDOException $e) {
         echo "Error: " . $e->getMessage();
     }

@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -11,4 +12,3 @@ if ($result) {
 } else {
     echo json_encode(array('error' => 'Failed to fetch questions.'));
 }
-?>

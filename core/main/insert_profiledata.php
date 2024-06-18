@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -9,7 +10,7 @@ if ($user_id !== null) {
     // Collect data from POST request
     $name = isset($_POST['name']) ? $_POST['name'] : null;
     $phoneNumber = isset($_POST['phoneNumber']) ? $_POST['phoneNumber'] : null;
-   
+
     // $address = isset($_POST['address']) ? $_POST['address'] : '';
     // $city = isset($_POST['city']) ? $_POST['city'] : '';
     // $state = isset($_POST['state']) ? $_POST['state'] : '';
@@ -20,7 +21,7 @@ if ($user_id !== null) {
     // $tikkiality = isset($_POST['tikkiality']) ? $_POST['tikkiality'] : '';
     $gender = isset($_POST['gender']) ? $_POST['gender'] : null;
     $country = isset($_POST['country']) ? $_POST['country'] : null;
-    
+
     try {
         // Prepare and execute the update query
         $stmt = $pdo->prepare("UPDATE User SET 
@@ -33,7 +34,7 @@ if ($user_id !== null) {
         if ($phoneNumber === '') {
             $stmt->bindValue(':W_NUM', null, PDO::PARAM_NULL); // Set to NULL if empty
         } else {
-            $stmt->bindParam(':W_NUM', $phoneNumber, PDO::PARAM_INT); 
+            $stmt->bindParam(':W_NUM', $phoneNumber, PDO::PARAM_INT);
         }
 
         $stmt->bindParam(':name', $name);
@@ -53,4 +54,3 @@ if ($user_id !== null) {
     // Respond if user ID is not found
     echo json_encode(array('success' => false, 'message' => 'User ID not found.'));
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -22,7 +23,7 @@ if (isset($_POST['image']) && !empty($_POST['image'])) {
         $stmt = $pdo->prepare($sql);
         $stmt->execute(['profile_url' => $profileURL, 'user_id' => $user_id]);
 
-        echo $profileURL; 
+        echo $profileURL;
     } else {
         http_response_code(500);
         echo 'Error: Failed to save the image.';
@@ -31,4 +32,3 @@ if (isset($_POST['image']) && !empty($_POST['image'])) {
     http_response_code(400); // Bad request
     echo 'Error: Image data not received.';
 }
-?>

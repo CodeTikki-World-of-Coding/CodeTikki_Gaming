@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include '../../setting.php';
 
@@ -7,5 +8,3 @@ $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Return event data as JSON
 echo json_encode($events);
-
-?>
