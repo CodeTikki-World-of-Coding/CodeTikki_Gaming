@@ -3,7 +3,7 @@ div.player-profile{
     background-color: #0170B8;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     overflow: hidden;
     div.player-profile_inner{
         display: flex;
@@ -132,14 +132,18 @@ div.crop-modal{
     }
 }
 div.profile{
-    width:100%;
-    height:100vh;
+    width:1590px;
+    height:auto;
     background-color: #646464;
-    overflow: auto;
+    // overflow: auto;
     padding-bottom: 5%;
-    .grow {
-        flex: 1;
+    // .grow {
+    //     flex: 1;
         .sidebar-profile_fetch{
+            // display: none; /* Hidden by default */
+            // position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+          
             display: flex;
             flex-direction: column;
             width: 28%;
@@ -147,6 +151,7 @@ div.profile{
             background-color: #2D2D2D;
             border: 1px solid #EAE6E6;
             border-radius: 10px;
+            margin-left: 3%;
             div.profile-img{
                 margin: 0 auto;
                 
@@ -185,21 +190,84 @@ div.profile{
             }
 
             label{
-                color: gray;
+                // color: gray;
                 margin-left: 5%;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 500;
-                input{
+                color: #FFFFFF;
+                span{
+                    margin-right: 2%;
+                }
+                
+                input.fetchUserName{
                     background: none ;
                     border: none;
-                    color: #D0D0D0;
-                    font-size: 22px;
-                    font-weight: 500;
-                    margin-left: 5%;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 1%;
+                }
+                input.fetchName{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 11%;
+                }
+                input.fetchEmail{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 12%;
+                }
+                input.fetchGender{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 8%;
+                }
+                input.fetchCountry{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 6%;
+                }
+                input.fetchInstitute{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 6%;
+                }
+                input.fetchRating{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 8%;
+                }
+                input.fetchDevision{
+                    background: none ;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    // font-weight: 500;
+                    margin-left: 6%;
                 }
                 .form-check-input{
                     border: 1px solid #D0D0D0;
                     background-color: #0170B8; /* Change to your desired color */
+                    margin-left: 5%;
+
                 }
                
                 
@@ -214,50 +282,154 @@ div.profile{
             .row{
                 .problem-section{
                     border:1px solid #D0D0D0;
-                    margin-left:5%;
+                    margin-left:2%;
                     background-color: #000000;
                     border-radius: 10px;
                     color: #D0D0D0;
 
-                    height:200px;
+                    height:185px;
+                    .problem-img{
+                        ul{
+                            li{
+                                list-style-type: none;
+                                // padding-top: 3%;
+                                font-size: 12px;
+                            }
+                        }
+                    }
                 }
                 .expierence-section{
                     border:1px solid #D0D0D0;
-                    margin-left:5%;
-                    height:200px;
+                    margin-left:2%;
+                    height:185px;
                     background-color: #000000;
                     border-radius: 10px;
                     color: #D0D0D0;
+                    .working-experience{
+                        .product{
+                            // border: 1px solid #fff;
+                            width: 315px;
+                            height: 70px;
+                            background-color: #686767;
+                            border-radius: 5px;
+                            margin: 5px;
+                            img{
+                                margin: 10px;
+                            }
+                            h6{
+                                margin: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                        .graphic{
+                            // border: 1px solid #fff;
+                            width: 315px;
+                            height: 70px;
+                            background-color: #686767;
+                            border-radius: 5px;
+                            margin: 5px;
+                            img{
+                                margin: 10px;
+                            }
+                            h6{
+                                margin: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .student-experience{
+                        .product{
+                            // border: 1px solid #fff;
+                            width: 315px;
+                            height: 70px;
+                            background-color: #686767;
+                            border-radius: 5px;
+                            margin: 5px;
+                            img{
+                                margin: 10px;
+                            }
+                            h6{
+                                margin: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                        .graphic{
+                            // border: 1px solid #fff;
+                            width: 315px;
+                            height: 70px;
+                            background-color: #686767;
+                            border-radius: 5px;
+                            margin: 5px;
+                            img{
+                                margin: 10px;
+                            }
+                            h6{
+                                margin: 0;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                    }
 
                 }
             }
             .submission-section{
                 border:1px solid #D0D0D0;
-                margin-left:5%;
-                margin-top:5%;
+                margin-left:1%;
+                margin-top:1%;
                 height:200px;
+                width: 1000px;
                 background-color: #000000;
                 border-radius: 10px;
                 color: #D0D0D0;
-
+                height: auto;
+                padding: 2%;
+                img.pie-img{
+                    margin-left: 50%;
+                    margin-top: -5%;
+                }
+                img{
+                    margin: 14px;
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        margin-top: -20px;
+                        font-size: 12px;
+                    }
+                }
             
             }
-        }
+        
     }
     .row{
         .left_profile_footer{
             height: 200px;
-            margin: 1%;
+            margin: 1px;
             color: #D0D0D0;
             border-radius: 10px;
+            margin-left: 3%;
 
 
         }
         .right_profile_footer{
             height: 200px;
-            margin: 1%;
+            margin: 1px;
+            background-color: #2D2D2D;
             color: #D0D0D0;
             border-radius: 10px;
+            margin-left: 2%;
 
 
         }

@@ -8,14 +8,14 @@ function showMonthlyAutomatic(event) {
     event.preventDefault();
     document.getElementById("quizModalMonthly").style.display = "block";
 }
-function fetchQuizIdAndGenerateSets(questions) {
+function fetchMonthlyQuizIdAndGenerateSets(questions) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 var quizId = xhr.responseText;
-                displayQuizId(quizId); 
-                generateQuizSets(questions, quizId);
+                displayMonthlyQuizId(quizId); 
+                generateMonthlyQuizSets(questions, quizId);
 
             } else {
                 console.error('Failed to fetch quiz ID. Status code:', xhr.status);
@@ -26,7 +26,7 @@ function fetchQuizIdAndGenerateSets(questions) {
     xhr.send();
 }
 
-function fetchQuestionsAndGenerateQuiz(event) {
+function fetchMonthlyQuestionsAndGenerateQuiz(event) {
     event.preventDefault(); 
 
     var xhr = new XMLHttpRequest();
@@ -35,7 +35,7 @@ function fetchQuestionsAndGenerateQuiz(event) {
             if (xhr.status === 200) {
                 try {
                     var questions = JSON.parse(xhr.responseText);
-                    fetchQuizIdAndGenerateSets(questions);
+                    fetchMonthlyQuizIdAndGenerateSets(questions);
                 } catch (error) {
                     console.error('Error parsing JSON:', error);
                 }
@@ -93,7 +93,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function generateQuizSets(questions, quizId) {
+function generateMonthlyQuizSets(questions, quizId) {
     var setsByLevel = {
         '0-200': [],
         '200-400': [],
@@ -183,15 +183,15 @@ function sendQuizSetToServer(quizSetData) {
 
 document.getElementById("showSecondFormBtn").addEventListener("click", showSecondForm);
 
-function generateBtn(event) {
+function generateMonthlyBtn(event) {
     event.preventDefault();
-    fetchQuestionsAndGenerateQuiz(event);
+    fetchMonthlyQuestionsAndGenerateQuiz(event);
     document.getElementById("quizModalMonthly2").style.display = "block"; 
    document.getElementById("quizModalMonthly").style.display = "none";
 
 }
 
-function displayQuizId(quizId) {
+function displayMonthlyQuizId(quizId) {
     const quizSetIdContainer = document.getElementById('MonthlyQuizSetId');
     if (!quizSetIdContainer) {
         console.error('QuizSetId container not found!');

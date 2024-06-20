@@ -4,7 +4,7 @@ function showSecondForm(event) {
     document.getElementById("rowDaily").style.display = "none";
 }
 
-function showAutomatic(event) {
+function showDailyAutomatic(event) {
     event.preventDefault();
     document.getElementById("quizModalDaily").style.display = "block";
 }
@@ -14,14 +14,14 @@ function closeModal() {
     document.getElementById("quizModalDaily").style.display = "none";
 }
 
-function fetchQuizIdAndGenerateSets(questions) {
+function fetchDailyQuizIdAndGenerateSets(questions) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 var quizId = xhr.responseText;
-                displayQuizId(quizId); 
-                generateQuizSets(questions, quizId);
+                displayDailyQuizId(quizId); 
+                generateDailyQuizSets(questions, quizId);
 
             } else {
                 console.error('Failed to fetch quiz ID. Status code:', xhr.status);
@@ -32,7 +32,7 @@ function fetchQuizIdAndGenerateSets(questions) {
     xhr.send();
 }
 
-function fetchQuestionsAndGenerateQuiz(event) {
+function fetchDailyQuestionsAndGenerateQuiz(event) {
     event.preventDefault(); 
 
     var xhr = new XMLHttpRequest();
@@ -41,7 +41,7 @@ function fetchQuestionsAndGenerateQuiz(event) {
             if (xhr.status === 200) {
                 try {
                     var questions = JSON.parse(xhr.responseText);
-                    fetchQuizIdAndGenerateSets(questions);
+                    fetchDailyQuizIdAndGenerateSets(questions);
                 } catch (error) {
                     console.error('Error parsing JSON:', error);
                 }
@@ -99,7 +99,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function generateQuizSets(questions, quizId) {
+function generateDailyQuizSets(questions, quizId) {
     var setsByLevel = {
         '0-200': [],
         '200-400': [],
@@ -189,15 +189,15 @@ function sendQuizSetToServer(quizSetData) {
 
 document.getElementById("showSecondFormBtn").addEventListener("click", showSecondForm);
 
-function generateBtn(event) {
+function generateDailyBtn(event) {
     event.preventDefault();
-    fetchQuestionsAndGenerateQuiz(event);
+    fetchDailyQuestionsAndGenerateQuiz(event);
     document.getElementById("quizModalDaily2").style.display = "block"; 
    document.getElementById("quizModalDaily").style.display = "none";
 
 }
 
-function displayQuizId(quizId) {
+function displayDailyQuizId(quizId) {
     const quizSetIdContainer = document.getElementById('QuizSetId');
     if (!quizSetIdContainer) {
         console.error('QuizSetId container not found!');

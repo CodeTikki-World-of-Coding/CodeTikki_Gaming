@@ -89,7 +89,7 @@
                         <li class="nav-item dropdown">
                             <div class="d-flex align-items-center">
                                 <img src="themes/images/mdi_frequently-asked-questions.svg" alt="logo" class="me-1 ms-1" style="width:20px">
-                                <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/my_question/my_question.php" id="navbarDropdown" aria-expanded="false">
+                                <a class="nav-link d-flex justify-content-between align-items-center menu" href="themes/main/cpanel/quizMaster/quiz/quizCreate.php" id="navbarDropdown" aria-expanded="false">
                                     Quiz 
                                 </a>
                             </div>                

@@ -8,14 +8,14 @@ function showWeeklyAutomatic(event) {
     event.preventDefault();
     document.getElementById("quizModalWeekly").style.display = "block";
 }
-function fetchQuizIdAndGenerateSets(questions) {
+function fetchWeeklyQuizIdAndGenerateSets(questions) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 var quizId = xhr.responseText;
-                displayQuizId(quizId); // Display Quiz ID in the modal
-                generateQuizSets(questions, quizId);
+                displayWeeklyQuizId(quizId); // Display Quiz ID in the modal
+                generateWeeklyQuizSets(questions, quizId);
 
             } else {
                 console.error('Failed to fetch quiz ID. Status code:', xhr.status);
@@ -26,7 +26,7 @@ function fetchQuizIdAndGenerateSets(questions) {
     xhr.send();
 }
 
-function fetchQuestionsAndGenerateQuiz(event) {
+function fetchWeeklyQuestionsAndGenerateQuiz(event) {
     event.preventDefault(); 
 
     var xhr = new XMLHttpRequest();
@@ -35,7 +35,7 @@ function fetchQuestionsAndGenerateQuiz(event) {
             if (xhr.status === 200) {
                 try {
                     var questions = JSON.parse(xhr.responseText);
-                    fetchQuizIdAndGenerateSets(questions);
+                    fetchWeeklyQuizIdAndGenerateSets(questions);
                 } catch (error) {
                     console.error('Error parsing JSON:', error);
                 }
@@ -93,7 +93,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function generateQuizSets(questions, quizId) {
+function generateWeeklyQuizSets(questions, quizId) {
     var setsByLevel = {
         '0-200': [],
         '200-400': [],
@@ -183,15 +183,15 @@ function sendQuizSetToServer(quizSetData) {
 
 document.getElementById("showSecondFormBtn").addEventListener("click", showSecondForm);
 
-function generateBtn(event) {
+function generateWeeklyBtn(event) {
     event.preventDefault();
-    fetchQuestionsAndGenerateQuiz(event);
+    fetchWeeklyQuestionsAndGenerateQuiz(event);
     document.getElementById("quizModalWeekly2").style.display = "block"; 
    document.getElementById("quizModalWeekly").style.display = "none";
 
 }
 
-function displayQuizId(quizId) {
+function displayWeeklyQuizId(quizId) {
     const quizSetIdContainer = document.getElementById('WeeklyQuizSetId');
     if (!quizSetIdContainer) {
         console.error('QuizSetId container not found!');

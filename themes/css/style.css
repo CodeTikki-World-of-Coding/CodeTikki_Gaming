@@ -11979,7 +11979,6 @@ body {
 body div.main {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 div.homepage,
@@ -12362,7 +12361,6 @@ div.player-profile {
   background-color: #0170B8;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   overflow: hidden;
 }
 div.player-profile div.player-profile_inner {
@@ -12477,16 +12475,13 @@ div.crop-modal .crop-modal-content .modal-body .cropper-container .cropper-crop-
 }
 
 div.profile {
-  width: 100%;
-  height: 100vh;
+  width: 1590px;
+  height: auto;
   background-color: #646464;
-  overflow: auto;
   padding-bottom: 5%;
 }
-div.profile .grow {
-  flex: 1;
-}
-div.profile .grow .sidebar-profile_fetch {
+div.profile .sidebar-profile_fetch {
+  z-index: 1; /* Sit on top */
   display: flex;
   flex-direction: column;
   width: 28%;
@@ -12494,98 +12489,241 @@ div.profile .grow .sidebar-profile_fetch {
   background-color: #2D2D2D;
   border: 1px solid #EAE6E6;
   border-radius: 10px;
+  margin-left: 3%;
 }
-div.profile .grow .sidebar-profile_fetch div.profile-img {
+div.profile .sidebar-profile_fetch div.profile-img {
   margin: 0 auto;
 }
-div.profile .grow .sidebar-profile_fetch div.profile-img #profileImage {
+div.profile .sidebar-profile_fetch div.profile-img #profileImage {
   border-radius: 50%;
   border: 1px solid #EAE6E6;
   width: 150px;
   height: 150px;
   margin-bottom: -20px;
 }
-div.profile .grow .sidebar-profile_fetch div.profile-img button.profile-btn {
+div.profile .sidebar-profile_fetch div.profile-img button.profile-btn {
   background: none;
   border: none;
 }
-div.profile .grow .sidebar-profile_fetch div.profile-img button.profile-btn .camera-icon {
+div.profile .sidebar-profile_fetch div.profile-img button.profile-btn .camera-icon {
   margin-left: -75%;
   border: none;
   background: none;
   margin-top: 213%;
 }
-div.profile .grow .sidebar-profile_fetch button.edit-btn {
+div.profile .sidebar-profile_fetch button.edit-btn {
   margin-left: 75%;
   background: none;
   border: none;
   color: #D0D0D0;
   font-weight: 500;
 }
-div.profile .grow .sidebar-profile_fetch button.edit-btn img {
+div.profile .sidebar-profile_fetch button.edit-btn img {
   width: 35px;
   height: 25px;
   border: none;
 }
-div.profile .grow .sidebar-profile_fetch label {
-  color: gray;
+div.profile .sidebar-profile_fetch label {
   margin-left: 5%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
+  color: #FFFFFF;
 }
-div.profile .grow .sidebar-profile_fetch label input {
+div.profile .sidebar-profile_fetch label span {
+  margin-right: 2%;
+}
+div.profile .sidebar-profile_fetch label input.fetchUserName {
   background: none;
   border: none;
-  color: #D0D0D0;
-  font-size: 22px;
-  font-weight: 500;
-  margin-left: 5%;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 1%;
 }
-div.profile .grow .sidebar-profile_fetch label .form-check-input {
+div.profile .sidebar-profile_fetch label input.fetchName {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 11%;
+}
+div.profile .sidebar-profile_fetch label input.fetchEmail {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 12%;
+}
+div.profile .sidebar-profile_fetch label input.fetchGender {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 8%;
+}
+div.profile .sidebar-profile_fetch label input.fetchCountry {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 6%;
+}
+div.profile .sidebar-profile_fetch label input.fetchInstitute {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 6%;
+}
+div.profile .sidebar-profile_fetch label input.fetchRating {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 8%;
+}
+div.profile .sidebar-profile_fetch label input.fetchDevision {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 6%;
+}
+div.profile .sidebar-profile_fetch label .form-check-input {
   border: 1px solid #D0D0D0;
   background-color: #0170B8; /* Change to your desired color */
+  margin-left: 5%;
 }
-div.profile .grow .main-page {
+div.profile .main-page {
   width: 65%;
   margin: 1%;
   border-radius: 10px;
 }
-div.profile .grow .main-page .row .problem-section {
+div.profile .main-page .row .problem-section {
   border: 1px solid #D0D0D0;
-  margin-left: 5%;
+  margin-left: 2%;
   background-color: #000000;
   border-radius: 10px;
   color: #D0D0D0;
-  height: 200px;
+  height: 185px;
 }
-div.profile .grow .main-page .row .expierence-section {
+div.profile .main-page .row .problem-section .problem-img ul li {
+  list-style-type: none;
+  font-size: 12px;
+}
+div.profile .main-page .row .expierence-section {
   border: 1px solid #D0D0D0;
-  margin-left: 5%;
-  height: 200px;
+  margin-left: 2%;
+  height: 185px;
   background-color: #000000;
   border-radius: 10px;
   color: #D0D0D0;
 }
-div.profile .grow .main-page .submission-section {
+div.profile .main-page .row .expierence-section .working-experience .product {
+  width: 315px;
+  height: 70px;
+  background-color: #686767;
+  border-radius: 5px;
+  margin: 5px;
+}
+div.profile .main-page .row .expierence-section .working-experience .product img {
+  margin: 10px;
+}
+div.profile .main-page .row .expierence-section .working-experience .product h6, div.profile .main-page .row .expierence-section .working-experience .product .h6 {
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .working-experience .product p {
+  font-size: 12px;
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .working-experience .graphic {
+  width: 315px;
+  height: 70px;
+  background-color: #686767;
+  border-radius: 5px;
+  margin: 5px;
+}
+div.profile .main-page .row .expierence-section .working-experience .graphic img {
+  margin: 10px;
+}
+div.profile .main-page .row .expierence-section .working-experience .graphic h6, div.profile .main-page .row .expierence-section .working-experience .graphic .h6 {
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .working-experience .graphic p {
+  font-size: 12px;
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .student-experience .product {
+  width: 315px;
+  height: 70px;
+  background-color: #686767;
+  border-radius: 5px;
+  margin: 5px;
+}
+div.profile .main-page .row .expierence-section .student-experience .product img {
+  margin: 10px;
+}
+div.profile .main-page .row .expierence-section .student-experience .product h6, div.profile .main-page .row .expierence-section .student-experience .product .h6 {
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .student-experience .product p {
+  font-size: 12px;
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .student-experience .graphic {
+  width: 315px;
+  height: 70px;
+  background-color: #686767;
+  border-radius: 5px;
+  margin: 5px;
+}
+div.profile .main-page .row .expierence-section .student-experience .graphic img {
+  margin: 10px;
+}
+div.profile .main-page .row .expierence-section .student-experience .graphic h6, div.profile .main-page .row .expierence-section .student-experience .graphic .h6 {
+  margin: 0;
+}
+div.profile .main-page .row .expierence-section .student-experience .graphic p {
+  font-size: 12px;
+  margin: 0;
+}
+div.profile .main-page .submission-section {
   border: 1px solid #D0D0D0;
-  margin-left: 5%;
-  margin-top: 5%;
+  margin-left: 1%;
+  margin-top: 1%;
   height: 200px;
+  width: 1000px;
   background-color: #000000;
   border-radius: 10px;
   color: #D0D0D0;
+  height: auto;
+  padding: 2%;
+}
+div.profile .main-page .submission-section img.pie-img {
+  margin-left: 50%;
+  margin-top: -5%;
+}
+div.profile .main-page .submission-section img {
+  margin: 14px;
+}
+div.profile .main-page .submission-section ul li {
+  list-style-type: none;
+  margin-top: -20px;
+  font-size: 12px;
 }
 div.profile .row .left_profile_footer {
   height: 200px;
-  margin: 1%;
+  margin: 1px;
   color: #D0D0D0;
   border-radius: 10px;
+  margin-left: 3%;
 }
 div.profile .row .right_profile_footer {
   height: 200px;
-  margin: 1%;
+  margin: 1px;
+  background-color: #2D2D2D;
   color: #D0D0D0;
   border-radius: 10px;
+  margin-left: 2%;
 }
 div.profile .editModalProfile .modal-dialog {
   width: 80%;

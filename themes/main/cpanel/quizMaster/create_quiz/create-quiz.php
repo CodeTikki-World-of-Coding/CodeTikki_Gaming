@@ -7,7 +7,7 @@
         <div class="col-md-5"><label class="custom"><button >Custom</button> </label></div>
     </form>
     <form  class="showSecondFormBtn" id="showSecondFormBtn" style="display:none">
-        <div class="col-md-12"><label class="automaticBtn" ><button type="button"  onclick="showAutomatic(event)">AUTOMATIC</button></label></div>
+        <div class="col-md-12"><label class="automaticBtn" ><button type="button"  onclick="showDailyAutomatic(event)">AUTOMATIC</button></label></div>
         <div class="col-md-12"><label class="manualBtn"><button >MANUAL</button></label></div>
     </form>
     <form  class="showThirdFormBtn" id="showThirdFormBtn" style="display:none">
@@ -60,7 +60,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" onclick="generateBtn(event)" class="btn btn-primary generateBtn">Generate</button>
+                        <button type="button" onclick="generateDailyBtn(event)" class="btn btn-primary generateBtn">Generate</button>
                     </form>
                 </div>            
             </div>
@@ -135,7 +135,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" onclick="generateBtn(event)" class="btn btn-primary generateBtn">Generate</button>
+                        <button type="button" onclick="generateWeeklyBtn(event)" class="btn btn-primary generateBtn">Generate</button>
                     </form>
                 </div>            
             </div>
@@ -209,7 +209,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" onclick="generateBtn(event)" class="btn btn-primary generateBtn">Generate</button>
+                        <button type="button" onclick="generateMonthlyBtn(event)" class="btn btn-primary generateBtn">Generate</button>
                     </form>
                 </div>            
             </div>

@@ -1,8 +1,8 @@
 
-<div class="container-fluid profile">
-<div class="row grow w-100 ">
+<div class=" profile">
+<div class="row  ">
     
-    <div class="col-4 bg-dark border border-light  py-3 sidebar sidebar-profile_fetch">
+    <div class="col-4   sidebar sidebar-profile_fetch">
         <div class="profile-img">
             <img src="" alt="" id="profileImage">
             <button class="profile-btn"  onclick="document.getElementById('profile-input').click();">
@@ -12,7 +12,7 @@
         </div>
          
         <button class="btn btn-primary edit-btn" data-toggle="modal" data-target="#editModal">Edit <img src="themes/images/Group.svg" alt=""></button>
-        <label>Name:
+        <label><span>Name:</span>
         <input type="text" class="fetchName" name="name"  readonly>
 
         </label>
@@ -21,57 +21,174 @@
 
         </label>
     
-        <label >Email:
+        <label ><span>Email:</span>
             <input type="email" class="fetchEmail" name="email"   readonly>
         </label>
-        <label >Gender:
+        <label ><span>Gender:</span>
         <input type="text" class="fetchGender" name="Gender" readonly>
 
         </label>
-        <label >Country:
+        <label > <span>Country:</span>
         <input type="text" class="fetchCountry" name="Country" readonly>
 
         </label>
-        <label >Profession:
+        <label > Profession:
         Working<input type="checkbox" class="form-check-input" id="workingCheckbox" name="working">
         Student<input type="checkbox" class="form-check-input" id="studentCheckbox" name="student">
         </label>
-        <label >Institute:
+        <label > <span>Institute:</span>
         <input type="text" class="fetchInstitute" name="institute" readonly>
 
         </label>
-        <label >Rating:
+        <label > <span>Rating:</span>
         <input type="text" class="fetchRating" name="rating" readonly>
 
         </label>
     
+        <label > <span>Devision:</span>
+        <input type="text" class="fetchDevision" name="division" readonly>
+
+        </label>
+    
 </div>
-    <div class="main col-8 bg-dark border border-light main-page   py-3">
+    <div class="main col-8  main-page   ">
         <div class="row">
-            <div class="col-md-5 problem-section">
-                <h4>Solved Problem</h4>
+            <div class="col-md-7 problem-section">
+                <h6>Solved Problem</h6>
+                <div class="row">
+                    <div class="col-md-4"><img src="themes/images/Group 78.png" alt=""></div>
+                    <div class="col-md-6 problem-img">
+                        <ul>
+                            <li>Easy
+                                 <img src="themes/images/Rectangle 903.png" alt="">
+                            </li>
+                            <li>
+                                Medium
+                                 <img src="themes/images/Rectangle 904.png" alt="">
+                            </li>
+                            <li>
+                                Hard
+                                 <img src="themes/images/Rectangle 905.png" alt="">
+                            </li>
+                            <li>
+                                Legendary
+                                 <img src="themes/images/Rectangle 909.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5 expierence-section " ">
-                <div class="working-experience " >
-                    <p id="workingExperienceTitle" >This is the working experience section.</p>
-                </div>
-                <div class="student-experience " >
-                    <p id="studentExperienceTitle" >This is the student experience section.</p>
-                </div>
+            <div class="col-md-4 expierence-section " >
+                <div class="working-experience "id="workingExperienceTitle" style="display: none;">
+                    <h6>Working</h6> 
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="themes/images/Rectangle 1182.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                 <h6>Product Designer</h6>
+                                 <p>Microsoft</p>
+                                 <p>july 2022- Present .1 year 4 months</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic">
+                    <div class="row">
+                            <div class="col-md-3">
+                                <img src="themes/images/Rectangle 1184.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                 <h6>Graphic Designer</h6>
+                                 <p>Accenture</p>
+                                 <p>july 2020- 1 year 6 months</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <div class="student-experience "id="studentExperienceTitle" style="display: none;">
+                <h6>Student</h6> 
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="themes/images/Rectangle 1182.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                 <h6>Product Designer</h6>
+                                 <p>Microsoft</p>
+                                 <p>july 2022- Present .1 year 4 months</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic">
+                    <div class="row">
+                            <div class="col-md-3">
+                                <img src="themes/images/Rectangle 1184.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                 <h6>Graphic Designer</h6>
+                                 <p>Accenture</p>
+                                 <p>july 2020- 1 year 6 months</p>
+                            </div>
+                        </div>
+                    </div>                </div>
             </div>
             </div>
 
-            <div class="col-md-10 submission-section">
-            <h4>Submission</h4>
+            <div class=" submission-section">
+            <h6>Submission</h6>
+            <div class="row">
+                <div class="col-md-6"><img class="pie-img" src="themes/images/Group 79.png" alt=""></div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>
+                           <img src="themes/images/Ellipse 247.png" alt=""> wrong_answers
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 248.png" alt=""> solutions_accepted    
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 249.png" alt=""> compile_error
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 250.png" alt=""> time_limit_exceeded
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 251.png" alt=""> runtime_error
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 252.png" alt=""> solutions_partially accepted
+                        </li>
+                        <li>
+                        <img src="themes/images/Ellipse 253.png" alt=""> compile_error
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
             </div>
         </div>
 </div>
-<div class="row w-100 ">
-    <div class="col-4 py-3 bg-dark border border-light ml-2 left_profile_footer"><h5>Rating Badges</h5>    </div>
+<div class="row  ">
+    <div class="col-3 py-3 bg-dark border border-light ml-2 left_profile_footer"><h6>Rating Badges</h6> 
+        <div class="row">
+            <div class="col-md-6"><img src="themes/images/Group 56.png" alt=""></div>
+            <div class="col-md-6"><img src="themes/images/Group 57.png" alt=""></div>
+        </div>
+    </div>
 
-    <div class="col-7 py-3 bg-dark border border-light ml-2 right_profile_footer">
-       <h5>Activity Map</h5>
+    <div class="col-8 py-3 border border-light ml-2 right_profile_footer">
+       <h6>Activity Map</h6>
+       <div class="row">
+        <div class="col"><img src="themes/images/Group 63.png" alt="">November</div>
+        <div class="col"><img src="themes/images/Group 64.png" alt="">December</div>
+        <div class="col"><img src="themes/images/Group 65.png" alt="">January</div>
+        <div class="col"><img src="themes/images/Group 66.png" alt="">Febrary</div>
+        <div class="col"><img src="themes/images/Group 67.png" alt="">March</div>
+        <div class="col"><img src="themes/images/Group 68.png" alt="">April</div>
+        <div class="col"><img src="themes/images/Group 69.png" alt="">May</div>
+        <div class="col"><img src="themes/images/Group 70.png" alt="">June</div>
+       </div>
 </div>
 </div>
 <div class="modal fade editModalProfile" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
