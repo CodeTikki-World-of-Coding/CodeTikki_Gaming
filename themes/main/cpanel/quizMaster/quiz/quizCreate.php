@@ -1,6 +1,6 @@
-<div class="container-fluid quizPage">
+<div class=" quiz_Page">
     <div class="row">
-        <div class="col-md-12 OngoingQuiz pl-5"><h2>Ongoing Quiz </h2>
+        <div class="col-md-12 OngoingQuiz "><h2>Ongoing Quiz </h2>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -34,7 +34,7 @@
                 </table>
             </div>
         </div>
-        <div class="col-md-12 PastQuiz"><h2>Past Quiz</h2>
+        <div class="col-md-12 UnscheduledQuiz"><h2>Unscheduled Quiz</h2>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -47,7 +47,7 @@
                             <th class="bg-primary text-white">Status</th>
                         </tr>
                     </thead>
-                    <tbody id="PastQuiz"></tbody>
+                    <tbody id="UnscheduledQuiz"></tbody>
                 </table>
             </div>
         </div>

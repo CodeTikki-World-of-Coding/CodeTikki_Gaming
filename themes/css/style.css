@@ -15479,4 +15479,11 @@ div#pseudoCodePage .main_pseudoPage .fifthCol ul li ul li.Register span {
   border: none;
 }
 
+.quiz_Page {
+  margin: 0;
+  padding: 0;
+  width: 1300px;
+  background: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -49,11 +49,12 @@
           <a class="nav-link active" aria-current="page" href="#"><img src="themes/images/solar_home-bold.svg" alt=""> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="login.php">Login/Register</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="themes/main/pseudoCode/pseudoCodePage.php">PsuedoBattle</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.php">Login/Register</a>
+        </li>
+        
       </div>
     </div>
   </nav>

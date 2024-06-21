@@ -21,7 +21,7 @@
 <div class="container-fluid main" id="mainPageContainer">
 <?php include './themes/main/navbar.php'; ?> 
 
-<div class="row " >
+<div class="row  navbarPages" >
             <div class="col-lg-12">
                 <?php include './themes/main/homepage.php'; ?> 
 
@@ -56,7 +56,7 @@
     else {
         // Load other links in the current tab
         e.preventDefault(); 
-        $(".row").load(page); 
+        $(".navbarPages").load(page); 
 
     }
 });
