@@ -169,7 +169,7 @@
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
-            <li class="nav-item ">
+        <li class="nav-item ">
             <a href="themes/main/nav-page/quiz.php" class="nav-link">
             <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
             <span class="icon-text">Quiz</span>
@@ -216,7 +216,13 @@
             <span class="icon-text">Referral Dashboard</span>
             </a>
         </li>
-            <li class="nav-item logout">
+        <li class="nav-item ">
+            <a href="themes/main/nav-page/quiz.php" class="nav-link">
+            <img class="icon" src="themes/images/calendar-days-solid.svg" alt="icon">
+            <span class="icon-text">Quiz</span>
+            </a>
+        </li>
+        <li class="nav-item logout">
             <a href="logout.php" class="nav-link">
             <img class="icon" src="themes/images/solar_logout-3-bold.svg" alt="icon">
             <span class="icon-text">Logout</span>

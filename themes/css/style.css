@@ -15486,4 +15486,36 @@ div#pseudoCodePage .main_pseudoPage .fifthCol ul li ul li.Register span {
   background: #fff;
 }
 
+.playQuiz .question-container {
+  border: 2px solid;
+  margin-top: 2%;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+}
+.playQuiz .question-container .time-marks {
+  border-bottom: 2px solid;
+}
+.playQuiz .question-container .time-marks .marks span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.playQuiz .question-container p.question-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.playQuiz .question-container .options .option {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+}
+.playQuiz .finished-container {
+  text-align: center;
+  margin-top: 10%;
+}
+.playQuiz .finished-container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */

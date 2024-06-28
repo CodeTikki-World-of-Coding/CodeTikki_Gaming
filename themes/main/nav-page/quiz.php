@@ -11,6 +11,7 @@
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
+                            <th class="bg-primary text-white">Play</th>
                         </tr>
                     </thead>
                     <tbody id="OngoingQuiz"></tbody>
@@ -28,6 +29,7 @@
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
+                            <th class="bg-primary text-white">Play</th>
                         </tr>
                     </thead>
                     <tbody id="UpcomingQuiz"></tbody>
@@ -45,6 +47,7 @@
                             <th class="bg-primary text-white">Start</th>
                             <th class="bg-primary text-white">Duration</th>
                             <th class="bg-primary text-white">Ends in</th>
+                            <th class="bg-primary text-white">Play</th>
                         </tr>
                     </thead>
                     <tbody id="PastQuiz"></tbody>

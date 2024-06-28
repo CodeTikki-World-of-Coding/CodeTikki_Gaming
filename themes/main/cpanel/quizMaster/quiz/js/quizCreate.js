@@ -133,7 +133,7 @@ $(document).ready(function() {
                                 } else {
                                     if (startDate.toDateString() === oneYearLater.toDateString()) {
                                         $('#UpcomingQuiz').append(row);
-                                    } else if (startDate <= now && endDate >= now) {
+                                    } else if (quiz.status == 1) {//startDate <= now && endDate >= now
                                         $('#OngoingQuiz').append(row);
                                     }
                                 }

@@ -32,6 +32,7 @@ $(document).ready(function() {
                             '<td>' + startDateString + '</td>' +
                             '<td>' + duration + '</td>' +
                             '<td>' + endDateString + '</td>' +
+                            '<td><button type="button" class="play-btn btn btn-success" data-sub-quiz-id="' + subQuizId + '">Play</button></td>' + 
                             '</tr>';
 
                         if (startDate.toDateString() === tomorrow.toDateString()) {
@@ -50,5 +51,28 @@ $(document).ready(function() {
         error: function(error) {
             console.log('Error fetching quiz data:', error);
         }
+    }); 
+    // $(document).on('click', '.play-btn', function() {
+    //     var subQuizId = $(this).data('sub-quiz-id');
+
+    //     // You can send the subQuizId via GET, POST or any other method required
+    //     $(".navbarPages").load("themes/main/userQuiz/play_quiz.php", { sub_quiz_id: subQuizId });
+    // });
+
+    $(document).on('click', '.play-btn', function() {
+        var subQuizId = $(this).data('sub-quiz-id');
+    
+        $.ajax({
+            url: 'themes/main/userQuiz/play_quiz.php',
+            method: 'GET',
+            data: { sub_quiz_id: subQuizId },
+            success: function(response) {
+                $(".navbarPages").html(response); // Replace .load() with .html() for more control
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('Error loading play_quiz.php:', textStatus, errorThrown);
+            }
+        });
     });
+    
 });
